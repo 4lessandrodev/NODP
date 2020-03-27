@@ -1,0 +1,190 @@
+/* IMPORTANDO A FONTE POPPINS DO GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap');
+
+/*VARIAVEIS GLOBAIS DE CORES SEGUINDO A PALETA DE CORES*/
+:root {
+  --dark-primary-color: #7B1FA2;
+  --default-primary-color: #9C27B0;
+  --light-primary-color: #E1BEE7;
+  --text-primary-color: #FFFFFF;
+  --accent-color: #FF9800;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --divider-color: #BDBDBD;
+  --light-background-color: #EDEDED;
+}
+
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+}
+
+/* CLASSE COM DE ACORDO COM A FUNÇÃO DE CADA PALETA DE CORES */
+.dark-primary-color {
+  background: #7B1FA2;
+}
+
+.default-primary-color {
+  background: #9C27B0;
+}
+
+.light-primary-color {
+  background: #E1BEE7;
+}
+
+.text-primary-color {
+  color: #FFFFFF;
+}
+
+.accent-color {
+  background: #FF9800;
+}
+
+.primary-text-color {
+  color: #212121;
+}
+
+.secondary-text-color {
+  color: #757575;
+}
+
+.divider-color {
+  border-color: #BDBDBD;
+}
+
+.light-background-color {
+  background-color: #EDEDED;
+}
+
+/*BOTOES ESCUROS DE ACORDO COM O PADRÃO UTILIZADO NA IDENTIDADE VISUAL*/
+.btn-1-d {
+  width: 112px;
+  height: 32px;
+  padding: 7px;
+  border: 2px solid var(--text-primary-color);
+  border-radius: 7px;
+  font-size: 12px;
+  background: var(--dark-primary-color);
+  color: var(--text-primary-color);
+  transition: ease-in 0.23s;
+  letter-spacing: 1px;
+}
+
+.btn-2-d {
+  width: 154px;
+  height: 37px;
+  padding: 7px;
+  border: 2px solid var(--text-primary-color);
+  border-radius: 7px;
+  font-size: 14px;
+  background: var(--dark-primary-color);
+  color: var(--text-primary-color);
+  transition: ease-in 0.23s;
+  letter-spacing: 1px;
+}
+
+.btn-3-d {
+  width: 210px;
+  height: 40px;
+  padding: 7px;
+  border: 2px solid var(--text-primary-color);
+  border-radius: 7px;
+  font-size: 16px;
+  background: var(--dark-primary-color);
+  color: var(--text-primary-color);
+  transition: ease-in 0.23s;
+  letter-spacing: 1px;
+}
+
+/*BOTOES CLAROS DE ACORDO COM O PADRÃO UTILIZADO NA IDENTIDADE VISUAL*/
+.btn-1-l {
+  width: 112px;
+  height: 32px;
+  padding: 7px;
+  border: 2px solid var(--dark-primary-color);
+  border-radius: 7px;
+  font-size: 12px;
+  background: var(--text-primary-color);
+  color: var(--dark-primary-color);
+  transition: ease-in 0.23s;
+  letter-spacing: 1px;
+}
+
+.btn-2-l {
+  width: 154px;
+  height: 37px;
+  padding: 7px;
+  border: 2px solid var(--dark-primary-color);
+  border-radius: 7px;
+  font-size: 14px;
+  background: var(--text-primary-color);
+  color: var(--dark-primary-color);
+  transition: ease-in 0.23s;
+  letter-spacing: 1px;
+}
+
+.btn-3-l {
+  width: 210px;
+  height: 40px;
+  padding: 7px;
+  border: 2px solid var(--dark-primary-color);
+  border-radius: 7px;
+  font-size: 16px;
+  background: var(--text-primary-color);
+  color: var(--dark-primary-color);
+  transition: ease-in 0.23s;
+  letter-spacing: 1px;
+}
+
+/*BOTOES ESCUROS EFEITO HOVER DE ACORDO COM O PADRÃO UTILIZADO NA IDENTIDADE VISUAL*/
+.btn-1-d:hover,
+.btn-2-d:hover,
+.btn-3-d:hover {
+  background: var(--text-primary-color);
+  color: var(--dark-primary-color);
+  border: 2px solid var(--dark-primary-color);
+  cursor: pointer;
+}
+
+/*BOTOES CLAROS EFEITO HOVER DE ACORDO COM O PADRÃO UTILIZADO NA IDENTIDADE VISUAL*/
+.btn-1-l:hover,
+.btn-2-l:hover,
+.btn-3-l:hover {
+  background: var(--dark-primary-color);
+  color: var(--text-primary-color);
+  border: 2px solid var(--text-primary-color);
+  cursor: pointer;
+}
+
+/*TAMANHO DA LOGO COM O DESENHO DE ACORDO COM O PADRÃO UTILIZADO NA IDENTIDADE VISUAL*/
+.logo {
+  width: 120px;
+  padding: 2px;
+}
+
+/*TAMANHO DA LOGO APENAS LETRAS DE ACORDO COM O PADRÃO UTILIZADO NA IDENTIDADE VISUAL*/
+.logo-letra {
+  width: 90px;
+  padding: 10px;
+}
+
+/*PADRÕES DE TAMANHO DE FONTES DE ACORDO COM O PADRÃO UTILIZADO NA IDENTIDADE VISUAL*/
+.titulo, h1 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.subtitulo, h2, h3, h4, h5, h6 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.texto, p, li {
+  font-size: 13px;
+  font-weight: 400;
+}
+

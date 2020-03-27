@@ -1,0 +1,17 @@
+
+
+Regras:
+1-Para variáveis do tipo 'const' utilizar descrição toda em caixa alta e anderlaine para separação quando for nome composto. 
+ex: 'const NOVO_USUARIO = { }';
+2-Para variáveis do tipo 'let' utilizar nomes de variáveis no padrão CamelCase. ex: 'let novoUsuario = { }';
+3-Evitar ao máximo a utilização de variáveis do tipo 'var';
+4-Colocar ponto e virgula ao fim de todos os códigos javascript;
+5-Declarar todas as variáveis globais no início do arquivo;
+6-Colocar comentário nas funções e variáveis sempre que possível;
+7-Em javascript utilizar apenas aspas simples;
+8-Em HTML utilizar apenas aspas duplas;
+9-Sempre finalizar uma função quando iniciar a mesma;
+10-Sempre realizar o comando 'git pull origin master' quando for começar a mexer no projeto e a cada série de trabalho (25 min);
+11-Sempre realizar os comandos 'git add .', 'git commit -m "mensagem"' e 'git push origin master' quando finalizar uma série de trabalho (25 min);
+12-Nunca trabalhe com dúvida, peça ajuda sempre que tiver dificuldades;
+13-Sempre que possível comunique a equipe as alterações relevantes que você fez;

@@ -1,0 +1,55 @@
+
+<!--Importar o head padrão para todas as páginas-->
+<%- include("./includes/head") -%> 
+<!--Importar o css exclusivo da página que está sendo desenvolvida-->
+<link rel='stylesheet' href='/css/index.css' />
+
+<!--Tag de fechamento do head que ficou aberto para possibilitar importar o css da página-->
+</head>
+
+<!--Códigos da página-->
+<body class="container">
+  <h1 class="titulo">Projeto <span lang="en">no<abbr title="Dependence">DP</abbr></span></h1>
+  <h2 class="subtitulo">Regras da nossa equipe</h2>
+  <ol>
+    <li>Para variáveis do tipo <code>'const'</code> utilizar a descrição toda em caixa alta e anderlaine para separação
+      quando
+      for nome composto. ex: <code>'const NOVO_USUARIO = { }';</code></li>
+      <li>Para variáveis do tipo 'let' utilizar nomes de variáveis no padrão CamelCase. ex: <code>'let novoUsuario = { }';</code>
+      </li>
+      <li>Evitar ao máximo a utilização de variáveis do tipo <code>'var';</code></li>
+      <li>Colocar ponto e virgula ao fim de todos os códigos javascript;</li>
+      <li>Declarar todas as variáveis globais no início do arquivo;</li>
+      <li>Colocar comentário nas funções e variáveis sempre que possível;</li>
+      <li>Em javascript utilizar apenas aspas simples;</li>
+      <li>Em HTML utilizar apenas aspas duplas;</li>
+      <li>Sempre finalizar uma função quando iniciar a mesma;</li>
+      <li>Sempre realizar o comando <code>'git pull origin master'</code> quando for começar a mexer no projeto e a cada série de
+        trabalho (25 min);</li>
+        <li>Sempre realizar os comandos <code>'git add .'</code>, <code>'git commit -m "mensagem"'</code> e <code>'git push
+          origin master'</code> quando finalizar
+          uma série de trabalho (25 min);</li>
+          <li>Nunca trabalhe com dúvida, peça ajuda sempre que tiver dificuldades;</li>
+          <li>Sempre que possível comunique a equipe as alterações relevantes que você fez;</li>
+        </ol>
+        <h1>Resumo do projeto</h1>
+        <p>O projeto <abbr title="No Dependence" lang="en">NODP</abbr> é uma rede social que atua como uma ferramenta de interação entre universitários cujo objetivo é
+          o intercâmbio de conhecimento. O diferencial consiste em conectar o usuário que deseja aprender determinado assunto
+          com aquele que está disposto a ensinar, contando com o recurso da gameficação para promover o engajamento nessa
+          troca de informações.</p>
+          
+        <p>Os Usuários terão um perfil com nome; instituição de ensino; uma pequena descrição de seus objetivos acadêmicos;
+            sua pontuação, tanto como “aluno” quanto como “professor”; quantidade de medalhas, que será um indicador de
+            reconhecimento, por parte dos outros usuários, pelo conteúdo compartilhado no feed(algo semelhante aos “likes”);
+            e a quantidade de moedas acumuladas.<p>
+        <p>Ao se cadastrarem na rede social, será contabilizado no perfil um total 5 de
+                moedas, que poderão ser usadas para obter aulas e/ou para apoiar outros usuários.
+                A obtenção de mais moedas será feita ao dar aulas e/ou receber apoio.<p>
+        <p>Com isso, incentivaremos a contribuição de cada um.<p>
+        <p>Para visualizar o conteúdo compartilhado no feed de outros usuários, será necessário apoiar, ou seja, dar uma moeda.
+          Haverá um espaço reservado na página mostrando quem são os seus apoiadores. O coração da ideia é um campo de busca
+         que retorna as aulas e os professores.</p>
+
+
+<!--Importar o footer padrão para todas as páginas, nele já tem o bootstrap e o fechamento das tags body e html-->
+<%- include("./includes/footer") -%>              
