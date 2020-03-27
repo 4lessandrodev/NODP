@@ -1,8 +1,5 @@
-# NODP
+# Projeto Integrador - NODP (No Dependence)
 Projeto integrador prático Digital House - Em equipe
-
-
-# Projeto Integrador – NO DP
 
 Grupo 2 : Ana Carolina Passos / André Oliveira / Alessandro Menezes / Erika Suguimoto / Michel Santana.
 O projeto NO DP é uma rede social que atua como uma ferramenta de interação entre universitários cujo objetivo é 
