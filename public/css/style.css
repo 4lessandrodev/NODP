@@ -199,6 +199,7 @@ body {
   padding: 0;
 }
 
+/*CSS DO HEADER */
 .header-nav{
   background-color: var(--dark-primary-color);
   height: 6vh;
@@ -245,3 +246,5 @@ body {
   margin: 0 1vw;
   color: var(--text-primary-color);
 }
+
+/*FIM DO CSS DO HEADER */
