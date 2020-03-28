@@ -168,8 +168,9 @@ body {
 
 /*TAMANHO DA LOGO APENAS LETRAS DE ACORDO COM O PADRÃO UTILIZADO NA IDENTIDADE VISUAL*/
 .logo-letra {
-  width: 90px;
-  padding: 10px;
+  width: 70px;
+  padding: 0;
+  margin-right: 10vw;
 }
 
 /*PADRÕES DE TAMANHO DE FONTES DE ACORDO COM O PADRÃO UTILIZADO NA IDENTIDADE VISUAL*/
@@ -188,3 +189,59 @@ body {
   font-weight: 400;
 }
 
+
+/*Sobrescrevendo a regra de containers do bootstrap para footer e header*/
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl{
+  padding: 0;
+}
+
+.header-nav{
+  background-color: var(--dark-primary-color);
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  margin-bottom: 3vh;
+}
+
+.header-nav .form-control{
+  height:calc(0.7em + .75rem + 2px);
+}
+
+.header-nav .input-group-text{
+  line-height:0.9;
+  position: relative;
+  left: -15px;
+  background-color: transparent;
+  border: none;
+  color: var(--text-primary-color);
+}
+
+.header-nav .form-inline{
+  width: 25vw;
+}
+
+.header-nav input[type='search']{
+  width: 20vw;
+}
+
+.header-nav-ul{
+  list-style: none;
+  margin: 0;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  justify-items: center;
+}
+
+.header-nav-ul li{
+  display: flex;
+  font-size: 1.2em;
+  margin: 0 1vw;
+  color: var(--text-primary-color);
+}

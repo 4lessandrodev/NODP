@@ -1,9 +1,32 @@
 <!--Importar o head padrão para todas as páginas-->
 <%- include("./includes/head") -%>
 <!--Importar o css exclusivo da página que está sendo desenvolvida-->
-<link rel='stylesheet' href='/css/' />
-
+<link rel='stylesheet' href='/css/home.css' />
 <!--Tag de fechamento do head que ficou aberto para possibilitar importar o css da página-->
 </head>
 
+<!--Importanto o arquivo header com a barra de pesquisa e menu-->
+<%- include('./includes/header')-%>
+
 <!--Códigos da página-->
+<div class="container">
+  
+  <div class="row">
+    <div class="col-3 coluna-esquerda">
+      Coluna do perfil
+    </div>
+    <div class="col-6 coluna-central">
+      Coluna conteúdo (Posts)
+    </div>
+    <div class="col-3 coluna-direita">
+      Coluna de mensagens, aulas recentes
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<!--Importanto o arquivo footer-->
+<%- include('./includes/footer')-%>
