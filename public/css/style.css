@@ -168,8 +168,9 @@ body {
 
 /*TAMANHO DA LOGO APENAS LETRAS DE ACORDO COM O PADRÃO UTILIZADO NA IDENTIDADE VISUAL*/
 .logo-letra {
-  width: 90px;
-  padding: 10px;
+  width: 70px;
+  padding: 0;
+  margin-right: 10vw;
 }
 
 /*PADRÕES DE TAMANHO DE FONTES DE ACORDO COM O PADRÃO UTILIZADO NA IDENTIDADE VISUAL*/
@@ -191,6 +192,4 @@ body {
 section#apoiadores img{
  width: 80px;
  height: 80px;
- 
-
-}
+ }
