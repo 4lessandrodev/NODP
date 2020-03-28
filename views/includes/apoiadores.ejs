@@ -1,0 +1,52 @@
+
+<!--Importar o head padrão para todas as páginas-->
+<%- include("./includes/head") -%> 
+<!--Importar o css exclusivo da página que está sendo desenvolvida-->
+<link rel='stylesheet' href='/css/index.css' />
+
+<!--Tag de fechamento do head que ficou aberto para possibilitar importar o css da página-->
+</head>
+
+<section id="apoiadores">
+
+  <div class="container">
+      <div class="row">
+        <div class="col-12">
+         Apoiadores
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <img src="./img/MarinaSilva foto.jpg" class="rounded-circle" alt="marina">
+        </div>
+        <div class="col-6">
+          <h1>Marina Silva</h1>
+          <h2>Biologia</h2>
+        </div>
+        <div class="col-3">
+          <input type="button" value="Apoiar" class=btn-1-d>
+        </div>
+      </div>
+        <div class="row">
+         <div class="col-3">
+          <img src="./img/MarceloFreixo.jpg" class="rounded-circle" alt="freixo">
+          </div>
+          <div class="col-6">
+            <h1>Marcelo Freixo</h1>
+            <h2>Ciências Políticas</h2>
+          </div>
+          <div class="col-3">
+            <input type="button" value="Apoiar" class=btn-1-d>
+          </div>
+      </div>
+  </div>
+  </section>
+
+
+    
+    
+
+
+
+<!--Importar o footer padrão para todas as páginas, nele já tem o bootstrap e o fechamento das tags body e html-->
+<%- include("./includes/footer") -%> 
