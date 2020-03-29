@@ -61,6 +61,19 @@ body {
 }
 
 /*BOTOES ESCUROS DE ACORDO COM O PADRÃO UTILIZADO NA IDENTIDADE VISUAL*/
+.btn-0-d {
+  width: 70px;
+  height: 32px;
+  padding: 7px;
+  border: 2px solid var(--text-primary-color);
+  border-radius: 7px;
+  font-size: 12px;
+  background: var(--dark-primary-color);
+  color: var(--text-primary-color);
+  transition: ease-in 0.23s;
+  letter-spacing: 1px;
+}
+
 .btn-1-d {
   width: 112px;
   height: 32px;
@@ -101,6 +114,19 @@ body {
 }
 
 /*BOTOES CLAROS DE ACORDO COM O PADRÃO UTILIZADO NA IDENTIDADE VISUAL*/
+.btn-0-l {
+  width: 112px;
+  height: 32px;
+  padding: 7px;
+  border: 2px solid var(--dark-primary-color);
+  border-radius: 7px;
+  font-size: 12px;
+  background: var(--text-primary-color);
+  color: var(--dark-primary-color);
+  transition: ease-in 0.23s;
+  letter-spacing: 1px;
+}
+
 .btn-1-l {
   width: 112px;
   height: 32px;
@@ -141,6 +167,7 @@ body {
 }
 
 /*BOTOES ESCUROS EFEITO HOVER DE ACORDO COM O PADRÃO UTILIZADO NA IDENTIDADE VISUAL*/
+.btn-0-d:hover,
 .btn-1-d:hover,
 .btn-2-d:hover,
 .btn-3-d:hover {
@@ -151,6 +178,7 @@ body {
 }
 
 /*BOTOES CLAROS EFEITO HOVER DE ACORDO COM O PADRÃO UTILIZADO NA IDENTIDADE VISUAL*/
+.btn-0-l:hover,
 .btn-1-l:hover,
 .btn-2-l:hover,
 .btn-3-l:hover {
@@ -174,22 +202,149 @@ body {
 }
 
 /*PADRÕES DE TAMANHO DE FONTES DE ACORDO COM O PADRÃO UTILIZADO NA IDENTIDADE VISUAL*/
-.titulo, h1 {
+.titulo,
+h1 {
   font-size: 16px;
   font-weight: 600;
 }
 
-.subtitulo, h2, h3, h4, h5, h6 {
+.subtitulo,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: 15px;
   font-weight: 500;
 }
 
-.texto, p, li {
+.texto,
+p,
+li {
   font-size: 13px;
   font-weight: 400;
 }
 
+
+/*Sobrescrevendo a regra de containers do bootstrap para footer e header*/
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  padding: 0;
+}
+
+/*CSS DO HEADER */
+.header-nav {
+  background-color: var(--dark-primary-color);
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  margin-bottom: 3vh;
+}
+
+.header-nav .form-control {
+  height: calc(0.7em + .75rem + 2px);
+}
+
+.header-nav .input-group-text {
+  line-height: 0.9;
+  position: relative;
+  left: -15px;
+  background-color: transparent;
+  border: none;
+  color: var(--text-primary-color);
+}
+
+.header-nav .form-inline {
+  width: 25vw;
+}
+
+.header-nav input[type='search'] {
+  width: 20vw;
+}
+
+.header-nav-ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+}
+
+.header-nav-ul li {
+  display: flex;
+  font-size: 1em;
+  margin: 0 1.2vw;
+  color: var(--text-primary-color);
+}
+
+.header-nav-ul li:hover{
+  cursor: pointer;
+}
+
+#pesquisar:hover{
+  cursor: pointer;
+}
+/*FIM DO CSS DO HEADER */
+
+
+
+
+
+/*SECTION APOIADORES*/
 section#apoiadores img{
- width: 80px;
- height: 80px;
- }
+  width: 50px;
+  height: 50px;
+}
+#apoiadores{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: var(--text-primary-color);
+  border: 1vw solid var(--text-primary-color);
+  border-radius: 1vw;
+  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+}
+
+#apoiadores .row{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+#apoiadores .col {
+  margin: 0;
+  padding: 0;
+}
+#apoiadores h1,
+#apoiadores h2 {
+  margin: 0;
+  padding: 0;
+}
+#apoiadores img{
+  margin: 0.5em;
+}
+
+#apoiadores .apoiadores-header{
+  border-bottom: 1px solid var(--divider-color);
+  padding-bottom: 2.3vh;
+  margin-bottom: 1vh;
+}
+
+#apoiadores .apoiador{
+  border-radius: 1vw;
+  border-bottom: 1px solid var(--divider-color);
+}
+
+#apoiadores .apoiador:hover{
+  background-color: var(--light-background-color);
+  cursor: pointer;
+}
