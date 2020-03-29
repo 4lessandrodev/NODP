@@ -1,9 +1,40 @@
 <!--Importar o head padrão para todas as páginas-->
 <%- include("./includes/head") -%>
 <!--Importar o css exclusivo da página que está sendo desenvolvida-->
-<link rel='stylesheet' href='/css/' />
-
+<link rel='stylesheet' href='/css/cadastro.css' />
 <!--Tag de fechamento do head que ficou aberto para possibilitar importar o css da página-->
 </head>
 
 <!--Códigos da página-->
+<body id="cadastro">
+  <div class="row">
+    
+    <div class="col background">
+    </div>
+
+    <div class="login col-lg-4 col-md-8 col-sm-12">
+      <form>
+
+        <img src="/img/logo-rocho-letra.png" alt="logo" class="logo-letra" id="logo">
+        <h1 class="titulo">Cadastrar</h1>
+
+        <div class="form-group">
+          <label for="email" class="subtitulo">Email</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="senha" class="subtitulo">Senha</label>
+          <input type="password" class="form-control" id="senha" required>
+        </div>
+        <button type="button" class="btn-1-l">Entrar</button>
+        <button type="submit" class="btn-1-d">Cadastrar</button>
+        <div class="cadastro-div-termos">
+          <input type="checkbox" id="termos" name="termos">
+          <label for="termos" class="texto">Aceito termos</label>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <!--Importanto o arquivo footer-->
+  <%- include('./includes/footer')-%>

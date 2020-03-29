@@ -1,0 +1,32 @@
+#cadastro .background{
+  background-image: url("/img/imagem-login.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#cadastro {
+  margin: 0;
+  padding: 0;
+  max-width: 98.5vw;
+}
+
+.login{
+  display: flex;
+  height: 96vh;
+  align-items: center;
+  background-color: var(--light-background-color);
+}
+
+.cadastro-div-termos{
+  margin-top: 2vh;
+}
+
+#cadastro form{
+  margin-left: 3vw;
+}
+
+.titulo{
+  margin-bottom: 3vh;
+  color: var(--dark-primary-color);
+  text-transform: uppercase;
+}
