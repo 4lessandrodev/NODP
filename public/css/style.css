@@ -383,11 +383,16 @@ section#aulas-recentes img{
   margin: 0;
   padding: 0;
 }
-#aulas-recentes h1,
-#aulas-recentes h2 {
+#aulas-recentes h1 {
   margin: 0;
   padding: 0;
   text-transform: uppercase;
+  padding-bottom: 2.3vh;
+  margin-bottom: 1vh;
+}
+#aulas-recentes h2 {
+  margin: 0;
+  padding: 0;
 }
 #aulas-recentes img{
   margin: 0.5em;
@@ -407,6 +412,12 @@ section#aulas-recentes img{
 #aulas-recentes .apoiador:hover{
   background-color: var(--light-background-color);
   cursor: pointer;
+}
+
+#aulas-recentes .apoiadores-footer{
+  border-top: 1px solid var(--divider-color);
+  padding-top: 2.3vh;
+  margin-top: 1vh;
 }
 /* FIM DO COMPONENTE AULAS-RECENTES */
 
