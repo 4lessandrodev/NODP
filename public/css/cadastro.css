@@ -12,7 +12,7 @@
 
 .login{
   display: flex;
-  height: 96vh;
+  height: 99vh;
   align-items: center;
   background-color: var(--light-background-color);
 }
