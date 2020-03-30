@@ -7,15 +7,20 @@ router.get('/', function (req, res, next) {
 });
 
 
-/* GET home page. */
+/* GET index page. */
 router.get('/index', function (req, res, next) {
   res.render('index', { title: 'Login' });
 });
 
 
-/* GET home page. */
+/* GET cadastro page. */
 router.get('/cadastro', function (req, res, next) {
   res.render('cadastro', { title: 'Cadastro' });
+});
+
+/* GET home page. */
+router.get('/home', function (req, res, next) {
+  res.render('home', { title: 'Home' });
 });
 
 
