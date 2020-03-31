@@ -446,13 +446,9 @@ section#aulas-recentes img{
   font-size: 10px;
 }
 
-<<<<<<< HEAD
-.apoiados{
-  width:'100%';
-=======
+
 .apoiados {
   width: '100%';
->>>>>>> ce2592f6dfd66b02baa4ea941e033fd27ba17a7f
   height: 8vh;
   display: flex;
   flex-direction: row;
