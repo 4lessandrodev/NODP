@@ -1,0 +1,131 @@
+.post-feed{
+  background-color: var(--text-primary-color);
+  margin-top: 1vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1vw;
+  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+}
+
+.post-feed-header{
+  display: flex;
+}
+
+.post-feed-header-avatar img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin: 2vh;
+}
+
+.post-feed-article .titulo{
+  text-transform: uppercase;
+}
+
+.post-footer-div .icone {
+  margin: 0 0.5em;
+}
+
+.post-footer-div button{
+  margin: 0.6em;
+}
+
+.post-feed-article .img-post img{
+  width: 100%;
+  max-width: 100%;
+}
+
+.post-feed-header .user-name,
+.post-feed-header .user-estudo,
+.post-feed-header span {
+  padding: 0;
+  margin: 0;
+}
+
+.post-feed-header .user-name{
+  margin: 2vh 0 0 0;
+}
+
+.post-feed:hover{
+  cursor: pointer;
+}
+
+.post-coment .input-comentario{
+  width: 98.5%;
+  margin-top: 2vh;
+  border-radius: 10px;
+  border: 1px solid var(--divider-color);
+  height: 5vh;
+  padding: 0.9em;
+  font-size: 12px;
+}
+
+.post-feed-article{
+  border-bottom: 1px solid var(--divider-color);
+}
+
+.post-footer{
+  margin-top: 4vh;
+}
+
+.post-coment-form{
+  display: flex;
+}
+
+.post-coment-form .img-avatar-coment{
+  display: flex;
+  justify-self: center;
+  align-items: flex-end;
+}
+
+.post-coment-form .div-input-comentario{
+  display: flex;
+  width: 100%;
+}
+
+
+
+.li-comentario .img-avatar-coment img,
+.post-coment-form .img-avatar-coment img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 1vh 0;
+}
+
+.footer-coment-ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.post-footer-div{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.div-li-comentario .li-comentario {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-top: 2vh;
+  padding: 1em;
+  border-radius: 20px;
+  background-color: var(--light-background-color);
+}
+
+.li-comentario{
+  display: flex;
+}
+
+.li-comentario .img-avatar-coment {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+
+.data-post{
+  font-size: 10px;
+}
