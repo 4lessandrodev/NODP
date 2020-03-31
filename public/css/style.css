@@ -905,6 +905,7 @@ section#mensagens img{
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   align-items: flex-start;
   margin-bottom: 1vh;
+  min-width: 100%;
 }
 
 #perfil-detalhe .avatar {
@@ -913,14 +914,15 @@ section#mensagens img{
   height: 140px;
   border: 5px solid var(--text-primary-color);
   display: flex;
-  top: 40px;
-  position: relative;
+  align-self: flex-end;
   margin-left:1vw;
+  position: relative;
+  top: 30px;
 }
 
 #perfil-detalhe .capa-perfil-detalhe {
   background-image: url('/img/capa.jpg');
-  height: 140px;
+  height: 190px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -948,18 +950,17 @@ section#mensagens img{
 
 #perfil-detalhe .info {
   text-align: left;
-  margin-top: 4vh;
-  margin-left:1vw;
+  margin: 4vh 1vw;
 }
 
 #perfil-detalhe .info .faculdade,
+#perfil-detalhe .info .cidade,
+#perfil-detalhe .info .frase,
+#perfil-detalhe .info .email,
+#perfil-detalhe .info .contato,
 #perfil-detalhe .info .profissao,
 #perfil-detalhe .info .nome {
   margin-bottom: 0.8vh;
-}
-
-#perfil-detalhe .info .frase {
-  padding-bottom: 3vh;
 }
 
 #perfil-detalhe .editar{
@@ -971,6 +972,36 @@ section#mensagens img{
 
 #perfil-detalhe .editar:hover{
   cursor: pointer;
+}
+
+#perfil-detalhe .interesses-ensino ul,
+#perfil-detalhe .interesses-aprendizado ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+#perfil-detalhe .interesses-ensino ul{
+  margin-bottom: 2vh;
+}
+
+#perfil-detalhe .interesses-aprendizado{
+  margin-top: 1em;
+}
+
+#perfil-detalhe li{
+  padding: 0 1vh 2vh 0;
+  margin: 0;
+  color: var(--dark-primary-color);
+}
+
+#perfil-detalhe .interesses-div {
+  display: inline-block;
+  border-top:1px solid var(--divider-color) ;
+  min-width: 40vw;
+  margin-top: 4vh;
 }
 
 /*FIM DO CSS DO COMPONENTE PERFIL*/
