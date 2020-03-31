@@ -327,6 +327,7 @@ section#apoiadores img {
   -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  margin-bottom: 1vh;
 }
 
 #apoiadores .row {
@@ -884,3 +885,92 @@ section#mensagens img{
   margin-top: 3vh;
   text-align: center;
 }
+
+/* FIM DO CSS DO COMPONENTE MENSAGENS */
+
+
+
+
+
+/*INICIA DO CSS DO COMPONENTE PERFIL*/
+#perfil-detalhe {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: var(--text-primary-color);
+  border: 1vw solid var(--text-primary-color);
+  border-radius: 1vw;
+  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  align-items: flex-start;
+  margin-bottom: 1vh;
+}
+
+#perfil-detalhe .avatar {
+  width: 140px;
+  border-radius: 100%;
+  height: 140px;
+  border: 5px solid var(--text-primary-color);
+  display: flex;
+  top: 40px;
+  position: relative;
+  margin-left:1vw;
+}
+
+#perfil-detalhe .capa-perfil-detalhe {
+  background-image: url('/img/capa.jpg');
+  height: 140px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-self: stretch;
+  justify-content: start;
+}
+
+#perfil-detalhe .capa-perfil-detalhe:hover,
+#perfil-detalhe .info:hover,
+#perfil-detalhe .avatar:hover {
+  cursor: pointer;
+}
+
+#perfil-detalhe .valor {
+  padding: 0 0.7vw;
+  font-size: medium;
+  font-weight: 500;
+}
+
+#perfil-detalhe .icone {
+  font-size: 1.2em;
+  color: var(--accent-color);
+}
+
+#perfil-detalhe .info {
+  text-align: left;
+  margin-top: 4vh;
+  margin-left:1vw;
+}
+
+#perfil-detalhe .info .faculdade,
+#perfil-detalhe .info .profissao,
+#perfil-detalhe .info .nome {
+  margin-bottom: 0.8vh;
+}
+
+#perfil-detalhe .info .frase {
+  padding-bottom: 3vh;
+}
+
+#perfil-detalhe .editar{
+  display: flex;
+  align-self: flex-end;
+  color: var(--dark-primary-color);
+  margin-top: 0.5em;
+}
+
+#perfil-detalhe .editar:hover{
+  cursor: pointer;
+}
+
+/*FIM DO CSS DO COMPONENTE PERFIL*/
