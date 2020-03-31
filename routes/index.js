@@ -23,5 +23,10 @@ router.get('/home', function (req, res, next) {
   res.render('home', { title: 'Home' });
 });
 
+/* GET perfil page. */
+router.get('/perfil', function (req, res, next) {
+  res.render('perfil', { title: 'Perfil' });
+});
+
 
 module.exports = router;
