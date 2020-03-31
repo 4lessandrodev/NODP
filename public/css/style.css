@@ -419,31 +419,34 @@ section#aulas-recentes img{
   height: 12vh;
   background-color:var(--text-primary-color);
   background-color: var(--text-primary-color);
-  border: 1px solid var(--default-primary-color);
+  border: 1px solid var(--divider-color);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #lugar{
-  color: var(--default-primary-color);
+  color: var(--dark-primary-color);
   text-align: center;
+  text-transform: uppercase;
 }
 
 #novaPostagem .botao {
   width: 8vw;
   height: 12vh;
   background-color: var(--text-primary-color);
-  border: 1px solid var(--default-primary-color);
+  border: 1px solid var(--divider-color);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   padding-top: 17px;
-  color: var(--default-primary-color);
+  color: var(--dark-primary-color);
 }
 
-#novaPostagem .botao:hover{
+#novaPostagem .botao:hover,
+#novaPostagem .posicao:hover h1,
+#novaPostagem .posicao:hover {
 color: var(--text-primary-color);
 background-color: var(--default-primary-color);
 cursor: pointer;
