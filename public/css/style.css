@@ -830,6 +830,7 @@ section#aulas-recentes img {
 section#mensagens img{
   width: 50px;
   height: 50px;
+  margin: 0.5em;
 }
 
 #mensagens {
@@ -842,6 +843,7 @@ section#mensagens img{
   -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  margin-bottom: 1vh;
 }
 
 #mensagens .mensagens-header{
@@ -859,11 +861,26 @@ section#mensagens img{
   padding: 0;
 }
 
-#mensagens .mensagem{
-  padding-bottom:2.3vh;
-  border-bottom: 1px solid var(--divider-color);
-  padding-top:2.3vh
+#mensagens .mensagem:hover {
+  background-color: var(--light-background-color);
+  cursor: pointer;
 }
 
+#mensagens .mensagem{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1vw;
+  border-bottom: 1px solid var(--divider-color);
+}
 
+#mensagens .mensagem .icone{
+  padding: 0.5em;
+  color: var(--accent-color);
+  align-self: center;
+}
 
+#mensagens .mensagens-footer{
+  margin-top: 3vh;
+  text-align: center;
+}
