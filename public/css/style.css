@@ -115,7 +115,7 @@ body {
 
 /*BOTOES CLAROS DE ACORDO COM O PADRÃO UTILIZADO NA IDENTIDADE VISUAL*/
 .btn-0-l {
-  width: 112px;
+  width: 110px;
   height: 32px;
   padding: 7px;
   border: 2px solid var(--dark-primary-color);
@@ -301,7 +301,8 @@ section#apoiadores img{
   width: 50px;
   height: 50px;
 }
-#apoiadores{
+
+#apoiadores {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -313,7 +314,7 @@ section#apoiadores img{
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
 }
 
-#apoiadores .row{
+#apoiadores .row {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -324,7 +325,11 @@ section#apoiadores img{
   margin: 0;
   padding: 0;
 }
-#apoiadores h1,
+#apoiadores h1 {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
 #apoiadores h2 {
   margin: 0;
   padding: 0;
@@ -348,7 +353,52 @@ section#apoiadores img{
   background-color: var(--light-background-color);
   cursor: pointer;
 }
+/*FIM DO CSS DO COMPONENTE APOIADORES*/
 
+/* INICIO DO CSS DO COMPONENTE AULAS-RCENTES */
+section#aulas-recentes img{
+  width: 30px;
+  height: 30px;
+}
+#aulas-recentes {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: var(--text-primary-color);
+  border: 1vw solid var(--text-primary-color);
+  border-radius: 1vw;
+  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+}
+
+#aulas-recentes .row {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+#aulas-recentes .col {
+  margin: 0;
+  padding: 0;
+}
+#aulas-recentes h1 {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  padding-bottom: 2.3vh;
+  margin-bottom: 1vh;
+}
+#aulas-recentes h2 {
+  margin: 0;
+  padding: 0;
+}
+#aulas-recentes img{
+  margin: 0.5em;
+}
+
+<<<<<<< HEAD
 .geral{
   width: '100%';
   height: 20vh;
@@ -439,3 +489,92 @@ section#apoiadores img{
   color: var(--default-primary-color)
 }
 /*FIM DO CSS DO COMPONENTE APOIADORES*/
+=======
+#aulas-recentes .apoiadores-header{
+  border-bottom: 1px solid var(--divider-color);
+  padding-bottom: 2.3vh;
+  margin-bottom: 1vh;
+}
+
+#aulas-recentes .apoiador{
+  border-radius: 1vw;
+  border-bottom: 1px solid var(--divider-color);
+}
+
+#aulas-recentes .apoiador:hover{
+  background-color: var(--light-background-color);
+  cursor: pointer;
+}
+
+#aulas-recentes .apoiadores-footer{
+  border-top: 1px solid var(--divider-color);
+  padding-top: 2.3vh;
+  margin-top: 1vh;
+}
+/* FIM DO COMPONENTE AULAS-RECENTES */
+
+
+/*INICIA DO CSS DO COMPONENTE PERFIL*/
+#perfil {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: var(--text-primary-color);
+  border: 1vw solid var(--text-primary-color);
+  border-radius: 1vw;
+  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  align-items: center;
+  margin-bottom: 2vh;
+}
+
+#perfil .avatar {
+  width: 90px;
+  border-radius: 100%;
+  height: 90px;
+  border: 3px solid var(--text-primary-color);
+  display: flex;
+  align-self: flex-end;
+  top: 21px;
+  position: relative;
+}
+
+#perfil .capa-perfil {
+  background-image: url('/img/capa.jpg');
+  height: 140px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-self: stretch;
+  justify-content: center;
+}
+
+#perfil .perfil-atributos-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#perfil .perfil-atributos-ul-li {
+  display: flex;
+}
+
+#perfil .valor {
+  padding: 0 0.7vw;
+  font-size: medium;
+  font-weight: 500;
+}
+
+#perfil .icone {
+  font-size: 1.2em;
+  color: var(--accent-color);
+}
+
+#perfil .info {
+  text-align: center;
+  margin-top: 4vh;
+}
+/*FIM DO CSS DO COMPONENTE PERFIL*/
+>>>>>>> b84331f1a8864b60d9809582339bcd43eb27a8e5

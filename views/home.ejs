@@ -2,7 +2,6 @@
 <%- include("./includes/head") -%>
 <!--Importar o css exclusivo da página que está sendo desenvolvida-->
 <link rel='stylesheet' href='/css/home.css' />
-<link rel='stylesheet' href='/css/perfil.css' />
 <!--Tag de fechamento do head que ficou aberto para possibilitar importar o css da página-->
 </head>
 
@@ -22,7 +21,8 @@
       <%- include('./includes/btn-nova-postagem')-%> 
     </div>
     <div class="col-3 coluna-direita">
-      Coluna de mensagens, aulas recentes
+      <!--Coluna de mensagens, aulas recentes-->
+      <%- include('./includes/aulas-recentes')-%>
     </div>
   </div>
 
