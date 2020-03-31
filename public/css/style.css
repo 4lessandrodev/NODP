@@ -398,7 +398,7 @@ section#aulas-recentes img{
   margin: 0.5em;
 }
 
-<<<<<<< HEAD
+/*AQUI COMEÇA O CSS DO COMPONENTE NOVAS PUBLICACOES*/
 .geral{
   width: '100%';
   height: 20vh;
@@ -441,23 +441,23 @@ section#aulas-recentes img{
   color: var(--default-primary-color);
 }
 
-
-.apoiados{
-  width:'100%';
+.apoiados {
+  width: '100%';
   height: 8vh;
   display: flex;
   flex-direction: row;
 }
-.text-apoiados{
+
+.text-apoiados {
   width: 10vw;
   height: 8vh;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  color:var(--default-primary-color)
+  color: var(--default-primary-color)
 }
 
-.listagem-apoiados{
+.listagem-apoiados {
   width: 30vw;
   height: 8vh;
   display: flex;
@@ -465,7 +465,7 @@ section#aulas-recentes img{
   align-items: center;
 }
 
-.apoiado{
+.apoiado {
   width: 2.8vw;
   height: 5vh;
   background-color: cornsilk;
@@ -474,22 +474,27 @@ section#aulas-recentes img{
   align-items: center;
 }
 
-#iconeBotao{
+#iconeBotao {
   font-size: 40px;
 }
 
-.seta{
+.seta {
   width: 2.8vw;
   height: 5vh;
   margin-left: 10px;
   display: flex;
   align-items: center;
 }
-#seta{
+
+#seta {
   color: var(--default-primary-color)
 }
+/*AQUI FINALIZA O CSS DO COMPONENTE NOVAS PUBLICACOES*/
+
+
+
+
 /*FIM DO CSS DO COMPONENTE APOIADORES*/
-=======
 #aulas-recentes .apoiadores-header{
   border-bottom: 1px solid var(--divider-color);
   padding-bottom: 2.3vh;
@@ -512,6 +517,8 @@ section#aulas-recentes img{
   margin-top: 1vh;
 }
 /* FIM DO COMPONENTE AULAS-RECENTES */
+
+
 
 
 /*INICIA DO CSS DO COMPONENTE PERFIL*/
@@ -577,4 +584,3 @@ section#aulas-recentes img{
   margin-top: 4vh;
 }
 /*FIM DO CSS DO COMPONENTE PERFIL*/
->>>>>>> b84331f1a8864b60d9809582339bcd43eb27a8e5
