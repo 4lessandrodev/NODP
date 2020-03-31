@@ -403,6 +403,8 @@ section#aulas-recentes img{
   width: '100%';
   height: 20vh;
   background-color: var(--text-primary-color);
+  border-radius: 10px;
+  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
 }
 
 .rowBotoes{
@@ -440,6 +442,9 @@ section#aulas-recentes img{
   padding-top: 10px;
   color: var(--default-primary-color);
 }
+.botao p{
+  font-size: 10px;
+}
 
 .apoiados {
   width: '100%';
@@ -475,7 +480,8 @@ section#aulas-recentes img{
 }
 
 #iconeBotao {
-  font-size: 40px;
+  font-size: 28px;
+  text-align: center;
 }
 
 .seta {
