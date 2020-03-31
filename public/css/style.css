@@ -632,177 +632,52 @@ section#aulas-recentes img{
 }
 /*FIM DO CSS DO COMPONENTE PERFIL*/
 
+/* INICIO DO CSS DO COMPONENTE MENSAGENS */
 
-/*INICIO DO CSS COMPONENTE CONQUISTA DO USUARIO*/
-#conquistas-usuario{
+
+section#mensagens img{
+  width: 50px;
+  height: 50px;
+ 
+  
+}
+
+#mensagens {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   background-color: var(--text-primary-color);
   border: 1vw solid var(--text-primary-color);
   border-radius: 1vw;
   -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  align-items: center;
 }
 
-#conquistas-usuario h1{
+#mensagens .mensagens-header{
+  padding-bottom:2.3vh;
+  border-bottom: 1px solid var(--divider-color);
+  
+
+
+}
+
+#mensagens h1{
+  margin: 0;
+  padding: 0;
   text-transform: uppercase;
+
+}
+#mensagens h2 {
+  margin: 0;
+  padding: 0;
 }
 
-#conquistas-usuario ul{
-  list-style: none;
-}
-
-#conquistas-usuario .conquistas-div-interna{
-  display: flex;
-  border: 1px solid var(--divider-color);
-  border-radius: 10px;
-  margin: 2vh 0;
-  justify-content: space-around;
-}
-
-#conquistas-usuario .conquistas-div-interna ul li{
-  display: flex;
-  align-items: baseline;
-}
-
-#conquistas-usuario .conquistas-div-interna ul li .icone{
-  display: flex;
-  font-size: 1.8em;
-  padding: 1em 0.5em 0.5em 0;
-  color: var(--accent-color);
-  align-self: baseline;
-}
-
-#conquistas-usuario .conquistas-div-interna ul li .numero {
-  font-size: 1.2em;
-  padding: 0 0.2em 0 0;
-  font-weight: 500;
-}
-/*FIM DO CSS PARA COMPONENTE CONQUISTA DO USUARIO*/
-
-
-/*INICIO DO CSS COMPONENTE CONQUISTA ALUNO*/
-#conquista-aluno {
-  background-color: var(--text-primary-color);
-  border: 1vw solid var(--text-primary-color);
-  border-radius: 1vw;
-  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  align-items: center;
-  margin-top: 1vh;
-}
-
-#conquista-aluno h1 {
-  text-transform: uppercase;
-}
-
-#conquista-aluno .conquistas-div-interna {
-  display: flex;
-  border: 1px solid var(--divider-color);
-  border-radius: 10px;
-  margin: 2vh 0;
-  justify-content: flex-start;
-}
-
-#conquista-aluno .conquistas-div-interna ul li .icone {
-  display: flex;
-  font-size: 1.8em;
-  padding: 1em 0.5em 0.5em 0;
-  color: var(--accent-color);
-  align-self: baseline;
-}
-
-#conquista-aluno .conquistas-div-interna ul li .numero {
-  font-size: 1.2em;
-  padding: 0 0.2em 0 0;
-  font-weight: 500;
+#mensagens .mensagem{
+  padding-bottom:2.3vh;
+  border-bottom: 1px solid var(--divider-color);
+  padding-top:2.3vh
 }
 
 
-#conquista-aluno .conquistas-div-interna ul li {
-  display: flex;
-  list-style: none;
-  align-items: baseline;
-}
 
-#conquista-aluno .header{
-  display: flex;
-  list-style: none;
-  align-items: baseline;
-  justify-content: space-between;
-}
-
-#conquista-aluno .header .fas{
-color: var(--accent-color);
-}
-
-#conquista-aluno .header .far {
-  color: var(--divider-color);
-}
-/*FIM DO CSS PARA COMPONENTE CONQUISTA ALUNO*/
-
-
-
-
-/*INICIO DO CSS COMPONENTE CONQUISTA PROFESSOR*/
-#conquista-professor {
-  background-color: var(--text-primary-color);
-  border: 1vw solid var(--text-primary-color);
-  border-radius: 1vw;
-  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  align-items: center;
-  margin-top: 1vh;
-}
-
-#conquista-professor h1 {
-  text-transform: uppercase;
-}
-
-#conquista-professor .conquistas-div-interna {
-  display: flex;
-  border: 1px solid var(--divider-color);
-  border-radius: 10px;
-  margin: 2vh 0;
-  justify-content: flex-start;
-}
-
-#conquista-professor .conquistas-div-interna ul li .icone {
-  display: flex;
-  font-size: 1.8em;
-  padding: 1em 0.5em 0.5em 0;
-  color: var(--accent-color);
-  align-self: baseline;
-}
-
-#conquista-professor .conquistas-div-interna ul li .numero {
-  font-size: 1.2em;
-  padding: 0 0.2em 0 0;
-  font-weight: 500;
-}
-
-
-#conquista-professor .conquistas-div-interna ul li {
-  display: flex;
-  list-style: none;
-  align-items: baseline;
-}
-
-#conquista-professor .header {
-  display: flex;
-  list-style: none;
-  align-items: baseline;
-  justify-content: space-between;
-}
-
-#conquista-professor .header .fas {
-  color: var(--accent-color);
-}
-
-#conquista-professor .header .far {
-  color: var(--divider-color);
-}
-
-/*FIM DO CSS PARA COMPONENTE CONQUISTA ALUNO*/
