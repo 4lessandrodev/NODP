@@ -399,7 +399,7 @@ section#aulas-recentes img{
 }
 
 /*AQUI COMEÇA O CSS DO COMPONENTE NOVAS PUBLICACOES*/
-.geral{
+#novaPostagem{
   width: '100%';
   height: 20vh;
   background-color: var(--text-primary-color);
@@ -407,14 +407,14 @@ section#aulas-recentes img{
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
 }
 
-.rowBotoes{
+#novaPostagem .rowBotoes {
   width:'100%';
   height: 12vh;
   display: flex;
   flex-direction: row;
 }
 
-.posicao{
+#novaPostagem .posicao {
   width:12vw;
   height: 12vh;
   background-color:var(--text-primary-color);
@@ -430,7 +430,7 @@ section#aulas-recentes img{
   text-align: center;
 }
 
-.botao{
+#novaPostagem .botao {
   width: 8vw;
   height: 12vh;
   background-color: var(--text-primary-color);
@@ -439,26 +439,29 @@ section#aulas-recentes img{
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 15px;
+  padding-top: 17px;
   color: var(--default-primary-color);
 }
-.botao p{
-  font-size: 10px;
+
+#novaPostagem .botao:hover{
+color: var(--text-primary-color);
+background-color: var(--default-primary-color);
+cursor: pointer;
 }
 
-<<<<<<< HEAD
-.apoiados{
-  width:'100%';
-=======
-.apoiados {
+#novaPostagem .botao p {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+#novaPostagem .apoiados {
   width: '100%';
->>>>>>> ce2592f6dfd66b02baa4ea941e033fd27ba17a7f
   height: 8vh;
   display: flex;
   flex-direction: row;
 }
 
-.text-apoiados {
+#novaPostagem .text-apoiados {
   width: 10vw;
   height: 8vh;
   display: flex;
@@ -467,7 +470,7 @@ section#aulas-recentes img{
   color: var(--default-primary-color)
 }
 
-.listagem-apoiados {
+#novaPostagem .listagem-apoiados {
   width: 30vw;
   height: 8vh;
   display: flex;
@@ -475,7 +478,7 @@ section#aulas-recentes img{
   align-items: center;
 }
 
-.apoiado {
+#novaPostagem .apoiado {
   width: 2.8vw;
   height: 5vh;
   background-color: cornsilk;
@@ -487,9 +490,10 @@ section#aulas-recentes img{
 #iconeBotao {
   font-size: 28px;
   text-align: center;
+  padding-bottom: 1vh;
 }
 
-.seta {
+#novaPostagem .seta {
   width: 2.8vw;
   height: 5vh;
   margin-left: 10px;
@@ -505,27 +509,31 @@ section#aulas-recentes img{
 
 
 
-/*FIM DO CSS DO COMPONENTE APOIADORES*/
-#aulas-recentes .apoiadores-header{
+/*FIM DO CSS DO COMPONENTE AULAS RECENTES*/
+#aulas-recentes .aulas-header{
   border-bottom: 1px solid var(--divider-color);
   padding-bottom: 2.3vh;
   margin-bottom: 1vh;
 }
 
-#aulas-recentes .apoiador{
+#aulas-recentes .aulas {
   border-radius: 1vw;
   border-bottom: 1px solid var(--divider-color);
 }
 
-#aulas-recentes .apoiador:hover{
+#aulas-recentes .aulas:hover {
   background-color: var(--light-background-color);
   cursor: pointer;
 }
 
-#aulas-recentes .apoiadores-footer{
-  border-top: 1px solid var(--divider-color);
+#aulas-recentes .aulas-footer {
   padding-top: 2.3vh;
   margin-top: 1vh;
+}
+
+#aulas-recentes .aulas img {
+  height: 50px;
+  width: 50px;
 }
 /* FIM DO COMPONENTE AULAS-RECENTES */
 
@@ -595,3 +603,12 @@ section#aulas-recentes img{
   margin-top: 4vh;
 }
 /*FIM DO CSS DO COMPONENTE PERFIL*/
+
+
+/* AQUI INICIA O CSS DO POST - FEED */
+
+
+
+/* AQUI FINALIZA O CSS DO POST - FEED */
+
+
