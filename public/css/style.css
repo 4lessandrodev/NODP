@@ -297,13 +297,14 @@ li {
   color: var(--text-primary-color);
 }
 
-.header-nav-ul li:hover{
+.header-nav-ul li:hover {
   cursor: pointer;
 }
 
-#pesquisar:hover{
+#pesquisar:hover {
   cursor: pointer;
 }
+
 /*FIM DO CSS DO HEADER */
 
 
@@ -311,7 +312,7 @@ li {
 
 
 /*SECTION APOIADORES*/
-section#apoiadores img{
+section#apoiadores img {
   width: 50px;
   height: 50px;
 }
@@ -335,45 +336,51 @@ section#apoiadores img{
   justify-content: center;
   align-content: center;
 }
+
 #apoiadores .col {
   margin: 0;
   padding: 0;
 }
+
 #apoiadores h1 {
   margin: 0;
   padding: 0;
   text-transform: uppercase;
 }
+
 #apoiadores h2 {
   margin: 0;
   padding: 0;
 }
-#apoiadores img{
+
+#apoiadores img {
   margin: 0.5em;
 }
 
-#apoiadores .apoiadores-header{
+#apoiadores .apoiadores-header {
   border-bottom: 1px solid var(--divider-color);
   padding-bottom: 2.3vh;
   margin-bottom: 1vh;
 }
 
-#apoiadores .apoiador{
+#apoiadores .apoiador {
   border-radius: 1vw;
   border-bottom: 1px solid var(--divider-color);
 }
 
-#apoiadores .apoiador:hover{
+#apoiadores .apoiador:hover {
   background-color: var(--light-background-color);
   cursor: pointer;
 }
+
 /*FIM DO CSS DO COMPONENTE APOIADORES*/
 
 /* INICIO DO CSS DO COMPONENTE AULAS-RCENTES */
-section#aulas-recentes img{
+section#aulas-recentes img {
   width: 30px;
   height: 30px;
 }
+
 #aulas-recentes {
   display: flex;
   flex-direction: column;
@@ -393,10 +400,12 @@ section#aulas-recentes img{
   justify-content: center;
   align-content: center;
 }
+
 #aulas-recentes .col {
   margin: 0;
   padding: 0;
 }
+
 #aulas-recentes h1 {
   margin: 0;
   padding: 0;
@@ -404,16 +413,18 @@ section#aulas-recentes img{
   padding-bottom: 2.3vh;
   margin-bottom: 1vh;
 }
+
 #aulas-recentes h2 {
   margin: 0;
   padding: 0;
 }
-#aulas-recentes img{
+
+#aulas-recentes img {
   margin: 0.5em;
 }
 
 /*AQUI COMEÇA O CSS DO COMPONENTE NOVAS PUBLICACOES*/
-#novaPostagem{
+#novaPostagem {
   width: '100%';
   height: 20vh;
   background-color: var(--text-primary-color);
@@ -422,16 +433,16 @@ section#aulas-recentes img{
 }
 
 #novaPostagem .rowBotoes {
-  width:'100%';
+  width: '100%';
   height: 12vh;
   display: flex;
   flex-direction: row;
 }
 
 #novaPostagem .posicao {
-  width:12vw;
+  width: 12vw;
   height: 12vh;
-  background-color:var(--text-primary-color);
+  background-color: var(--text-primary-color);
   background-color: var(--text-primary-color);
   border: 1px solid var(--divider-color);
   display: flex;
@@ -439,7 +450,7 @@ section#aulas-recentes img{
   align-items: center;
 }
 
-#lugar{
+#lugar {
   color: var(--dark-primary-color);
   text-align: center;
   text-transform: uppercase;
@@ -521,13 +532,14 @@ section#aulas-recentes img{
 #seta {
   color: var(--default-primary-color)
 }
+
 /*AQUI FINALIZA O CSS DO COMPONENTE NOVAS PUBLICACOES*/
 
 
 
 
 /*FIM DO CSS DO COMPONENTE AULAS RECENTES*/
-#aulas-recentes .aulas-header{
+#aulas-recentes .aulas-header {
   border-bottom: 1px solid var(--divider-color);
   padding-bottom: 2.3vh;
   margin-bottom: 1vh;
@@ -552,6 +564,7 @@ section#aulas-recentes img{
   height: 50px;
   width: 50px;
 }
+
 /* FIM DO COMPONENTE AULAS-RECENTES */
 
 
@@ -622,24 +635,201 @@ section#aulas-recentes img{
 
 #perfil .info .faculdade,
 #perfil .info .profissao,
-#perfil .info .nome{
+#perfil .info .nome {
   margin-bottom: 1vh;
 }
 
-#perfil .info .frase{
+#perfil .info .frase {
   padding-bottom: 3vh;
   border-bottom: 1px solid var(--divider-color);
 }
+
 /*FIM DO CSS DO COMPONENTE PERFIL*/
 
+
+/*INICIO DO CSS COMPONENTE CONQUISTA DO USUARIO*/
+#conquistas-usuario {
+  background-color: var(--text-primary-color);
+  border: 1vw solid var(--text-primary-color);
+  border-radius: 1vw;
+  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  align-items: center;
+}
+
+#conquistas-usuario h1 {
+  text-transform: uppercase;
+}
+
+#conquistas-usuario ul {
+  list-style: none;
+}
+
+#conquistas-usuario .conquistas-div-interna {
+  display: flex;
+  border: 1px solid var(--divider-color);
+  border-radius: 10px;
+  margin: 2vh 0;
+  justify-content: space-around;
+}
+
+#conquistas-usuario .conquistas-div-interna ul li {
+  display: flex;
+  align-items: baseline;
+}
+
+#conquistas-usuario .conquistas-div-interna ul li .icone {
+  display: flex;
+  font-size: 1.8em;
+  padding: 1em 0.5em 0.5em 0;
+  color: var(--accent-color);
+  align-self: baseline;
+}
+
+#conquistas-usuario .conquistas-div-interna ul li .numero {
+  font-size: 1.2em;
+  padding: 0 0.2em 0 0;
+  font-weight: 500;
+}
+
+/*FIM DO CSS PARA COMPONENTE CONQUISTA DO USUARIO*/
+
+
+/*INICIO DO CSS COMPONENTE CONQUISTA ALUNO*/
+#conquista-aluno {
+  background-color: var(--text-primary-color);
+  border: 1vw solid var(--text-primary-color);
+  border-radius: 1vw;
+  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  align-items: center;
+  margin-top: 1vh;
+}
+
+#conquista-aluno h1 {
+  text-transform: uppercase;
+}
+
+#conquista-aluno .conquistas-div-interna {
+  display: flex;
+  border: 1px solid var(--divider-color);
+  border-radius: 10px;
+  margin: 2vh 0;
+  justify-content: flex-start;
+}
+
+#conquista-aluno .conquistas-div-interna ul li .icone {
+  display: flex;
+  font-size: 1.8em;
+  padding: 1em 0.5em 0.5em 0;
+  color: var(--accent-color);
+  align-self: baseline;
+}
+
+#conquista-aluno .conquistas-div-interna ul li .numero {
+  font-size: 1.2em;
+  padding: 0 0.2em 0 0;
+  font-weight: 500;
+}
+
+
+#conquista-aluno .conquistas-div-interna ul li {
+  display: flex;
+  list-style: none;
+  align-items: baseline;
+}
+
+#conquista-aluno .header {
+  display: flex;
+  list-style: none;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+#conquista-aluno .header .fas {
+  color: var(--accent-color);
+}
+
+#conquista-aluno .header .far {
+  color: var(--divider-color);
+}
+
+/*FIM DO CSS PARA COMPONENTE CONQUISTA ALUNO*/
+
+
+
+
+/*INICIO DO CSS COMPONENTE CONQUISTA PROFESSOR*/
+#conquista-professor {
+  background-color: var(--text-primary-color);
+  border: 1vw solid var(--text-primary-color);
+  border-radius: 1vw;
+  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  align-items: center;
+  margin-top: 1vh;
+}
+
+#conquista-professor h1 {
+  text-transform: uppercase;
+}
+
+#conquista-professor .conquistas-div-interna {
+  display: flex;
+  border: 1px solid var(--divider-color);
+  border-radius: 10px;
+  margin: 2vh 0;
+  justify-content: flex-start;
+}
+
+#conquista-professor .conquistas-div-interna ul li .icone {
+  display: flex;
+  font-size: 1.8em;
+  padding: 1em 0.5em 0.5em 0;
+  color: var(--accent-color);
+  align-self: baseline;
+}
+
+#conquista-professor .conquistas-div-interna ul li .numero {
+  font-size: 1.2em;
+  padding: 0 0.2em 0 0;
+  font-weight: 500;
+}
+
+
+#conquista-professor .conquistas-div-interna ul li {
+  display: flex;
+  list-style: none;
+  align-items: baseline;
+}
+
+#conquista-professor .header {
+  display: flex;
+  list-style: none;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+#conquista-professor .header .fas {
+  color: var(--accent-color);
+}
+
+#conquista-professor .header .far {
+  color: var(--divider-color);
+}
+
+/*FIM DO CSS PARA COMPONENTE CONQUISTA ALUNO*/
+
+
+
+
 /* INICIO DO CSS DO COMPONENTE MENSAGENS */
-
-
 section#mensagens img{
   width: 50px;
   height: 50px;
- 
-  
 }
 
 #mensagens {
@@ -657,16 +847,12 @@ section#mensagens img{
 #mensagens .mensagens-header{
   padding-bottom:2.3vh;
   border-bottom: 1px solid var(--divider-color);
-  
-
-
 }
 
 #mensagens h1{
   margin: 0;
   padding: 0;
   text-transform: uppercase;
-
 }
 #mensagens h2 {
   margin: 0;
