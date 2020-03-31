@@ -438,10 +438,9 @@ section#aulas-recentes img{
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 15px;
   color: var(--default-primary-color);
 }
-
 
 .apoiados{
   width:'100%';
