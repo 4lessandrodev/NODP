@@ -140,6 +140,19 @@ body {
   letter-spacing: 1px;
 }
 
+.btn-1b-l {
+  width: 154px;
+  height: 32px;
+  padding: 7px;
+  border: 2px solid var(--dark-primary-color);
+  border-radius: 7px;
+  font-size: 12px;
+  background: var(--text-primary-color);
+  color: var(--dark-primary-color);
+  transition: ease-in 0.23s;
+  letter-spacing: 1px;
+}
+
 .btn-2-l {
   width: 154px;
   height: 37px;
@@ -181,7 +194,8 @@ body {
 .btn-0-l:hover,
 .btn-1-l:hover,
 .btn-2-l:hover,
-.btn-3-l:hover {
+.btn-3-l:hover,
+.btn-1b-l:hover {
   background: var(--dark-primary-color);
   color: var(--text-primary-color);
   border: 2px solid var(--text-primary-color);
@@ -605,13 +619,18 @@ cursor: pointer;
   text-align: center;
   margin-top: 4vh;
 }
+
+#perfil .info .faculdade,
+#perfil .info .profissao,
+#perfil .info .nome{
+  margin-bottom: 1vh;
+}
+
+#perfil .info .frase{
+  padding-bottom: 3vh;
+  border-bottom: 1px solid var(--divider-color);
+}
 /*FIM DO CSS DO COMPONENTE PERFIL*/
 
-
-/* AQUI INICIA O CSS DO POST - FEED */
-
-
-
-/* AQUI FINALIZA O CSS DO POST - FEED */
 
 
