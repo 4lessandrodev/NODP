@@ -140,6 +140,19 @@ body {
   letter-spacing: 1px;
 }
 
+.btn-1b-l {
+  width: 154px;
+  height: 32px;
+  padding: 7px;
+  border: 2px solid var(--dark-primary-color);
+  border-radius: 7px;
+  font-size: 12px;
+  background: var(--text-primary-color);
+  color: var(--dark-primary-color);
+  transition: ease-in 0.23s;
+  letter-spacing: 1px;
+}
+
 .btn-2-l {
   width: 154px;
   height: 37px;
@@ -181,7 +194,8 @@ body {
 .btn-0-l:hover,
 .btn-1-l:hover,
 .btn-2-l:hover,
-.btn-3-l:hover {
+.btn-3-l:hover,
+.btn-1b-l:hover {
   background: var(--dark-primary-color);
   color: var(--text-primary-color);
   border: 2px solid var(--text-primary-color);
@@ -283,13 +297,19 @@ li {
   color: var(--text-primary-color);
 }
 
-.header-nav-ul li:hover{
+.header-nav-ul li:hover {
   cursor: pointer;
 }
 
-#pesquisar:hover{
+#pesquisar:hover {
   cursor: pointer;
 }
+
+.header-nav a{
+  color: var(--text-primary-color);
+  text-decoration: none;
+}
+
 /*FIM DO CSS DO HEADER */
 
 
@@ -297,7 +317,7 @@ li {
 
 
 /*SECTION APOIADORES*/
-section#apoiadores img{
+section#apoiadores img {
   width: 50px;
   height: 50px;
 }
@@ -312,6 +332,8 @@ section#apoiadores img{
   -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  margin-bottom: 1vh;
+  
 }
 
 #apoiadores .row {
@@ -321,45 +343,52 @@ section#apoiadores img{
   justify-content: center;
   align-content: center;
 }
+
 #apoiadores .col {
   margin: 0;
   padding: 0;
 }
+
 #apoiadores h1 {
   margin: 0;
   padding: 0;
   text-transform: uppercase;
 }
+
 #apoiadores h2 {
   margin: 0;
   padding: 0;
 }
-#apoiadores img{
+
+#apoiadores img {
   margin: 0.5em;
+  object-fit: contain;
 }
 
-#apoiadores .apoiadores-header{
+#apoiadores .apoiadores-header {
   border-bottom: 1px solid var(--divider-color);
   padding-bottom: 2.3vh;
   margin-bottom: 1vh;
 }
 
-#apoiadores .apoiador{
+#apoiadores .apoiador {
   border-radius: 1vw;
   border-bottom: 1px solid var(--divider-color);
 }
 
-#apoiadores .apoiador:hover{
+#apoiadores .apoiador:hover {
   background-color: var(--light-background-color);
   cursor: pointer;
 }
+
 /*FIM DO CSS DO COMPONENTE APOIADORES*/
 
 /* INICIO DO CSS DO COMPONENTE AULAS-RCENTES */
-section#aulas-recentes img{
+section#aulas-recentes img {
   width: 30px;
   height: 30px;
 }
+
 #aulas-recentes {
   display: flex;
   flex-direction: column;
@@ -379,10 +408,12 @@ section#aulas-recentes img{
   justify-content: center;
   align-content: center;
 }
+
 #aulas-recentes .col {
   margin: 0;
   padding: 0;
 }
+
 #aulas-recentes h1 {
   margin: 0;
   padding: 0;
@@ -390,16 +421,18 @@ section#aulas-recentes img{
   padding-bottom: 2.3vh;
   margin-bottom: 1vh;
 }
+
 #aulas-recentes h2 {
   margin: 0;
   padding: 0;
 }
-#aulas-recentes img{
+
+#aulas-recentes img {
   margin: 0.5em;
 }
 
 /*AQUI COMEÇA O CSS DO COMPONENTE NOVAS PUBLICACOES*/
-.geral{
+#novaPostagem {
   width: '100%';
   height: 20vh;
   background-color: var(--text-primary-color);
@@ -407,54 +440,64 @@ section#aulas-recentes img{
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
 }
 
-.rowBotoes{
-  width:'100%';
+#novaPostagem .rowBotoes {
+  width: '100%';
   height: 12vh;
   display: flex;
   flex-direction: row;
 }
 
-.posicao{
-  width:12vw;
+#novaPostagem .posicao {
+  width: 12vw;
   height: 12vh;
-  background-color:var(--text-primary-color);
   background-color: var(--text-primary-color);
-  border: 1px solid var(--default-primary-color);
+  background-color: var(--text-primary-color);
+  border: 1px solid var(--divider-color);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#lugar{
-  color: var(--default-primary-color);
+#lugar {
+  color: var(--dark-primary-color);
   text-align: center;
+  text-transform: uppercase;
 }
 
-.botao{
+#novaPostagem .botao {
   width: 8vw;
   height: 12vh;
   background-color: var(--text-primary-color);
-  border: 1px solid var(--default-primary-color);
+  border: 1px solid var(--divider-color);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 15px;
-  color: var(--default-primary-color);
+  padding-top: 17px;
+  color: var(--dark-primary-color);
 }
-.botao p{
+
+#novaPostagem .botao:hover,
+#novaPostagem .posicao:hover h1,
+#novaPostagem .posicao:hover {
+  color: var(--text-primary-color);
+  background-color: var(--default-primary-color);
+  cursor: pointer;
+}
+
+#novaPostagem .botao p {
   font-size: 10px;
+  text-transform: uppercase;
 }
 
-
-.apoiados {
+#novaPostagem .apoiados {
   width: '100%';
   height: 8vh;
   display: flex;
   flex-direction: row;
 }
 
-.text-apoiados {
+#novaPostagem .text-apoiados {
   width: 10vw;
   height: 8vh;
   display: flex;
@@ -463,7 +506,7 @@ section#aulas-recentes img{
   color: var(--default-primary-color)
 }
 
-.listagem-apoiados {
+#novaPostagem .listagem-apoiados {
   width: 30vw;
   height: 8vh;
   display: flex;
@@ -471,7 +514,7 @@ section#aulas-recentes img{
   align-items: center;
 }
 
-.apoiado {
+#novaPostagem .apoiado {
   width: 2.8vw;
   height: 5vh;
   background-color: cornsilk;
@@ -483,9 +526,10 @@ section#aulas-recentes img{
 #iconeBotao {
   font-size: 28px;
   text-align: center;
+  padding-bottom: 1vh;
 }
 
-.seta {
+#novaPostagem .seta {
   width: 2.8vw;
   height: 5vh;
   margin-left: 10px;
@@ -496,31 +540,44 @@ section#aulas-recentes img{
 #seta {
   color: var(--default-primary-color)
 }
+
 /*AQUI FINALIZA O CSS DO COMPONENTE NOVAS PUBLICACOES*/
 
 
 /*FIM DO CSS DO COMPONENTE APOIADORES*/
 #aulas-recentes .apoiadores-header{
+
+}
+
+
+/*FIM DO CSS DO COMPONENTE AULAS RECENTES*/
+#aulas-recentes .aulas-header {
   border-bottom: 1px solid var(--divider-color);
   padding-bottom: 2.3vh;
   margin-bottom: 1vh;
 }
 
-#aulas-recentes .apoiador{
+#aulas-recentes .aulas {
   border-radius: 1vw;
   border-bottom: 1px solid var(--divider-color);
 }
 
-#aulas-recentes .apoiador:hover{
+#aulas-recentes .aulas:hover {
   background-color: var(--light-background-color);
   cursor: pointer;
 }
 
-#aulas-recentes .apoiadores-footer{
-  border-top: 1px solid var(--divider-color);
+#aulas-recentes .aulas-footer {
   padding-top: 2.3vh;
   margin-top: 1vh;
 }
+
+#aulas-recentes .aulas img {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+}
+
 /* FIM DO COMPONENTE AULAS-RECENTES */
 
 
@@ -538,7 +595,7 @@ section#aulas-recentes img{
   -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   align-items: center;
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
 }
 
 #perfil .avatar {
@@ -550,6 +607,7 @@ section#aulas-recentes img{
   align-self: flex-end;
   top: 21px;
   position: relative;
+  object-fit: contain;
 }
 
 #perfil .capa-perfil {
@@ -561,6 +619,7 @@ section#aulas-recentes img{
   display: flex;
   align-self: stretch;
   justify-content: center;
+  object-fit: contain;
 }
 
 #perfil .perfil-atributos-ul {
@@ -588,4 +647,380 @@ section#aulas-recentes img{
   text-align: center;
   margin-top: 4vh;
 }
+
+#perfil .info .faculdade,
+#perfil .info .profissao,
+#perfil .info .nome {
+  margin-bottom: 1vh;
+}
+
+#perfil .info .frase {
+  padding-bottom: 3vh;
+  border-bottom: 1px solid var(--divider-color);
+}
+
+#perfil:hover{
+  cursor: pointer;
+}
+
+/*FIM DO CSS DO COMPONENTE PERFIL*/
+
+
+/*INICIO DO CSS COMPONENTE CONQUISTA DO USUARIO*/
+#conquistas-usuario {
+  background-color: var(--text-primary-color);
+  border: 1vw solid var(--text-primary-color);
+  border-radius: 1vw;
+  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  align-items: center;
+}
+
+#conquistas-usuario h1 {
+  text-transform: uppercase;
+}
+
+#conquistas-usuario ul {
+  list-style: none;
+}
+
+#conquistas-usuario .conquistas-div-interna {
+  display: flex;
+  border: 1px solid var(--divider-color);
+  border-radius: 10px;
+  margin: 2vh 0;
+  justify-content: space-around;
+}
+
+#conquistas-usuario .conquistas-div-interna ul li {
+  display: flex;
+  align-items: baseline;
+}
+
+#conquistas-usuario .conquistas-div-interna ul li .icone {
+  display: flex;
+  font-size: 1.8em;
+  padding: 1em 0.5em 0.5em 0;
+  color: var(--accent-color);
+  align-self: baseline;
+}
+
+#conquistas-usuario .conquistas-div-interna ul li .numero {
+  font-size: 1.2em;
+  padding: 0 0.2em 0 0;
+  font-weight: 500;
+}
+
+/*FIM DO CSS PARA COMPONENTE CONQUISTA DO USUARIO*/
+
+
+/*INICIO DO CSS COMPONENTE CONQUISTA ALUNO*/
+#conquista-aluno {
+  background-color: var(--text-primary-color);
+  border: 1vw solid var(--text-primary-color);
+  border-radius: 1vw;
+  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  align-items: center;
+  margin-top: 1vh;
+}
+
+#conquista-aluno h1 {
+  text-transform: uppercase;
+}
+
+#conquista-aluno .conquistas-div-interna {
+  display: flex;
+  border: 1px solid var(--divider-color);
+  border-radius: 10px;
+  margin: 2vh 0;
+  justify-content: flex-start;
+}
+
+#conquista-aluno .conquistas-div-interna ul li .icone {
+  display: flex;
+  font-size: 1.8em;
+  padding: 1em 0.5em 0.5em 0;
+  color: var(--accent-color);
+  align-self: baseline;
+}
+
+#conquista-aluno .conquistas-div-interna ul li .numero {
+  font-size: 1.2em;
+  padding: 0 0.2em 0 0;
+  font-weight: 500;
+}
+
+
+#conquista-aluno .conquistas-div-interna ul li {
+  display: flex;
+  list-style: none;
+  align-items: baseline;
+}
+
+#conquista-aluno .header {
+  display: flex;
+  list-style: none;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+#conquista-aluno .header .fas {
+  color: var(--accent-color);
+}
+
+#conquista-aluno .header .far {
+  color: var(--divider-color);
+}
+
+/*FIM DO CSS PARA COMPONENTE CONQUISTA ALUNO*/
+
+
+
+
+/*INICIO DO CSS COMPONENTE CONQUISTA PROFESSOR*/
+#conquista-professor {
+  background-color: var(--text-primary-color);
+  border: 1vw solid var(--text-primary-color);
+  border-radius: 1vw;
+  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  align-items: center;
+  margin-top: 1vh;
+}
+
+#conquista-professor h1 {
+  text-transform: uppercase;
+}
+
+#conquista-professor .conquistas-div-interna {
+  display: flex;
+  border: 1px solid var(--divider-color);
+  border-radius: 10px;
+  margin: 2vh 0;
+  justify-content: flex-start;
+}
+
+#conquista-professor .conquistas-div-interna ul li .icone {
+  display: flex;
+  font-size: 1.8em;
+  padding: 1em 0.5em 0.5em 0;
+  color: var(--accent-color);
+  align-self: baseline;
+}
+
+#conquista-professor .conquistas-div-interna ul li .numero {
+  font-size: 1.2em;
+  padding: 0 0.2em 0 0;
+  font-weight: 500;
+}
+
+
+#conquista-professor .conquistas-div-interna ul li {
+  display: flex;
+  list-style: none;
+  align-items: baseline;
+}
+
+#conquista-professor .header {
+  display: flex;
+  list-style: none;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+#conquista-professor .header .fas {
+  color: var(--accent-color);
+}
+
+#conquista-professor .header .far {
+  color: var(--divider-color);
+}
+
+/*FIM DO CSS PARA COMPONENTE CONQUISTA ALUNO*/
+
+
+
+
+/* INICIO DO CSS DO COMPONENTE MENSAGENS */
+section#mensagens img{
+  width: 50px;
+  height: 50px;
+  margin: 0.5em;
+  object-fit: contain;
+}
+
+#mensagens {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: var(--text-primary-color);
+  border: 1vw solid var(--text-primary-color);
+  border-radius: 1vw;
+  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  margin-bottom: 1vh;
+}
+
+#mensagens .mensagens-header{
+  padding-bottom:2.3vh;
+  border-bottom: 1px solid var(--divider-color);
+}
+
+#mensagens h1{
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+#mensagens h2 {
+  margin: 0;
+  padding: 0;
+}
+
+#mensagens .mensagem:hover {
+  background-color: var(--light-background-color);
+  cursor: pointer;
+}
+
+#mensagens .mensagem{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1vw;
+  border-bottom: 1px solid var(--divider-color);
+}
+
+#mensagens .mensagem .icone{
+  padding: 0.5em;
+  color: var(--accent-color);
+  align-self: center;
+}
+
+#mensagens .mensagens-footer{
+  margin-top: 3vh;
+  text-align: center;
+}
+
+/* FIM DO CSS DO COMPONENTE MENSAGENS */
+
+
+
+
+
+/*INICIA DO CSS DO COMPONENTE PERFIL*/
+#perfil-detalhe {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: var(--text-primary-color);
+  border: 1vw solid var(--text-primary-color);
+  border-radius: 1vw;
+  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  align-items: flex-start;
+  margin-bottom: 1vh;
+  min-width: 100%;
+}
+
+#perfil-detalhe .avatar {
+  width: 140px;
+  border-radius: 100%;
+  height: 140px;
+  border: 5px solid var(--text-primary-color);
+  display: flex;
+  align-self: flex-end;
+  margin-left:1vw;
+  position: relative;
+  top: 30px;
+}
+
+#perfil-detalhe .capa-perfil-detalhe {
+  background-image: url('/img/capa.jpg');
+  height: 190px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-self: stretch;
+  justify-content: start;
+}
+
+#perfil-detalhe .capa-perfil-detalhe:hover,
+#perfil-detalhe .info:hover,
+#perfil-detalhe .avatar:hover {
+  cursor: pointer;
+}
+
+#perfil-detalhe .valor {
+  padding: 0 0.7vw;
+  font-size: medium;
+  font-weight: 500;
+}
+
+#perfil-detalhe .icone {
+  font-size: 1.2em;
+  color: var(--accent-color);
+}
+
+#perfil-detalhe .info {
+  text-align: left;
+  margin: 4vh 1vw;
+}
+
+#perfil-detalhe .info .faculdade,
+#perfil-detalhe .info .cidade,
+#perfil-detalhe .info .frase,
+#perfil-detalhe .info .email,
+#perfil-detalhe .info .contato,
+#perfil-detalhe .info .profissao,
+#perfil-detalhe .info .nome {
+  margin-bottom: 0.8vh;
+}
+
+#perfil-detalhe .editar{
+  display: flex;
+  align-self: flex-end;
+  color: var(--dark-primary-color);
+  margin-top: 0.5em;
+}
+
+#perfil-detalhe .editar:hover{
+  cursor: pointer;
+}
+
+#perfil-detalhe .interesses-ensino ul,
+#perfil-detalhe .interesses-aprendizado ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+#perfil-detalhe .interesses-ensino ul{
+  margin-bottom: 2vh;
+}
+
+#perfil-detalhe .interesses-aprendizado{
+  margin-top: 1em;
+}
+
+#perfil-detalhe li{
+  padding: 0 1vh 2vh 0;
+  margin: 0;
+  color: var(--dark-primary-color);
+}
+
+#perfil-detalhe .interesses-div {
+  display: inline-block;
+  border-top:1px solid var(--divider-color) ;
+  min-width: 40vw;
+  margin-top: 4vh;
+}
+
 /*FIM DO CSS DO COMPONENTE PERFIL*/
