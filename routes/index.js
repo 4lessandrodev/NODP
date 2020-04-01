@@ -28,5 +28,10 @@ router.get('/perfil', function (req, res, next) {
   res.render('perfil', { title: 'Perfil' });
 });
 
+/* GET pesquisas page. */
+router.get('/pesquisas', function (req, res, next) {
+  res.render('pesquisas', { title: 'Perfil' });
+});
+
 
 module.exports = router;
