@@ -30,8 +30,13 @@ router.get('/perfil', function (req, res, next) {
 
 /* GET pesquisas page. */
 router.get('/pesquisas', function (req, res, next) {
-  res.render('pesquisas', { title: 'Perfil' });
+  res.render('pesquisas', { title: 'Pesquisa' });
 });
 
+
+/* GET pesquisas page. */
+router.get('/ranking', function (req, res, next) {
+  res.render('ranking', { title: 'Ranking' });
+});
 
 module.exports = router;

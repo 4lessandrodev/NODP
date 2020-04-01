@@ -546,7 +546,7 @@ section#aulas-recentes img {
 
 /*FIM DO CSS DO COMPONENTE APOIADORES*/
 #aulas-recentes .apoiadores-header{
-
+  
 }
 
 
@@ -662,7 +662,6 @@ section#aulas-recentes img {
 #perfil:hover{
   cursor: pointer;
 }
-
 /*FIM DO CSS DO COMPONENTE PERFIL*/
 
 
@@ -1023,4 +1022,87 @@ section#mensagens img{
   margin-top: 4vh;
 }
 
+#perfil-detalhe .icone{
+  display: flex;
+  justify-self: flex-end;
+  color: white;
+}
+#perfil-detalhe .trofeu{
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 5em;
+  color: var(--text-primary-color);
+  width: 40vw;
+  align-self: flex-end;
+}
+
 /*FIM DO CSS DO COMPONENTE PERFIL*/
+
+
+/*INICIO DO CSS COMPONENTE RANKING DE ALUNO*/
+#ranking-aluno {
+  background-color: var(--text-primary-color);
+  border: 1vw solid var(--text-primary-color);
+  border-radius: 1vw;
+  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  align-items: center;
+  margin-top: 1vh;
+}
+
+#ranking-aluno h1 {
+  text-transform: uppercase;
+}
+
+#ranking-aluno .ranking-div-interna {
+  display: flex;
+  border: 1px solid var(--divider-color);
+  border-radius: 10px;
+  margin: 2vh 0;
+  justify-content: flex-start;
+}
+
+#ranking-aluno .ranking-div-interna ul li .icone {
+  display: flex;
+  font-size: 1.8em;
+  padding: 1em 0.5em 0.5em 0;
+  color: var(--accent-color);
+  align-self: baseline;
+}
+
+#ranking-aluno .ranking-div-interna ul li .numero {
+  font-size: 1.2em;
+  padding: 0 0.2em 0 0;
+  font-weight: 500;
+}
+
+
+#ranking-aluno .ranking-div-interna ul li {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+#ranking-aluno .ranking-div-interna ul li img{
+  width: 50px;
+  height: 50px;
+  margin: 2vh 1vh 0 0;
+}
+
+#ranking-aluno .header {
+  display: flex;
+  list-style: none;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+#ranking-aluno .header .fas {
+  color: var(--accent-color);
+}
+
+#ranking-aluno .header .far {
+  color: var(--divider-color);
+}
+
+/*FIM DO CSS PARA COMPONENTE CONQUISTA ALUNO*/
