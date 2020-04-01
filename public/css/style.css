@@ -305,6 +305,11 @@ li {
   cursor: pointer;
 }
 
+.header-nav a{
+  color: var(--text-primary-color);
+  text-decoration: none;
+}
+
 /*FIM DO CSS DO HEADER */
 
 
@@ -643,6 +648,10 @@ section#aulas-recentes img {
 #perfil .info .frase {
   padding-bottom: 3vh;
   border-bottom: 1px solid var(--divider-color);
+}
+
+#perfil:hover{
+  cursor: pointer;
 }
 
 /*FIM DO CSS DO COMPONENTE PERFIL*/

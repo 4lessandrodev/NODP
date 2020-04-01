@@ -4,17 +4,17 @@ body{
 
 .coluna-esquerda{
 height: 90vh;
-border: 1px solid var(--dark-primary-color);
+/* border: 1px solid var(--dark-primary-color); */
 padding-top: 1vh;
 }
 .coluna-central{
-border: 1px solid var(--dark-primary-color);
+/* border: 1px solid var(--dark-primary-color); */
 height: 90vh;
 padding-top: 1vh;
 }
 .coluna-direita{
 height: 90vh;
-border: 1px solid var(--dark-primary-color);
+/* border: 1px solid var(--dark-primary-color); */
 padding-top: 1vh;
 }
 
