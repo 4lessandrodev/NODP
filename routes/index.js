@@ -35,8 +35,13 @@ router.get('/pesquisas', function (req, res, next) {
 
 
 /* GET pesquisas page. */
-router.get('/ranking', function (req, res, next) {
-  res.render('ranking', { title: 'Ranking' });
+router.get('/ranking-alunos', function (req, res, next) {
+  res.render('ranking-alunos', { title: 'Ranking' });
+});
+
+/* GET pesquisas page. */
+router.get('/ranking-professores', function (req, res, next) {
+  res.render('ranking-professores', { title: 'Ranking' });
 });
 
 module.exports = router;

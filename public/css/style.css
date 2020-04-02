@@ -1213,4 +1213,92 @@ section#mensagens img{
   color: var(--divider-color);
 }
 
+#ranking-aluno .btn-ranking {
+  text-align: end;
+  position: relative;
+  bottom: 5vh;
+  overflow: hidden;
+}
 /*FIM DO CSS PARA COMPONENTE CONQUISTA ALUNO*/
+
+
+
+
+
+/*INICIO DO CSS COMPONENTE RANKING DE PROFESSOR*/
+#ranking-professor {
+  background-color: var(--text-primary-color);
+  border: 1vw solid var(--text-primary-color);
+  border-radius: 1vw;
+  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  align-items: center;
+  margin-top: 1vh;
+}
+
+#ranking-professor h1 {
+  text-transform: uppercase;
+}
+
+#ranking-professor .ranking-div-interna {
+  display: flex;
+  border: 1px solid var(--divider-color);
+  border-radius: 10px;
+  margin: 2vh 0;
+  justify-content: flex-start;
+}
+
+#ranking-professor .ranking-div-interna ul li .icone {
+  display: flex;
+  font-size: 1.8em;
+  padding: 1em 0.5em 0.5em 0;
+  color: var(--accent-color);
+  align-self: baseline;
+}
+
+#ranking-professor .ranking-div-interna ul li .numero {
+  font-size: 1.2em;
+  padding: 0 0.2em 0 0;
+  font-weight: 500;
+}
+
+
+#ranking-professor .ranking-div-interna ul li {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+#ranking-professor .ranking-div-interna ul li img {
+  width: 50px;
+  height: 50px;
+  margin: 2vh 1vh 0 0;
+}
+
+#ranking-professor .header {
+  display: flex;
+  list-style: none;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+#ranking-professor .header .fas {
+  color: var(--accent-color);
+}
+
+#ranking-professor .header .far {
+  color: var(--divider-color);
+}
+
+#ranking-professor .btn-ranking {
+  text-align: end;
+  position: relative;
+  bottom: 5vh;
+  overflow: hidden;
+}
+
+/*FIM DO CSS PARA COMPONENTE CONQUISTA PROFESSOR*/
+
+
+
