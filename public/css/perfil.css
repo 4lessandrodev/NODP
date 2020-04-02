@@ -3,17 +3,17 @@ body{
   }
   
   .coluna-esquerda{
-  height: 90vh;
+  height: auto;
   /* border: 1px solid var(--dark-primary-color); */
-  padding-top: 1vh;
+  padding: 0vh;
   }
   .coluna-central{
   /* border: 1px solid var(--dark-primary-color); */
-  height: 90vh;
-  padding-top: 1vh;
+  height: auto;
+  padding: 0 1vh;
   }
   .coluna-direita{
-  height: 90vh;
+  height: auto;
   /* border: 1px solid var(--dark-primary-color); */
-  padding-top: 1vh;
+  padding: 0vh;
   }

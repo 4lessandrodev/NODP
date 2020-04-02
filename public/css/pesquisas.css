@@ -1,22 +1,29 @@
 body{
-    background-color: var(--light-background-color);
-  }
-  
-  .coluna-esquerda{
-  height: 90vh;
+  background-color: var(--light-background-color);
+}
+
+.coluna-esquerda{
+  height: auto;
   border: 1px solid var(--dark-primary-color);
-  padding-top: 1vh;
-  }
-  .coluna-central{
-  border: 1px solid var(--dark-primary-color);
-  height: 90vh;
-  padding-top: 1vh;
-  }
-  .coluna-direita{
-  height: 90vh;
-  border: 1px solid var(--dark-primary-color);
-  padding-top: 1vh;
-  }
-  
-  
-  
+  margin: 0;
+  padding: 0;
+}
+.coluna-central{
+  /* border: 1px solid var(--dark-primary-color); */
+  height: auto;
+  padding: 0 0.5vw;
+}
+.coluna-direita{
+  height: auto;
+  /* border: 1px solid var(--dark-primary-color); */
+  margin: 0;
+  padding: 0;
+}
+
+.div-scroll-post {
+  height: 120vh;
+  overflow: scroll;
+  /* border: 1px solid red; */
+}
+
+
