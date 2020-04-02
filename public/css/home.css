@@ -8,13 +8,11 @@ height: auto;
 /* border: 1px solid red; */
 margin: 0;
 padding: 0;
-
 }
 .coluna-central{
 /* border: 1px solid var(--dark-primary-color); */
 height: auto;
-padding: 0 0.5vw;
-
+padding: 0 1vh;
 /* border: 1px solid red; */
 }
 .coluna-direita{
@@ -22,11 +20,13 @@ height: auto;
 /* border: 1px solid var(--dark-primary-color); */
 padding: 0;
 /* border: 1px solid red; */
-position:static;
 }
 
 .div-scroll-post{
   height: 120vh;
   overflow: scroll;
   /* border: 1px solid red; */
+}
+::-webkit-scrollbar {
+  width: 0px;
 }

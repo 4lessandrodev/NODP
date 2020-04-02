@@ -519,10 +519,14 @@ section#aulas-recentes img {
   align-items: center;
 }
 
-#iconeBotao {
+#novaPostagem .botao {
   font-size: 28px;
   text-align: center;
   padding-bottom: 1vh;
+}
+
+#novaPostagem .botao p{
+  padding-top: 1vh;
 }
 
 #novaPostagem .seta {
@@ -548,15 +552,21 @@ section#aulas-recentes img {
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
 }
 
+#label {
+  color: var(--dark-primary-color);
+  text-align: center;
+  text-transform: uppercase;
+}
+
 #filtroPesquisa .rowBotoes {
-  width: '100%';
+  width: 100%;
   height: 12vh;
   display: flex;
   flex-direction: row;
 }
 
 #filtroPesquisa .aplicar {
-  width: 12vw;
+  width: 9vw;
   height: 12vh;
   background-color: var(--text-primary-color);
   background-color: var(--text-primary-color);
@@ -631,10 +641,14 @@ section#aulas-recentes img {
   align-items: center;
 }
 
-#iconeBotao {
+#filtroPesquisa .botao {
   font-size: 28px;
   text-align: center;
   padding-bottom: 1vh;
+}
+
+#filtroPesquisa .botao p{
+  padding-top: 1vh;
 }
 
 #filtroPesquisa .seta {
@@ -649,13 +663,14 @@ section#aulas-recentes img {
   color: var(--default-primary-color)
 }
 
+#filtroPesquisa .ativo{
+  color: var(--text-primary-color);
+  background-color: var(--default-primary-color);
+  cursor: pointer;
+}
+
 /*AQUI FINALIZA O CSS DO COMPONENTE FILTRO DE PESQUISAS*/
 
-
-/*FIM DO CSS DO COMPONENTE APOIADORES*/
-#aulas-recentes .apoiadores-header{
-  
-}
 
 
 /*FIM DO CSS DO COMPONENTE AULAS RECENTES*/
