@@ -1,53 +1,40 @@
 <section id="filtroPesquisa" class="geral">
     <div class="rowBotoes">
         <div class="aplicar">
-            <h1 id="lugar">APLICAR<br>FILTRO</h1>
+            <h1 id="label">Aplicar<br>Filtro</h1>
         </div>
-
+        
         <div class="botao">
-            <i id="iconeBotao" class="far fa-user"></i>
+            <i id="iconeBotao1" class="far fa-user"></i>
             <p>usuários</p>
         </div>
-
+        
         <div class="botao">
-            <i id="iconeBotao" class="fas fa-chalkboard-teacher"></i>
+            <i id="iconeBotao2" class="fas fa-chalkboard-teacher"></i>
             <p>aprender</p>
         </div>
-
+        
         <div class="botao">
-            <i id="iconeBotao" class="far fa-hand-peace"></i>
+            <i id="iconeBotao3" class="far fa-hand-peace"></i>
             <p>aprendendo</p>
         </div>
         <div class="botao">
-            <i id="iconeBotao" class="fas fa-glasses"></i>
+            <i id="iconeBotao4" class="fas fa-glasses"></i>
             <p>ensinar</p>
         </div>
         <div class="botao">
-            <i id="iconeBotao" class="far fa-thumbs-up"></i>
+            <i id="iconeBotao5" class="far fa-thumbs-up"></i>
             <p>ensinando</p>
         </div>
     </div>
-
-    <div class="apoiados">
-        <!-- <div class="text-apoiados">
-            <p>Seus apoiados</p>
-        </div>
-
-        <div class="listagem-apoiados">
-            <div class="apoiado"></div>
-            <div class="apoiado"></div>
-            <div class="apoiado"></div>
-            <div class="apoiado"></div>
-            <div class="apoiado"></div>
-            <div class="apoiado"></div>
-            <div class="apoiado"></div>
-            <div class="apoiado"></div>
-            <div class="seta">
-                <i class="fas fa-play" id="seta"></i>
-            </div>
-
-            
-        </div> -->
-    </div>
-
 </section> 
+
+<script>
+    const BOTOES = document.querySelectorAll('.botao');
+    //Esta função aplica o efeito no botão clicado pelo usuário para adicionar filtro
+    for(let botao of BOTOES){
+        botao.addEventListener('click',function(){
+            botao.classList.toggle('ativo');
+        });
+    };
+</script>
