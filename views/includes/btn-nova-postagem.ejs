@@ -3,21 +3,25 @@
         <div class="posicao" onclick="location.href='/ranking-professores'">
             <h1 id="lugar">3º<br>lugar</h1>
         </div>
+
+        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Falar com @mdo</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Falar com @fat</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Falar com @getbootstrap</button> -->
         
-        <div class="botao">
+        <div class="botao" data-toggle="modal" data-target="#modalAprender">
             <i id="iconeBotao" class="fas fa-chalkboard-teacher"></i>
             <p>aprender</p>
         </div>
         
-        <div class="botao">
+        <div class="botao" data-toggle="modal" data-target="#modalAprendendo">
             <i id="iconeBotao" class="far fa-hand-peace"></i>
             <p>aprendendo</p>
         </div>
-        <div class="botao">
+        <div class="botao" data-toggle="modal" data-target="#modalEnsinar">
             <i id="iconeBotao" class="fas fa-glasses"></i>
             <p>ensinar</p>
         </div>
-        <div class="botao">
+        <div class="botao" data-toggle="modal" data-target="#modalEnsinando">
             <i id="iconeBotao" class="far fa-thumbs-up"></i>
             <p>ensinando</p>
         </div>
@@ -42,5 +46,6 @@
             </div>  
         </div>
     </div>
-    
+    <!-- Modal de criar publicação-->
+<%- include('../includes/criar-publicacao')-%>
 </section> 
