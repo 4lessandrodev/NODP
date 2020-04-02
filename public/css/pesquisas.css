@@ -25,5 +25,7 @@ body{
   overflow: scroll;
   /* border: 1px solid red; */
 }
-
+::-webkit-scrollbar {
+  width: 0px;
+}
 
