@@ -33,13 +33,13 @@ body{
 section#usuario-pesquisado .usuario img{
   width: 50px;
   height: 50px;
-  margin: 0.5em;
-  object-fit: contain;
-}
+ 
+} 
 
 section#aula-pesquisada .aula-pesq img{
   width: 50px;
   height: 50px;
-  margin: 0.5em;
-  object-fit: contain;
+  
 }
+
+
