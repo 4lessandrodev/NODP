@@ -1,0 +1,103 @@
+<!-- Modal -->
+
+<div class="modal fade" id="modalEditarPerfil" tabindex="-1" role="dialog" aria-labelledby="postModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Descartar">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <!-- <section class="post-feed container">-->
+        <header class="header">
+          <div class="imagem-background">
+            <div class="header-avatar">
+              <img src="/img/kate.jpg" alt="avatar">
+            </div>
+          </div>
+        </header>
+        
+        <article class="detalhes-dados">
+          
+          <div class="user-info row">
+            <div class="informacoes-do-usuario col">
+              <label for="nome" class="texto">Nome</label>
+              <input type="text" name="nome" id="nome" class="texto" class="texto" placeholder="Nome Sobrenome">
+              
+              <label for="faculdade" class="texto">Instituição de ensino</label>
+              <input type="text" name="faculdade" id="faculdade" class="texto" placeholder="Nome da Faculdade">
+              
+              <label for="interesse-aprendizado" class="texto">Interesses de aprendizado</label>
+              <input type="text" name="interesse-aprendizado" id="interesse-aprendizado" class="texto" placeholder="Matematica, Inglês...">
+              
+              <label for="cidade" class="texto">Cidade</label>
+              <input type="text" name="cidade" id="cidade" class="texto" placeholder="Sao Paulo">
+              
+            </div>
+            
+            <div class="informacoes-do-usuario col">
+              
+              <label for="estado" class="texto">Estado</label>
+              <select name="estado" id="estado" class="texto">
+                <option value="SP" class="texto">SP</option>
+                <option value="GO" class="texto">GO</option>
+                <option value="MG" class="texto">MG</option>
+              </select>
+              
+              <label for="data-nacimento" class="texto">Data Nascimento</label>
+              <input type="date" name="data-nacimento" id="data-nacimento" class="texto">
+              
+              <label for="qtd-moedas-cobrado" class="texto">Ano da início</label>
+              <input type="number" name="qtd-moedas-cobrado" id="qtd-moedas-cobrado" class="texto" placeholder="2020">
+              
+              <label for="interesse-ensino" class="texto">Interesses de ensino</label>
+              <input type="text" name="interesse-ensino" id="interesse-ensino" class="texto"
+              placeholder="Libras, Francês, Redação...">
+              
+            </div>
+            
+            <div class="informacoes-do-usuario col">
+              
+              <label for="qtd-moedas-cobrado" class="texto">Qtd. de moedas cobrado/h</label>
+              <input type="text" name="qtd-moedas-cobrado" id="qtd-moedas-cobrado" class="texto"
+              placeholder="2">
+              
+              <label for="meio-aprendizado" class="texto">Aprender via</label>
+              <select name="meio-aprendizado" id="meio-aprendizado" class="texto">
+                <option value="1" class="texto">Online</option>
+                <option value="2" class="texto">Presencial</option>
+                <option value="3" class="texto">Presencial e Online</option>
+              </select>
+              
+              <label for="meio-aprendizado" class="texto">Ensinar via</label>
+              <select name="meio-aprendizado" id="meio-aprendizado" class="texto">
+                <option value="1" class="texto">Online</option>
+                <option value="2" class="texto">Presencial</option>
+                <option value="3" class="texto">Presencial e Online</option>
+              </select>
+              
+              <label for="telefone" class="texto">Telefone de contato</label>
+              <input type="tel" name="telefone" id="telefone" class="texto" placeholder="(00) 99999-9999">
+            </div>
+            
+            
+          </div>
+          <div>
+            <textarea name="" rows="2" placeholder="Seu objetivo aqui ..." class="texto bio"
+            maxlength="250" style="width: 100%;"></textarea>
+            <div class="quantidade-caracteres">
+              <p class="texto">250</p>
+            </div>
+          </div>
+          
+        </article>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-2-l" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-2-d">Salvar</button>
+      </div>
+    </div>
+  </div>
+</div>
