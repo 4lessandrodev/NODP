@@ -1,0 +1,76 @@
+#modalAprender .img-post{
+  font-size: 250px;
+  text-align: center;
+  margin: 0vw;
+  padding: 0vw;
+  font-weight: lighter;
+  line-height: 0.4;
+  background-color: var(--divider-color);
+  color: var(--text-primary-color);
+  transition: ease-in-out 0.5s;
+}
+
+#modalAprender .img-post:hover {
+cursor: pointer;
+background-color: var(--default-primary-color);
+}
+
+#modalAprender .informacoes-do-post {
+display: flex;
+}
+#modalAprender .informacoes-do-post .btn-urgente,
+#modalAprender .informacoes-do-post .btn-normal {
+width: 10vw;
+border: 1px solid var(--divider-color);
+height: 5vh;
+text-align: center;
+}
+
+#modalAprender .informacoes-do-post .btn-urgente {
+border-bottom: 5px solid var(--accent-color);
+padding: 1vh;
+margin-top: 1.5vh;
+margin-right: 0.5vw;
+transition: ease-in-out 0.33s;
+}
+#modalAprender .informacoes-do-post .btn-urgente:hover {
+background-color: var(--accent-color);
+color: var(--text-primary-color);
+cursor: pointer;
+}
+
+#modalAprender .informacoes-do-post .btn-normal {
+border-bottom: 5px solid var(--secondary-text-color);
+padding: 1vh;
+margin-top: 1.5vh;
+transition: ease-in-out 0.33s;
+}
+
+#modalAprender .informacoes-do-post .btn-normal:hover {
+background-color: var(--secondary-text-color);
+color: var(--text-primary-color);
+cursor: pointer;
+}
+
+.titulo-modal{
+  border: none;
+  padding: 0.5em 0;
+}
+
+
+.texto-post{
+  resize: none;
+  border-radius: 10px;
+  padding: 0.5em;
+  width: 100%;
+}
+
+.quantidade-caracteres{
+  text-align: right;
+  padding: 0;
+}
+.quantidade-caracteres p.texto{
+  text-align: right;
+  padding: 0;
+  margin: 0;
+}

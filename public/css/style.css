@@ -442,6 +442,31 @@ section#aulas-recentes img {
   margin: 0.5em;
 }
 
+#aulas-recentes .aulas{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#aulas-recentes .aulas-header .tipo-aula{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: initial;
+  color: var(--dark-primary-color);
+}
+
+#aulas-recentes .tipo-aula:hover{
+  cursor: pointer;
+}
+
+.seta{
+  color: var(--dark-primary-color);
+}
+/*FIM DO CSS DO COMPONENTE AULAS RECENTES*/
+
+
+
 /*AQUI COMEÇA O CSS DO COMPONENTE NOVAS PUBLICACOES*/
 #novaPostagem {
   width: '100%';
