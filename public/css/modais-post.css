@@ -1,60 +1,65 @@
+/*INICIO DO CSS PARA O MODAL APRENDER*/
 #modalAprender .img-post{
-  font-size: 250px;
+  font-size: 50px;
   text-align: center;
-  margin: 0vw;
+  margin: 2vh 0;
   padding: 0vw;
   font-weight: lighter;
   line-height: 0.4;
-  background-color: var(--divider-color);
+  background-color: var(--light-background-color);
   color: var(--text-primary-color);
   transition: ease-in-out 0.5s;
+  border: 2px dashed var(--secondary-text-color);
 }
 
 #modalAprender .img-post:hover {
-cursor: pointer;
-background-color: var(--default-primary-color);
+  cursor: pointer;
+  background-color: var(--default-primary-color);
 }
 
 #modalAprender .informacoes-do-post {
-display: flex;
+  display: flex;
 }
 #modalAprender .informacoes-do-post .btn-urgente,
 #modalAprender .informacoes-do-post .btn-normal {
-width: 10vw;
-border: 1px solid var(--divider-color);
-height: 5vh;
-text-align: center;
+  width: 10vw;
+  border: 1px solid var(--divider-color);
+  height: 5vh;
+  text-align: center;
 }
 
 #modalAprender .informacoes-do-post .btn-urgente {
-border-bottom: 5px solid var(--accent-color);
-padding: 1vh;
-margin-top: 1.5vh;
-margin-right: 0.5vw;
-transition: ease-in-out 0.33s;
+  border-bottom: 5px solid var(--accent-color);
+  padding: 0.9vh;
+  margin-top: 1.5vh;
+  margin-right: 0.5vw;
+  transition: ease-in-out 0.33s;
 }
 #modalAprender .informacoes-do-post .btn-urgente:hover {
-background-color: var(--accent-color);
-color: var(--text-primary-color);
-cursor: pointer;
+  background-color: var(--accent-color);
+  color: var(--text-primary-color);
+  cursor: pointer;
 }
 
 #modalAprender .informacoes-do-post .btn-normal {
-border-bottom: 5px solid var(--secondary-text-color);
-padding: 1vh;
-margin-top: 1.5vh;
-transition: ease-in-out 0.33s;
+  border-bottom: 5px solid var(--secondary-text-color);
+  padding: 0.9vh;
+  margin-top: 1.5vh;
+  transition: ease-in-out 0.33s;
 }
 
 #modalAprender .informacoes-do-post .btn-normal:hover {
-background-color: var(--secondary-text-color);
-color: var(--text-primary-color);
-cursor: pointer;
+  background-color: var(--secondary-text-color);
+  color: var(--text-primary-color);
+  cursor: pointer;
 }
 
 .titulo-modal{
   border: none;
   padding: 0.5em 0;
+  margin-top: 1.5vh;
+  margin-right: 0.5vw;
+  outline: none;
 }
 
 
@@ -63,6 +68,15 @@ cursor: pointer;
   border-radius: 10px;
   padding: 0.5em;
   width: 100%;
+  outline: none;
+  transition: ease-in-out 0.5s;
+}
+
+.texto-post:focus{
+  font-size: 1.2em !important;
+  border: none;
+  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  height: 30vh;
 }
 
 .quantidade-caracteres{
@@ -74,3 +88,194 @@ cursor: pointer;
   padding: 0;
   margin: 0;
 }
+/*FIM DO CSS PARA O MODAL APRENDER*/
+
+
+/*INICIO DO CSS PARA O MODAL ENSINAR*/
+#modalEnsinar .img-post {
+  font-size: 50px;
+  text-align: center;
+  margin: 2vh 0;
+  padding: 0vw;
+  font-weight: lighter;
+  line-height: 0.4;
+  background-color: var(--light-background-color);
+  color: var(--text-primary-color);
+  transition: ease-in-out 0.5s;
+  border: 2px dashed var(--secondary-text-color);
+}
+
+#modalEnsinar .img-post:hover {
+  cursor: pointer;
+  background-color: var(--default-primary-color);
+}
+
+#modalEnsinar .informacoes-do-post {
+  display: flex;
+}
+
+#modalEnsinar .informacoes-do-post .btn-urgente,
+#modalEnsinar .informacoes-do-post .btn-normal {
+  width: 10vw;
+  border: 1px solid var(--divider-color);
+  height: 5vh;
+  text-align: center;
+}
+
+#modalEnsinar .informacoes-do-post .btn-urgente {
+  border-bottom: 5px solid var(--accent-color);
+  padding: 0.9vh;
+  margin-top: 1.5vh;
+  margin-right: 0.5vw;
+  transition: ease-in-out 0.33s;
+}
+
+#modalEnsinar .informacoes-do-post .btn-urgente:hover {
+  background-color: var(--accent-color);
+  color: var(--text-primary-color);
+  cursor: pointer;
+}
+
+#modalEnsinar .informacoes-do-post .btn-normal {
+  border-bottom: 5px solid var(--secondary-text-color);
+  padding: 0.9vh;
+  margin-top: 1.5vh;
+  transition: ease-in-out 0.33s;
+}
+
+#modalEnsinar .informacoes-do-post .btn-normal:hover {
+  background-color: var(--secondary-text-color);
+  color: var(--text-primary-color);
+  cursor: pointer;
+}
+
+/*FIM DO CSS PARA O MODAL ENSINAR*/
+
+
+
+
+/*INICIO DO CSS PARA O MODAL APRENDENDO*/
+#modalAprendendo .img-post {
+  font-size: 50px;
+  text-align: center;
+  margin: 2vh 0;
+  padding: 0vw;
+  font-weight: lighter;
+  line-height: 0.4;
+  background-color: var(--light-background-color);
+  color: var(--text-primary-color);
+  transition: ease-in-out 0.5s;
+  border: 2px dashed var(--secondary-text-color);
+}
+
+#modalAprendendo .img-post:hover {
+  cursor: pointer;
+  background-color: var(--default-primary-color);
+}
+
+#modalAprendendo .informacoes-do-post {
+  display: flex;
+}
+
+#modalAprendendo .informacoes-do-post .btn-urgente,
+#modalAprendendo .informacoes-do-post .btn-normal {
+  width: 10vw;
+  border: 1px solid var(--divider-color);
+  height: 5vh;
+  text-align: center;
+}
+
+#modalAprendendo .informacoes-do-post .btn-urgente {
+  border-bottom: 5px solid var(--accent-color);
+  padding: 0.9vh;
+  margin-top: 1.5vh;
+  margin-right: 0.5vw;
+  transition: ease-in-out 0.33s;
+}
+
+#modalAprendendo .informacoes-do-post .btn-urgente:hover {
+  background-color: var(--accent-color);
+  color: var(--text-primary-color);
+  cursor: pointer;
+}
+
+#modalAprendendo .informacoes-do-post .btn-normal {
+  border-bottom: 5px solid var(--secondary-text-color);
+  padding: 0.9vh;
+  margin-top: 1.5vh;
+  transition: ease-in-out 0.33s;
+}
+
+#modalAprendendo .informacoes-do-post .btn-normal:hover {
+  background-color: var(--secondary-text-color);
+  color: var(--text-primary-color);
+  cursor: pointer;
+}
+
+/*FIM DO CSS PARA O MODAL APRENDENDO*/
+
+
+
+
+/*INICIO DO CSS PARA O MODAL ENSINANDO*/
+#modalEnsinando .img-post {
+  font-size: 50px;
+  text-align: center;
+  margin: 2vh 0;
+  padding: 0vw;
+  font-weight: lighter;
+  line-height: 0.4;
+  background-color: var(--light-background-color);
+  color: var(--text-primary-color);
+  transition: ease-in-out 0.5s;
+  border: 2px dashed var(--secondary-text-color);
+}
+
+#modalEnsinando .img-post:hover {
+  cursor: pointer;
+  background-color: var(--default-primary-color);
+}
+
+#modalEnsinando .informacoes-do-post {
+  display: flex;
+}
+
+#modalEnsinando .informacoes-do-post .btn-urgente,
+#modalEnsinando .informacoes-do-post .btn-normal {
+  width: 10vw;
+  border: 1px solid var(--divider-color);
+  height: 5vh;
+  text-align: center;
+}
+
+#modalEnsinando .informacoes-do-post .btn-urgente {
+  border-bottom: 5px solid var(--accent-color);
+  padding: 0.9vh;
+  margin-top: 1.5vh;
+  margin-right: 0.5vw;
+  transition: ease-in-out 0.33s;
+}
+
+#modalEnsinando .informacoes-do-post .btn-urgente:hover {
+  background-color: var(--accent-color);
+  color: var(--text-primary-color);
+  cursor: pointer;
+}
+
+#modalEnsinando .informacoes-do-post .btn-normal {
+  border-bottom: 5px solid var(--secondary-text-color);
+  padding: 0.9vh;
+  margin-top: 1.5vh;
+  transition: ease-in-out 0.33s;
+}
+
+#modalEnsinando .informacoes-do-post .btn-normal:hover {
+  background-color: var(--secondary-text-color);
+  color: var(--text-primary-color);
+  cursor: pointer;
+}
+
+
+
+
+/*FIM DO CSS PARA O MODAL ENSINANDO*/
