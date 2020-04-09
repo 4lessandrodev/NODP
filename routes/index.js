@@ -23,6 +23,11 @@ router.get('/home', function (req, res, next) {
   res.render('home', { title: 'Home' });
 });
 
+/* GET home page. */
+router.get('/perfil-usuario/:id?', function (req, res, next) {
+  res.render('perfil-usuario', { title: 'Usuario' });
+});
+
 /* GET perfil page. */
 router.get('/perfil', function (req, res, next) {
   res.render('perfil', { title: 'Perfil' });

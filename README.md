@@ -1,8 +1,16 @@
 # Projeto Integrador - NODP (No Dependence)
-Projeto integrador prático Digital House - Em equipe
+## Projeto integrador prático Digital House - Em equipe
 
-Grupo 2 : Ana Carolina Passos / André Oliveira / Alessandro Menezes / Erika Suguimoto / Michel Santana.
-O projeto NO DP é uma rede social que atua como uma ferramenta de interação entre universitários cujo objetivo é 
+###### Grupo 2 : 
+* Ana Carolina Passos @acarolinapassos
+* André Oliveira @oliveira086
+* Alessandro Menezes @ALESSANDROLMENEZES
+* Erika Suguimoto @EricaSugui
+
+> Demo do projeto Figma:
+[Clique para ver a Demo no figma](https://www.figma.com/proto/NxVG7XuHkqdQlMCHU0LdVq/NODP-OFICIAL-TEAM?node-id=6%3A20&scaling=scale-down)
+
+O projeto **NODP** é uma rede social que atua como uma ferramenta de interação entre universitários cujo objetivo é 
 o intercâmbio de conhecimento. O diferencial consiste em conectar o usuário que deseja aprender determinado assunto
 com aquele que está disposto a ensinar, contando com o recurso da gameficação para promover o engajamento nessa 
 troca de informações.

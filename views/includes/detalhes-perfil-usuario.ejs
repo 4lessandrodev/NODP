@@ -2,7 +2,7 @@
   <div class="capa-perfil-detalhe">
     <img src="/img/kate.jpg" alt="avatar" class="avatar">
   </div>
-  <div class="editar">
+  <div class="editar" data-toggle="modal" data-target="#modalEditarPerfil">
     <span><i class="far fa-edit"></i></span>
   </div>
   <div class="info">
@@ -33,4 +33,7 @@
       </div>
     </div>
   </div>
+
+  <%- include('./modal-editar-perfil-usuario') %> 
+
 </section>
