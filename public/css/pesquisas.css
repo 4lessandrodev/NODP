@@ -3,7 +3,10 @@ body{
 }
 
 .coluna-esquerda{
+  display: flex;
+  align-items: center;
   height: auto;
+  flex-direction: column;
   border: 1px solid var(--dark-primary-color);
   margin: 0;
   padding: 0;

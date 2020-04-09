@@ -1509,7 +1509,47 @@ section#mensagens img{
   width: 800px;
 }
 
-
 /*FIM DO CSS COMPONENTE MODAL EDITAR PERFIL*/
 
+/* INICIO DO CSS PATROCINADORES MENOR */
+
+#div-geral-patrocinador-menor{
+  width: 21vw;
+  height: 15vh;
+  margin-top: 10px;
+}
+
+.patrocinador-menor{
+  width: '100%';
+  height: '100%';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto-patrocinador-menor{
+  width: 20vw;
+  height: 15vh;
+  object-fit: cover;
+}
+
+#div-geral-patrocinador-maior{
+  width: 21vw;
+  height: 40vh;
+  margin-top: 10px;
+}
+
+.patrocinador-maior{
+  width: '100%';
+  height: '100%';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto-patrocinador-maior{
+  width: 20vw;
+  height: 40vh;
+  object-fit: cover;
+}
 
