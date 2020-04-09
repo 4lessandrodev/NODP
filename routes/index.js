@@ -44,4 +44,9 @@ router.get('/ranking-professores', function (req, res, next) {
   res.render('ranking-professores', { title: 'Ranking' });
 });
 
+/* GET apoiados/apoiando page. */
+router.get('/apoio', function (req, res, next) {
+  res.render('apoio', { title: 'Apoio' });
+});
+
 module.exports = router;
