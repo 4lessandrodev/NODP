@@ -1,19 +1,31 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 #modalMensagem .msg-feed-header-avatar img {
   width: 50px;
   border-radius: 100%;
   height: 50px;
   border: 3px solid var(--text-primary-color);
+  -o-object-fit: contain;
   object-fit: contain;
+  -webkit-transition: ease-in-out 0.5s;
+  -o-transition: ease-in-out 0.5s;
   transition: ease-in-out 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   bottom: 10px;
 }
 
 #modalMensagem .informacoes-do-msg {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 #modalMensagem .msg-feed-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -30,6 +42,8 @@
   padding: 0.9vh;
   margin-top: 1.5vh;
   margin-right: 0.5vw;
+  -webkit-transition: ease-in-out 0.33s;
+  -o-transition: ease-in-out 0.33s;
   transition: ease-in-out 0.33s;
 }
 
@@ -43,6 +57,8 @@
   border-bottom: 5px solid var(--secondary-text-color);
   padding: 0.9vh;
   margin-top: 1.5vh;
+  -webkit-transition: ease-in-out 0.33s;
+  -o-transition: ease-in-out 0.33s;
   transition: ease-in-out 0.33s;
 }
 
@@ -67,12 +83,15 @@
   padding: 0.5em;
   width: 100%;
   outline: none;
+  -webkit-transition: ease-in-out 0.5s;
+  -o-transition: ease-in-out 0.5s;
   transition: ease-in-out 0.5s;
 }
 
 #modalMensagem .texto-msg:focus {
   font-size: 1.2em !important;
   border: none;
+  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
 }
 
@@ -92,6 +111,7 @@
   margin: 0;
   padding: 0;
 }
+
 #modalMensagem .informacoes-do-msg-mensagens {
   border: 1px solid var(--divider-color);
   background-color: var(--light-background-color);
@@ -100,7 +120,9 @@
   min-height: 40vh;
   overflow-y: scroll;
   max-height: 30vh;
+  scrollbar-width:none;
 }
+
 #modalMensagem .horario {
   color: var(--secondary-text-color);
   margin: 0;
@@ -108,12 +130,14 @@
   font-size: 0.8em;
   text-align: left;
 }
+
 #modalMensagem .msg {
   background-color: var(--text-primary-color);
   margin: 2%;
   padding: 5%;
   border-radius: 20px;
 }
+
 #modalMensagem .mais-mensagens-anterior {
   text-align: center;
   cursor: pointer;
@@ -121,12 +145,13 @@
 }
 
 
-#modalMensagem cite{
+#modalMensagem cite {
   color: var(--secondary-text-color);
   text-transform: capitalize;
   font-style: normal;
   
 }
+
 /*FIM DO CSS PARA O MODAL MENSAGENS*/
 
 
@@ -138,31 +163,48 @@
   border-radius: 100%;
   height: 50px;
   border: 3px solid var(--text-primary-color);
+  -o-object-fit: contain;
   object-fit: contain;
+  -webkit-transition: ease-in-out 0.5s;
+  -o-transition: ease-in-out 0.5s;
   transition: ease-in-out 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
 
 #modalNovaMensagem .informacoes-do-msg {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 #modalNovaMensagem .msg-feed-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   margin: 0 0 2vh 0;
   padding: 0;
 }
+
 #modalNovaMensagem .user-name {
   font-size: 10px;
   font-weight: 400;
 }
-#modalNovaMensagem .msg-feed-header .msg-ul-amigos{
+
+#modalNovaMensagem .msg-feed-header .msg-ul-amigos {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
   align-items: baseline;
+  -ms-flex-line-pack: distribute;
   align-content: space-around;
   justify-items: baseline;
   width: 90%;
@@ -171,53 +213,73 @@
   padding: 0;
   overflow: scroll;
   margin: 0;
+  scrollbar-width:none;
 }
+
 #modalNovaMensagem .proximo,
-#modalNovaMensagem .anterior{
+#modalNovaMensagem .anterior {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 5%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   color: var(--divider-color);
 }
+
 #modalNovaMensagem .proximo:hover,
-#modalNovaMensagem .anterior:hover{
+#modalNovaMensagem .anterior:hover {
   color: var(--dark-primary-color);
   cursor: pointer;
 }
-#modalNovaMensagem .msg-feed-header .msg-ul-amigos li{
+
+#modalNovaMensagem .msg-feed-header .msg-ul-amigos li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
   text-align: center;
   padding: 0;
   margin: 1%;
   width: 100%;
+  -webkit-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
   border-radius: 5px;
 }
-#modalNovaMensagem .msg-feed-header .msg-ul-amigos li:hover{
+
+#modalNovaMensagem .msg-feed-header .msg-ul-amigos li:hover {
   background-color: var(--divider-color);
   cursor: pointer;
   color: var(--text-primary-color);
 }
-#modalNovaMensagem .usuario-selecionado{
+
+#modalNovaMensagem .usuario-selecionado {
   background-color: var(--divider-color);
   cursor: pointer;
   color: var(--text-primary-color);
 }
 
 #modalNovaMensagem .msg-feed-header .lista-de-amigos {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
   border: 1px solid var(--divider-color);
-  overflow-x: scroll;
+  overflow-x: hidden;
   min-width: 100%;
   height: 13vh;
 }
+
 #modalNovaMensagem .input-buscar-amigos {
   min-width: 82%;
   width: 82%;
 }
+
 #buscar-destinatarios {
   margin-bottom: 2vh !important;
 }
@@ -227,6 +289,7 @@
 #modalNovaMensagem .texto-msg:focus {
   font-size: 1.2em !important;
   border: none;
+  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
 }
 
@@ -275,5 +338,8 @@
   height: 0px;
 }
 
-
+.scroller {
+  scrollbar-width:none;
+  scrollbar-color: var(--light-background-color);
+}
 /*FIM DO CSS PARA O MODAL MENSAGENS*/

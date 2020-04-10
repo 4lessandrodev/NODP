@@ -1,22 +1,33 @@
-body{
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+body {
   background-color: var(--light-background-color);
 }
 
-.coluna-esquerda{
+.coluna-esquerda {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   height: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   border: 1px solid var(--dark-primary-color);
   margin: 0;
   padding: 0;
 }
-.coluna-central{
+
+.coluna-central {
   /* border: 1px solid var(--dark-primary-color); */
   height: auto;
   padding: 0 0.5vw;
 }
-.coluna-direita{
+
+.coluna-direita {
   height: auto;
   /* border: 1px solid var(--dark-primary-color); */
   margin: 0;
@@ -28,45 +39,52 @@ body{
   overflow: scroll;
   /* border: 1px solid red; */
 }
+
 ::-webkit-scrollbar {
   width: 0px;
 }
 
 /* COMPONENTE USUARIO PESQUISADO */
-section#usuario-pesquisado .usuario img{
+section#usuario-pesquisado .usuario img {
   width: 50px;
   height: 50px;
-  
- 
-} 
 
-section#usuario-pesquisado{
-  display: flexbox;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  background-color: var(--text-primary-color);
-  border: 1vw solid var(--text-primary-color);
-  border-radius: 1vw;
-  height: auto;
-  padding: 0 0.5vw;
-  
- }
 
- section#aula-pesquisada{
-  display: flexbox;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  background-color: var(--text-primary-color);
-  border: 1vw solid var(--text-primary-color);
-  border-radius: 1vw;
-  height: auto;
-  padding: 0 0.5vw;
- }
-
-section#aula-pesquisada .aula-pesq img{
-  width: 50px;
-  height: 50px;
-  
 }
 
+section#usuario-pesquisado {
+  display: flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  background-color: var(--text-primary-color);
+  border: 1vw solid var(--text-primary-color);
+  border-radius: 1vw;
+  height: auto;
+  padding: 0 0.5vw;
 
+}
+
+section#aula-pesquisada {
+  display: flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  background-color: var(--text-primary-color);
+  border: 1vw solid var(--text-primary-color);
+  border-radius: 1vw;
+  height: auto;
+  padding: 0 0.5vw;
+}
+
+section#aula-pesquisada .aula-pesq img {
+  width: 50px;
+  height: 50px;
+
+}

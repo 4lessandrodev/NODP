@@ -1,32 +1,38 @@
-body{
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+body {
   background-color: var(--light-background-color);
 }
 
-.coluna-esquerda{
-height: auto;
-/* border: 1px solid var(--dark-primary-color); */
-/* border: 1px solid red; */
-margin: 0;
-padding: 0;
-}
-.coluna-central{
-/* border: 1px solid var(--dark-primary-color); */
-height: auto;
-padding: 0 1vh;
-/* border: 1px solid red; */
-}
-.coluna-direita{
-height: auto;
-/* border: 1px solid var(--dark-primary-color); */
-padding: 0;
-/* border: 1px solid red; */
+.coluna-esquerda {
+  height: auto;
+  /* border: 1px solid var(--dark-primary-color); */
+  /* border: 1px solid red; */
+  margin: 0;
+  padding: 0;
 }
 
-.div-scroll-post{
-  height: 120vh;
-  overflow: scroll;
+.coluna-central {
+  /* border: 1px solid var(--dark-primary-color); */
+  height: auto;
+  padding: 0 1vh;
   /* border: 1px solid red; */
 }
+
+.coluna-direita {
+  height: auto;
+  /* border: 1px solid var(--dark-primary-color); */
+  padding: 0;
+  /* border: 1px solid red; */
+}
+
+.div-scroll-post {
+  height: 120vh;
+  overflow: scroll;
+  scrollbar-width: none;
+  /* border: 1px solid red; */
+}
+
 ::-webkit-scrollbar {
   width: 0px;
 }

@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 /* IMPORTANDO A FONTE POPPINS DO GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap');
 
@@ -70,6 +72,8 @@ body {
   font-size: 12px;
   background: var(--dark-primary-color);
   color: var(--text-primary-color);
+  -webkit-transition: ease-in 0.23s;
+  -o-transition: ease-in 0.23s;
   transition: ease-in 0.23s;
   letter-spacing: 1px;
 }
@@ -83,6 +87,8 @@ body {
   font-size: 12px;
   background: var(--dark-primary-color);
   color: var(--text-primary-color);
+  -webkit-transition: ease-in 0.23s;
+  -o-transition: ease-in 0.23s;
   transition: ease-in 0.23s;
   letter-spacing: 1px;
 }
@@ -96,6 +102,8 @@ body {
   font-size: 12px;
   background: var(--dark-primary-color);
   color: var(--text-primary-color);
+  -webkit-transition: ease-in 0.23s;
+  -o-transition: ease-in 0.23s;
   transition: ease-in 0.23s;
   letter-spacing: 1px;
 }
@@ -110,6 +118,8 @@ body {
   font-size: 14px;
   background: var(--dark-primary-color);
   color: var(--text-primary-color);
+  -webkit-transition: ease-in 0.23s;
+  -o-transition: ease-in 0.23s;
   transition: ease-in 0.23s;
   letter-spacing: 1px;
 }
@@ -123,6 +133,8 @@ body {
   font-size: 16px;
   background: var(--dark-primary-color);
   color: var(--text-primary-color);
+  -webkit-transition: ease-in 0.23s;
+  -o-transition: ease-in 0.23s;
   transition: ease-in 0.23s;
   letter-spacing: 1px;
 }
@@ -137,6 +149,8 @@ body {
   font-size: 12px;
   background: var(--text-primary-color);
   color: var(--dark-primary-color);
+  -webkit-transition: ease-in 0.23s;
+  -o-transition: ease-in 0.23s;
   transition: ease-in 0.23s;
   letter-spacing: 1px;
 }
@@ -150,6 +164,8 @@ body {
   font-size: 12px;
   background: var(--text-primary-color);
   color: var(--dark-primary-color);
+  -webkit-transition: ease-in 0.23s;
+  -o-transition: ease-in 0.23s;
   transition: ease-in 0.23s;
   letter-spacing: 1px;
 }
@@ -163,6 +179,8 @@ body {
   font-size: 12px;
   background: var(--text-primary-color);
   color: var(--dark-primary-color);
+  -webkit-transition: ease-in 0.23s;
+  -o-transition: ease-in 0.23s;
   transition: ease-in 0.23s;
   letter-spacing: 1px;
 }
@@ -176,6 +194,8 @@ body {
   font-size: 14px;
   background: var(--text-primary-color);
   color: var(--dark-primary-color);
+  -webkit-transition: ease-in 0.23s;
+  -o-transition: ease-in 0.23s;
   transition: ease-in 0.23s;
   letter-spacing: 1px;
 }
@@ -189,6 +209,8 @@ body {
   font-size: 16px;
   background: var(--text-primary-color);
   color: var(--dark-primary-color);
+  -webkit-transition: ease-in 0.23s;
+  -o-transition: ease-in 0.23s;
   transition: ease-in 0.23s;
   letter-spacing: 1px;
 }
@@ -268,9 +290,15 @@ li {
 .header-nav {
   background-color: var(--dark-primary-color);
   height: 6vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   justify-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 3vh;
 }
@@ -299,13 +327,21 @@ li {
 .header-nav-ul {
   list-style: none;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   justify-items: center;
 }
 
 .header-nav-ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 1em;
   margin: 0 1.2vw;
@@ -320,7 +356,7 @@ li {
   cursor: pointer;
 }
 
-.header-nav a{
+.header-nav a {
   color: var(--text-primary-color);
   text-decoration: none;
 }
@@ -334,24 +370,37 @@ section#apoiadores img {
 }
 
 #apoiadores {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   background-color: var(--text-primary-color);
   border: 1vw solid var(--text-primary-color);
   border-radius: 1vw;
   -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   margin-bottom: 1vh;
-  
+
 }
 
 #apoiadores .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-line-pack: center;
   align-content: center;
 }
 
@@ -373,6 +422,7 @@ section#apoiadores img {
 
 #apoiadores img {
   margin: 0.5em;
+  -o-object-fit: contain;
   object-fit: contain;
 }
 
@@ -401,22 +451,35 @@ section#aulas-recentes img {
 }
 
 #aulas-recentes {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   background-color: var(--text-primary-color);
   border: 1vw solid var(--text-primary-color);
   border-radius: 1vw;
   -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
 }
 
 #aulas-recentes .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-line-pack: center;
   align-content: center;
 }
 
@@ -442,27 +505,44 @@ section#aulas-recentes img {
   margin: 0.5em;
 }
 
-#aulas-recentes .aulas{
+#aulas-recentes .aulas {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
-#aulas-recentes .aulas-header .tipo-aula{
+#aulas-recentes .aulas-header .tipo-aula {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: initial;
+  -ms-flex-align: initial;
   align-items: initial;
   color: var(--dark-primary-color);
 }
 
-#aulas-recentes .tipo-aula:hover{
+#aulas-recentes .tipo-aula:hover {
   cursor: pointer;
 }
 
-.seta{
+.seta {
   color: var(--dark-primary-color);
 }
+
 /*FIM DO CSS DO COMPONENTE AULAS RECENTES*/
 
 
@@ -473,13 +553,19 @@ section#aulas-recentes img {
   height: 20vh;
   background-color: var(--text-primary-color);
   border-radius: 10px;
+  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
 }
 
 #novaPostagem .rowBotoes {
   width: '100%';
   height: 12vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 
@@ -489,8 +575,14 @@ section#aulas-recentes img {
   background-color: var(--text-primary-color);
   background-color: var(--text-primary-color);
   border: 1px solid var(--divider-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -505,9 +597,18 @@ section#aulas-recentes img {
   height: 12vh;
   background-color: var(--text-primary-color);
   border: 1px solid var(--divider-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding-top: 17px;
   color: var(--dark-primary-color);
@@ -529,15 +630,26 @@ section#aulas-recentes img {
 #novaPostagem .apoiados {
   width: '100%';
   height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 
 #novaPostagem .text-apoiados {
   width: 10vw;
   height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
   color: var(--default-primary-color)
 }
@@ -545,8 +657,15 @@ section#aulas-recentes img {
 #novaPostagem .listagem-apoiados {
   width: 30vw;
   height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -555,7 +674,11 @@ section#aulas-recentes img {
   height: 5vh;
   background-color: cornsilk;
   margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -565,7 +688,7 @@ section#aulas-recentes img {
   padding-bottom: 1vh;
 }
 
-#novaPostagem .botao p{
+#novaPostagem .botao p {
   padding-top: 1vh;
 }
 
@@ -573,7 +696,11 @@ section#aulas-recentes img {
   width: 2.8vw;
   height: 5vh;
   margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -589,6 +716,7 @@ section#aulas-recentes img {
   height: 20vh;
   background-color: var(--text-primary-color);
   border-radius: 10px;
+  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
 }
 
@@ -601,7 +729,12 @@ section#aulas-recentes img {
 #filtroPesquisa .rowBotoes {
   width: 100%;
   height: 12vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 
@@ -611,8 +744,14 @@ section#aulas-recentes img {
   background-color: var(--text-primary-color);
   background-color: var(--text-primary-color);
   border: 1px solid var(--divider-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -627,9 +766,18 @@ section#aulas-recentes img {
   height: 12vh;
   background-color: var(--text-primary-color);
   border: 1px solid var(--divider-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding-top: 17px;
   color: var(--dark-primary-color);
@@ -651,15 +799,26 @@ section#aulas-recentes img {
 #filtroPesquisa .apoiados {
   width: '100%';
   height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 
 #filtroPesquisa .text-apoiados {
   width: 10vw;
   height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
   color: var(--default-primary-color)
 }
@@ -667,8 +826,15 @@ section#aulas-recentes img {
 #filtroPesquisa .listagem-apoiados {
   width: 30vw;
   height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -677,7 +843,11 @@ section#aulas-recentes img {
   height: 5vh;
   background-color: cornsilk;
   margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -687,7 +857,7 @@ section#aulas-recentes img {
   padding-bottom: 1vh;
 }
 
-#filtroPesquisa .botao p{
+#filtroPesquisa .botao p {
   padding-top: 1vh;
 }
 
@@ -695,7 +865,11 @@ section#aulas-recentes img {
   width: 2.8vw;
   height: 5vh;
   margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -703,7 +877,7 @@ section#aulas-recentes img {
   color: var(--default-primary-color)
 }
 
-#filtroPesquisa .ativo{
+#filtroPesquisa .ativo {
   color: var(--text-primary-color);
   background-color: var(--default-primary-color);
   cursor: pointer;
@@ -738,6 +912,7 @@ section#aulas-recentes img {
 #aulas-recentes .aulas img {
   height: 50px;
   width: 50px;
+  -o-object-fit: contain;
   object-fit: contain;
 }
 
@@ -748,15 +923,22 @@ section#aulas-recentes img {
 
 /*INICIA DO CSS DO COMPONENTE PERFIL*/
 #perfil {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   background-color: var(--text-primary-color);
   border: 1vw solid var(--text-primary-color);
   border-radius: 1vw;
   -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-bottom: 1vh;
 }
@@ -766,10 +948,14 @@ section#aulas-recentes img {
   border-radius: 100%;
   height: 90px;
   border: 3px solid var(--text-primary-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-item-align: end;
   align-self: flex-end;
   top: 21px;
   position: relative;
+  -o-object-fit: contain;
   object-fit: contain;
 }
 
@@ -779,9 +965,15 @@ section#aulas-recentes img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-item-align: stretch;
   align-self: stretch;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -o-object-fit: contain;
   object-fit: contain;
 }
 
@@ -792,6 +984,8 @@ section#aulas-recentes img {
 }
 
 #perfil .perfil-atributos-ul-li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -822,24 +1016,38 @@ section#aulas-recentes img {
   border-bottom: 1px solid var(--divider-color);
 }
 
-#perfil:hover{
+#perfil:hover {
   cursor: pointer;
 }
 
-.row-botoes-perfil{
+.row-botoes-perfil {
   width: 58vw;
   height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
 }
 
-.campo-ocupado{
+.campo-ocupado {
   width: 60%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
-  justify-content:space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -854,8 +1062,9 @@ section#aulas-recentes img {
   border: 1vw solid var(--text-primary-color);
   border-radius: 1vw;
   -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -868,23 +1077,33 @@ section#aulas-recentes img {
 }
 
 #conquistas-usuario .conquistas-div-interna {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border: 1px solid var(--divider-color);
   border-radius: 10px;
   margin: 2vh 0;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
 #conquistas-usuario .conquistas-div-interna ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
   align-items: baseline;
 }
 
 #conquistas-usuario .conquistas-div-interna ul li .icone {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 1.8em;
   padding: 1em 0.5em 0.5em 0;
   color: var(--accent-color);
+  -ms-flex-item-align: baseline;
   align-self: baseline;
 }
 
@@ -903,8 +1122,9 @@ section#aulas-recentes img {
   border: 1vw solid var(--text-primary-color);
   border-radius: 1vw;
   -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-top: 1vh;
 }
@@ -914,18 +1134,25 @@ section#aulas-recentes img {
 }
 
 #conquista-aluno .conquistas-div-interna {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border: 1px solid var(--divider-color);
   border-radius: 10px;
   margin: 2vh 0;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
 #conquista-aluno .conquistas-div-interna ul li .icone {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 1.8em;
   padding: 1em 0.5em 0.5em 0;
   color: var(--accent-color);
+  -ms-flex-item-align: baseline;
   align-self: baseline;
 }
 
@@ -937,15 +1164,25 @@ section#aulas-recentes img {
 
 
 #conquista-aluno .conquistas-div-interna ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
   align-items: baseline;
 }
 
 #conquista-aluno .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
   align-items: baseline;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -968,8 +1205,9 @@ section#aulas-recentes img {
   border: 1vw solid var(--text-primary-color);
   border-radius: 1vw;
   -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-top: 1vh;
 }
@@ -979,18 +1217,25 @@ section#aulas-recentes img {
 }
 
 #conquista-professor .conquistas-div-interna {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border: 1px solid var(--divider-color);
   border-radius: 10px;
   margin: 2vh 0;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
 #conquista-professor .conquistas-div-interna ul li .icone {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 1.8em;
   padding: 1em 0.5em 0.5em 0;
   color: var(--accent-color);
+  -ms-flex-item-align: baseline;
   align-self: baseline;
 }
 
@@ -1002,15 +1247,25 @@ section#aulas-recentes img {
 
 
 #conquista-professor .conquistas-div-interna ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
   align-items: baseline;
 }
 
 #conquista-professor .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
   align-items: baseline;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -1028,36 +1283,43 @@ section#aulas-recentes img {
 
 
 /* INICIO DO CSS DO COMPONENTE MENSAGENS */
-section#mensagens img{
+section#mensagens img {
   width: 50px;
   height: 50px;
   margin: 0.5em;
+  -o-object-fit: contain;
   object-fit: contain;
 }
 
 #mensagens {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   background-color: var(--text-primary-color);
   border: 1vw solid var(--text-primary-color);
   border-radius: 1vw;
   -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   margin-bottom: 1vh;
 }
 
-#mensagens .mensagens-header{
-  padding-bottom:2.3vh;
+#mensagens .mensagens-header {
+  padding-bottom: 2.3vh;
   border-bottom: 1px solid var(--divider-color);
 }
 
-#mensagens h1{
+#mensagens h1 {
   margin: 0;
   padding: 0;
   text-transform: uppercase;
 }
+
 #mensagens h2 {
   margin: 0;
   padding: 0;
@@ -1068,21 +1330,29 @@ section#mensagens img{
   cursor: pointer;
 }
 
-#mensagens .mensagem{
+#mensagens .mensagem {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   border-radius: 1vw;
   border-bottom: 1px solid var(--divider-color);
 }
 
-#mensagens .mensagem .icone{
+#mensagens .mensagem .icone {
   padding: 0.5em;
   color: var(--accent-color);
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center;
 }
 
-#mensagens .mensagens-footer{
+#mensagens .mensagens-footer {
   margin-top: 3vh;
   text-align: center;
 }
@@ -1095,15 +1365,22 @@ section#mensagens img{
 
 /*INICIA DO CSS DO COMPONENTE PERFIL*/
 #perfil-detalhe {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   background-color: var(--text-primary-color);
   border: 1vw solid var(--text-primary-color);
   border-radius: 1vw;
   -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
   margin-bottom: 1vh;
   min-width: 100%;
@@ -1114,9 +1391,12 @@ section#mensagens img{
   border-radius: 100%;
   height: 140px;
   border: 5px solid var(--text-primary-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-item-align: end;
   align-self: flex-end;
-  margin-left:1vw;
+  margin-left: 1vw;
   position: relative;
   top: 30px;
 }
@@ -1127,8 +1407,13 @@ section#mensagens img{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-item-align: stretch;
   align-self: stretch;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: start;
 }
 
@@ -1164,35 +1449,43 @@ section#mensagens img{
   margin-bottom: 0.8vh;
 }
 
-#perfil-detalhe .editar{
+#perfil-detalhe .editar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-item-align: end;
   align-self: flex-end;
   color: var(--dark-primary-color);
   margin-top: 0.5em;
 }
 
-#perfil-detalhe .editar:hover{
+#perfil-detalhe .editar:hover {
   cursor: pointer;
 }
 
 #perfil-detalhe .interesses-ensino ul,
 #perfil-detalhe .interesses-aprendizado ul {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   margin: 0;
   padding: 0;
 }
 
-#perfil-detalhe .interesses-ensino ul{
+#perfil-detalhe .interesses-ensino ul {
   margin-bottom: 2vh;
 }
 
-#perfil-detalhe .interesses-aprendizado{
+#perfil-detalhe .interesses-aprendizado {
   margin-top: 1em;
 }
 
-#perfil-detalhe li{
+#perfil-detalhe li {
   padding: 0 1vh 2vh 0;
   margin: 0;
   color: var(--dark-primary-color);
@@ -1200,22 +1493,31 @@ section#mensagens img{
 
 #perfil-detalhe .interesses-div {
   display: inline-block;
-  border-top:1px solid var(--divider-color) ;
+  border-top: 1px solid var(--divider-color);
   min-width: 40vw;
   margin-top: 4vh;
 }
 
-#perfil-detalhe .icone{
+#perfil-detalhe .icone {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-self: flex-end;
   color: white;
 }
-#perfil-detalhe .trofeu{
+
+#perfil-detalhe .trofeu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
   font-size: 5em;
   color: var(--text-primary-color);
   width: 40vw;
+  -ms-flex-item-align: end;
   align-self: flex-end;
 }
 
@@ -1228,8 +1530,9 @@ section#mensagens img{
   border: 1vw solid var(--text-primary-color);
   border-radius: 1vw;
   -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-top: 1vh;
 }
@@ -1239,18 +1542,25 @@ section#mensagens img{
 }
 
 #ranking-aluno .ranking-div-interna {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border: 1px solid var(--divider-color);
   border-radius: 10px;
   margin: 2vh 0;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
 #ranking-aluno .ranking-div-interna ul li .icone {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 1.8em;
   padding: 1em 0.5em 0.5em 0;
   color: var(--accent-color);
+  -ms-flex-item-align: baseline;
   align-self: baseline;
 }
 
@@ -1262,21 +1572,31 @@ section#mensagens img{
 
 
 #ranking-aluno .ranking-div-interna ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
-#ranking-aluno .ranking-div-interna ul li img{
+#ranking-aluno .ranking-div-interna ul li img {
   width: 50px;
   height: 50px;
   margin: 2vh 1vh 0 0;
 }
 
 #ranking-aluno .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
   align-items: baseline;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -1294,6 +1614,7 @@ section#mensagens img{
   bottom: 5vh;
   overflow: hidden;
 }
+
 /*FIM DO CSS PARA COMPONENTE CONQUISTA ALUNO*/
 
 
@@ -1306,8 +1627,9 @@ section#mensagens img{
   border: 1vw solid var(--text-primary-color);
   border-radius: 1vw;
   -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-top: 1vh;
 }
@@ -1317,18 +1639,25 @@ section#mensagens img{
 }
 
 #ranking-professor .ranking-div-interna {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border: 1px solid var(--divider-color);
   border-radius: 10px;
   margin: 2vh 0;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
 #ranking-professor .ranking-div-interna ul li .icone {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 1.8em;
   padding: 1em 0.5em 0.5em 0;
   color: var(--accent-color);
+  -ms-flex-item-align: baseline;
   align-self: baseline;
 }
 
@@ -1340,8 +1669,12 @@ section#mensagens img{
 
 
 #ranking-professor .ranking-div-interna ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -1352,9 +1685,15 @@ section#mensagens img{
 }
 
 #ranking-professor .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
   align-items: baseline;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -1387,16 +1726,22 @@ section#mensagens img{
   border: 1vw solid var(--text-primary-color);
   border-radius: 1vw;
   -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-top: 1vh;
 }
 
-#usuario-pesquisado .usuario{
+#usuario-pesquisado .usuario {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
+
 /*FIM DO CSS COMPONENTE USUARIO PESQUISADO*/
 
 
@@ -1406,21 +1751,27 @@ section#mensagens img{
   border: 1vw solid var(--text-primary-color);
   border-radius: 1vw;
   -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-top: 1vh;
 }
 
 #aula-pesquisada .aula {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
-#aula-pesquisada .aula img{
+#aula-pesquisada .aula img {
   width: 50px;
   height: 50px;
 }
+
 /*FIM DO CSS COMPONENTE AULA PESQUISADA*/
 
 
@@ -1429,31 +1780,45 @@ section#mensagens img{
 
 
 /*INICIO DO CSS COMPONENTE MODAL EDITAR PERFIL*/
-#modalEditarPerfil .header{
+#modalEditarPerfil .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
-#modalEditarPerfil .header-avatar{
+
+#modalEditarPerfil .header-avatar {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-item-align: center;
   align-self: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
-#modalEditarPerfil .header-avatar img{
+#modalEditarPerfil .header-avatar img {
   width: 90px;
   border-radius: 100%;
   height: 90px;
   border: 3px solid var(--text-primary-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-item-align: end;
   align-self: flex-end;
   top: 25px;
   position: relative;
+  -o-object-fit: contain;
   object-fit: contain;
+  -webkit-transition: ease-in-out 0.5s;
+  -o-transition: ease-in-out 0.5s;
   transition: ease-in-out 0.5s;
 }
 
-#modalEditarPerfil .header-avatar img:hover{
+#modalEditarPerfil .header-avatar img:hover {
   width: 100px;
   border-radius: 100%;
   height: 100px;
@@ -1467,44 +1832,49 @@ section#mensagens img{
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 5vh;
+  -webkit-transition: ease-in-out 0.5s;
+  -o-transition: ease-in-out 0.5s;
   transition: ease-in-out 0.5s;
 }
+
 #modalEditarPerfil .header .imagem-background:hover {
   cursor: pointer;
   background-position: center;
 }
 
-#modalEditarPerfil .modal-body{
+#modalEditarPerfil .modal-body {
   padding: 0 1rem;
 }
 
 
 #modalEditarPerfil input,
-#modalEditarPerfil select{
+#modalEditarPerfil select {
   border: 1px solid var(--divider-color);
   border-radius: 5px;
   width: 100%;
   height: 4.5vh;
   padding: 0.2rem;
   color: var(--dark-primary-color);
-    margin-bottom: 2vh;
+  margin-bottom: 2vh;
 }
 
-#modalEditarPerfil label{
+#modalEditarPerfil label {
   font-weight: 500;
 }
 
-#modalEditarPerfil textarea{
+#modalEditarPerfil textarea {
   margin-top: 2vh;
   padding: 0.5rem;
   border-radius: 10px;
   resize: none;
 }
-#modalEditarPerfil .quantidade-caracteres{
+
+#modalEditarPerfil .quantidade-caracteres {
   color: var(--secondary-text-color);
   text-align: right;
 }
-#modalEditarPerfil .modal-dialog{
+
+#modalEditarPerfil .modal-dialog {
   min-width: 800px;
   width: 800px;
 }
@@ -1513,43 +1883,56 @@ section#mensagens img{
 
 /* INICIO DO CSS PATROCINADORES MENOR */
 
-#div-geral-patrocinador-menor{
+#div-geral-patrocinador-menor {
   width: 21vw;
   height: 15vh;
   margin-top: 10px;
 }
 
-.patrocinador-menor{
+.patrocinador-menor {
   width: '100%';
   height: '100%';
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
-.foto-patrocinador-menor{
+.foto-patrocinador-menor {
   width: 20vw;
   height: 15vh;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
-#div-geral-patrocinador-maior{
+#div-geral-patrocinador-maior {
   width: 21vw;
   height: 40vh;
   margin-top: 10px;
 }
 
-.patrocinador-maior{
+.patrocinador-maior {
   width: '100%';
   height: '100%';
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
-.foto-patrocinador-maior{
+.foto-patrocinador-maior {
   width: 20vw;
   height: 40vh;
+  -o-object-fit: cover;
   object-fit: cover;
 }
-
