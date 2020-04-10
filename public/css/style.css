@@ -129,7 +129,7 @@ body {
 
 /*BOTOES CLAROS DE ACORDO COM O PADRÃO UTILIZADO NA IDENTIDADE VISUAL*/
 .btn-0-l {
-  width: 110px;
+  width: 70px;
   height: 32px;
   padding: 7px;
   border: 2px solid var(--dark-primary-color);

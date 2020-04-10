@@ -1,4 +1,4 @@
-<!--INICIO DO MODAL APRENDER-->
+<!--INICIO DO MODAL MENSAGEM-->
 <div class="modal fade" id="modalMensagem" tabindex="-1" role="dialog" aria-labelledby="msgModalLabel"
 aria-hidden="true">
 <div class="modal-dialog modal-dialog-centered" role="document">
@@ -23,33 +23,81 @@ aria-hidden="true">
         </header>
         
         <article class="msg-feed-article">
-          <div class="img-msg">
-            <!-- <img src="/img/estudando.jpg" alt=""> -->
-            <i class="far fa-image"></i>
-          </div>
           <div class="user-info">
             <div class="informacoes-do-msg">
               <div class="informacoes-do-msg-mensagens">
                 
                 <!--LISTAR MENSAGENS -->
                 <ul class="informacoes-do-msg-mensagens-ul">
+                  <div class="mais-mensagens-anterior">
+                    <span><i class="fas fa-chevron-up"></i></span>
+                  </div>
                   <li class="msg">
                     <h2 class="subtitulo">
                       Usuario Anônimo
                     </h2>
-                    <p class="texto">
+                    <cite class="texto">
                       Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
-                    </p>
+                    </cite>
                     <time class="horario">
                       04.05.2020 19:00h
                     </time>
                   </li>
+                  
+                  <li class="msg">
+                    <h2 class="subtitulo">
+                      Usuario Anônimo
+                    </h2>
+                    <cite class="texto">
+                      Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+                    </cite>
+                    <time class="horario">
+                      04.05.2020 19:00h
+                    </time>
+                  </li>
+                  
+                  <li class="msg">
+                    <h2 class="subtitulo">
+                      Usuario Anônimo
+                    </h2>
+                    <cite class="texto">
+                      Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+                    </cite>
+                    <time class="horario">
+                      04.05.2020 19:00h
+                    </time>
+                  </li>
+                  
+                  <li class="msg">
+                    <h2 class="subtitulo">
+                      Usuario Anônimo
+                    </h2>
+                    <cite class="texto">
+                      Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+                    </cite>
+                    <time class="horario">
+                      04.05.2020 19:00h
+                    </time>
+                  </li>
+                  
+                  <li class="msg">
+                    <h2 class="subtitulo">
+                      Usuario Anônimo
+                    </h2>
+                    <cite class="texto">
+                      Mussum Ipsum, cacilds vidis litro abertis.
+                    </cite>
+                    <time class="horario">
+                      04.05.2020 19:00h
+                    </time>
+                  </li>
+                  
                 </ul>
                 
                 
               </div>
             </div>
-            <textarea name="" rows="4" placeholder="Seu texto aqui ..." class="texto texto-msg"
+            <textarea name="" rows="4" placeholder="Sua mensagem aqui ..." class="texto texto-msg"
             maxlength="250"></textarea>
             <div class="quantidade-caracteres">
               <p class="texto">250</p>
@@ -64,4 +112,190 @@ aria-hidden="true">
     </div>
   </div>
 </div>
-<!--FIM DO MODAL APRENDER-->
+<!--FIM DO MODAL MENSAGEM-->
+
+
+
+<!--INICIO DO MODAL MENSAGEM-->
+<div class="modal fade" id="modalNovaMensagem" tabindex="-1" role="dialog" aria-labelledby="msgModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="msgModalLabel">Enviar Mensagem</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Descartar">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <!-- <section class="msg-feed container">-->
+        <form class="form-inline my-2 my-lg-0" id="buscar-destinatarios">
+          <input class="form-control mr-sm-2 texto input-buscar-amigos" type="search" placeholder="Buscar destinatário"
+          aria-label="Search">
+          <button class="btn-0-l" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        
+        <header class="msg-feed-header">
+          <div class="lista-de-amigos">
+            <div class="anterior">
+              <i class="fas fa-chevron-left"></i>
+            </div>
+            <ul class="msg-ul-amigos">
+              <li>
+                <div class="msg-feed-header-avatar">
+                  <img src="/img/jandira.jpg" alt="">
+                  <h1 class="user-name">Kate</h1>
+                </div>
+              </li>
+              <li>
+                <div class="msg-feed-header-avatar">
+                  <img src="/img/aecio.jpg" alt="">
+                  <h1 class="user-name">Kate</h1>
+                </div>
+              </li>
+              <li>
+                <div class="msg-feed-header-avatar">
+                  <img src="/img/mateus.jpg" alt="">
+                  <h1 class="user-name">Kate</h1>
+                </div>
+              </li>
+              <li>
+                <div class="msg-feed-header-avatar">
+                  <img src="/img/MarceloFreixo.jpg" alt="">
+                  <h1 class="user-name">Kate</h1>
+                </div>
+              </li>
+              <li>
+                <div class="msg-feed-header-avatar">
+                  <img src="/img/MarinaSilva foto.jpg" alt="">
+                  <h1 class="user-name">Kate</h1>
+                </div>
+              </li>
+              <li>
+                <div class="msg-feed-header-avatar">
+                  <img src="/img/taliria.jpg" alt="">
+                  <h1 class="user-name">Aline</h1>
+                </div>
+              </li>
+              <li>
+                <div class="msg-feed-header-avatar">
+                  <img src="/img/thiago.jpg" alt="">
+                  <h1 class="user-name">Aline</h1>
+                </div>
+              </li>
+              <li>
+                <div class="msg-feed-header-avatar">
+                  <img src="/img/kate.jpg" alt="">
+                  <h1 class="user-name">Aline</h1>
+                </div>
+              </li>
+              <li>
+                <div class="msg-feed-header-avatar">
+                  <img src="/img/Viola.jpg" alt="">
+                  <h1 class="user-name">Aline</h1>
+                </div>
+              </li>
+              <li>
+                <div class="msg-feed-header-avatar">
+                  <img src="/img/jandira.jpg" alt="">
+                  <h1 class="user-name">Kate</h1>
+                </div>
+              </li>
+              <li>
+                <div class="msg-feed-header-avatar">
+                  <img src="/img/aecio.jpg" alt="">
+                  <h1 class="user-name">Kate</h1>
+                </div>
+              </li>
+              <li>
+                <div class="msg-feed-header-avatar">
+                  <img src="/img/mateus.jpg" alt="">
+                  <h1 class="user-name">Kate</h1>
+                </div>
+              </li>
+              <li>
+                <div class="msg-feed-header-avatar">
+                  <img src="/img/MarceloFreixo.jpg" alt="">
+                  <h1 class="user-name">Kate</h1>
+                </div>
+              </li>
+              <li>
+                <div class="msg-feed-header-avatar">
+                  <img src="/img/MarinaSilva foto.jpg" alt="">
+                  <h1 class="user-name">Kate</h1>
+                </div>
+              </li>
+              <li>
+                <div class="msg-feed-header-avatar">
+                  <img src="/img/taliria.jpg" alt="">
+                  <h1 class="user-name">Aline</h1>
+                </div>
+              </li>
+              <li>
+                <div class="msg-feed-header-avatar">
+                  <img src="/img/thiago.jpg" alt="">
+                  <h1 class="user-name">Aline</h1>
+                </div>
+              </li>
+              <li>
+                <div class="msg-feed-header-avatar">
+                  <img src="/img/kate.jpg" alt="">
+                  <h1 class="user-name">Aline</h1>
+                </div>
+              </li>
+              <li>
+                <div class="msg-feed-header-avatar">
+                  <img src="/img/Viola.jpg" alt="">
+                  <h1 class="user-name">Aline</h1>
+                </div>
+              </li>
+            </ul>
+            <div class="proximo">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+        </header>
+        
+        <article class="msg-feed-article">
+          <div class="user-info">
+            
+            <textarea name="" rows="7" placeholder="Sua mensagem aqui ..." class="texto texto-msg"
+            maxlength="250"></textarea>
+            <div class="quantidade-caracteres">
+              <p class="texto">250</p>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-2-l" data-dismiss="modal">Descartar</button>
+        <button type="button" class="btn btn-2-d">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const UL_USUARIOS = document.querySelector('.msg-ul-amigos');
+  //Esta função aplica o efeito no botão clicado pelo usuário para adicionar filtro do usuário
+  UL_USUARIOS.addEventListener('click', function(e) {
+    var clicou = e.target.parentNode.parentNode;
+    if(clicou.tagName == 'LI'){
+      clicou.classList.toggle('usuario-selecionado');
+    }
+  });
+  
+  const DIREITA = document.querySelector('.anterior');
+  const ESQUERDA = document.querySelector('.proximo');
+  const VIEW_USERS = document.querySelector('.msg-ul-amigos');
+  
+  ESQUERDA.addEventListener('click', function(){
+    VIEW_USERS.scrollTo(VIEW_USERS.offsetWidth + VIEW_USERS.offsetWidth, 0);
+  });
+  DIREITA.addEventListener('click', function(){
+    VIEW_USERS.scrollTo(VIEW_USERS.offsetWidth - VIEW_USERS.offsetWidth, 0);
+  });
+  
+  
+</script>
+<!--FIM DO MODAL MENSAGEM-->
