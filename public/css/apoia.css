@@ -1,4 +1,33 @@
  .apoia img{
     width: 50px;
     height: 50px;
+    
+    text-align:center
+ 
 }
+
+section#apoia{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: var(--text-primary-color);
+  border: 1vw solid var(--text-primary-color);
+  border-radius: 1vw;
+  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  margin-bottom: 1vh;
+}
+
+.apoia-header h1{
+  text-transform: uppercase;
+  padding-bottom:2.3vh;
+  border-bottom: 1px solid var(--divider-color);
+  
+}
+
+.apoia{
+  margin-bottom:30px;
+  margin-top:30px;
+}
+
