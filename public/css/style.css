@@ -550,7 +550,7 @@ section#aulas-recentes img {
 /*AQUI COMEÇA O CSS DO COMPONENTE NOVAS PUBLICACOES*/
 #novaPostagem {
   width: '100%';
-  height: 20vh;
+  height: 170px;
   background-color: var(--text-primary-color);
   border-radius: 10px;
   -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
@@ -560,7 +560,7 @@ section#aulas-recentes img {
 
 #novaPostagem .rowBotoes {
   width: '100%';
-  height: 12vh;
+  height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -572,7 +572,7 @@ section#aulas-recentes img {
 
 #novaPostagem .posicao {
   width: 12vw;
-  height: 12vh;
+  height: 85px;
   background-color: var(--text-primary-color);
   background-color: var(--text-primary-color);
   border: 1px solid var(--divider-color);
@@ -595,7 +595,7 @@ section#aulas-recentes img {
 
 #novaPostagem .botao {
   width: 8vw;
-  height: 12vh;
+  height: 85px;
   background-color: var(--text-primary-color);
   border: 1px solid var(--divider-color);
   display: -webkit-box;
@@ -630,7 +630,7 @@ section#aulas-recentes img {
 
 #novaPostagem .apoiados {
   width: '100%';
-  height: 8vh;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -642,7 +642,7 @@ section#aulas-recentes img {
 
 #novaPostagem .text-apoiados {
   width: 10vw;
-  height: 8vh;
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -658,7 +658,7 @@ section#aulas-recentes img {
 
 #novaPostagem .listagem-apoiados {
   width: 30vw;
-  height: 8vh;
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -672,18 +672,6 @@ section#aulas-recentes img {
   padding: 10px;
 }
 
-/* #novaPostagem .apoiado {
-  width: 2.8vw;
-  height: 5vh;
-  background-color: cornsilk;
-  margin-left: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-} */
 #novaPostagem .apoiado {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -735,7 +723,7 @@ section#aulas-recentes img {
 /*AQUI COMEÇA O CSS DO COMPONENTE FILTRO DE PESQUISAS*/
 #filtroPesquisa {
   width: '100%';
-  height: 14vh;
+  height: 105px;
   background-color: var(--text-primary-color);
   border-radius: 10px;
   -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
@@ -751,7 +739,7 @@ section#aulas-recentes img {
 
 #filtroPesquisa .rowBotoes {
   width: 100%;
-  height: 12vh;
+  height: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -763,7 +751,7 @@ section#aulas-recentes img {
 
 #filtroPesquisa .aplicar {
   width: 9vw;
-  height: 12vh;
+  height: 85px;
   background-color: var(--text-primary-color);
   background-color: var(--text-primary-color);
   border: 1px solid var(--divider-color);
@@ -786,7 +774,7 @@ section#aulas-recentes img {
 
 #filtroPesquisa .botao {
   width: 8vw;
-  height: 12vh;
+  height: 85px;
   background-color: var(--text-primary-color);
   border: 1px solid var(--divider-color);
   display: -webkit-box;
