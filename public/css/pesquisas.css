@@ -16,7 +16,7 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  border: 1px solid var(--dark-primary-color);
+  /* border: 1px solid var(--dark-primary-color); */
   margin: 0;
   padding: 0;
 }
