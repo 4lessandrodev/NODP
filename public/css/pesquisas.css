@@ -24,6 +24,7 @@ body {
 .coluna-central {
   /* border: 1px solid var(--dark-primary-color); */
   height: auto;
+  min-width: 460px;
   padding: 0 0.5vw;
 }
 

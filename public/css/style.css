@@ -550,7 +550,8 @@ section#aulas-recentes img {
 /*AQUI COMEÇA O CSS DO COMPONENTE NOVAS PUBLICACOES*/
 #novaPostagem {
   width: '100%';
-  height: 170px;
+  height: 26vh;
+  min-height: 150px;
   background-color: var(--text-primary-color);
   border-radius: 10px;
   -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
@@ -560,7 +561,8 @@ section#aulas-recentes img {
 
 #novaPostagem .rowBotoes {
   width: '100%';
-  height: 100px;
+  height: 13vh;
+  min-height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -572,7 +574,8 @@ section#aulas-recentes img {
 
 #novaPostagem .posicao {
   width: 12vw;
-  height: 85px;
+  height: 13vh;
+  min-height: 70px;
   background-color: var(--text-primary-color);
   background-color: var(--text-primary-color);
   border: 1px solid var(--divider-color);
@@ -595,7 +598,8 @@ section#aulas-recentes img {
 
 #novaPostagem .botao {
   width: 8vw;
-  height: 85px;
+  height: 13vh;
+  min-height: 70px;
   background-color: var(--text-primary-color);
   border: 1px solid var(--divider-color);
   display: -webkit-box;
@@ -630,7 +634,8 @@ section#aulas-recentes img {
 
 #novaPostagem .apoiados {
   width: '100%';
-  height: 50px;
+  height: 13vh;
+  min-height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -642,7 +647,8 @@ section#aulas-recentes img {
 
 #novaPostagem .text-apoiados {
   width: 10vw;
-  height: 60px;
+  height: 13vh;
+  min-height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -653,12 +659,13 @@ section#aulas-recentes img {
   -ms-flex-align: end;
   align-items: flex-end;
   color: var(--default-primary-color);
-  padding: 10px;
+  padding: 1vh;
 }
 
 #novaPostagem .listagem-apoiados {
   width: 30vw;
-  height: 60px;
+  height: 13vh;
+  min-height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -669,7 +676,7 @@ section#aulas-recentes img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 10px;
+  padding: 1vh;
 }
 
 #novaPostagem .apoiado {
@@ -693,7 +700,7 @@ section#aulas-recentes img {
 }
 
 #novaPostagem .botao {
-  font-size: 28px;
+  font-size: 2vw;
   text-align: center;
   padding-bottom: 1vh;
 }
@@ -723,12 +730,14 @@ section#aulas-recentes img {
 /*AQUI COMEÇA O CSS DO COMPONENTE FILTRO DE PESQUISAS*/
 #filtroPesquisa {
   width: '100%';
-  height: 105px;
+  min-width: 450px; /*para botao nao colapsar*/
+  height: 16vh;
+  min-height: 85px;
   background-color: var(--text-primary-color);
   border-radius: 10px;
   -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  padding: 10px;
+  padding: 1vw;
 }
 
 #label {
@@ -739,7 +748,9 @@ section#aulas-recentes img {
 
 #filtroPesquisa .rowBotoes {
   width: 100%;
-  height: 90px;
+  min-width: 450px; /*para botao nao colapsar*/
+  height: 13vh;
+  min-height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -751,7 +762,9 @@ section#aulas-recentes img {
 
 #filtroPesquisa .aplicar {
   width: 9vw;
-  height: 85px;
+  min-width: 80px; /*para botao nao colapsar*/
+  height: 13vh;
+  min-height: 70px;
   background-color: var(--text-primary-color);
   background-color: var(--text-primary-color);
   border: 1px solid var(--divider-color);
@@ -764,6 +777,7 @@ section#aulas-recentes img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding-top: 1vh;
 }
 
 #lugar {
@@ -774,7 +788,9 @@ section#aulas-recentes img {
 
 #filtroPesquisa .botao {
   width: 8vw;
-  height: 85px;
+  min-width: 70px; /*para botao nao colapsar*/
+  height: 13vh;
+  min-height: 70px;
   background-color: var(--text-primary-color);
   border: 1px solid var(--divider-color);
   display: -webkit-box;
@@ -790,7 +806,8 @@ section#aulas-recentes img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 17px;
+  /* padding-top: 17px; */
+  padding: 3vh 0 3vh 0;
   color: var(--dark-primary-color);
 }
 
@@ -807,85 +824,15 @@ section#aulas-recentes img {
   text-transform: uppercase;
 }
 
-#filtroPesquisa .apoiados {
-  width: '100%';
-  height: 8vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-#filtroPesquisa .text-apoiados {
-  width: 10vw;
-  height: 8vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  color: var(--default-primary-color)
-}
-
-#filtroPesquisa .listagem-apoiados {
-  width: 30vw;
-  height: 8vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-#filtroPesquisa .apoiado {
-  width: 2.8vw;
-  height: 5vh;
-  background-color: cornsilk;
-  margin-left: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 #filtroPesquisa .botao {
-  font-size: 28px;
+  /* font-size: 28px; */
+  font-size: 2vw;
   text-align: center;
   padding-bottom: 1vh;
 }
 
 #filtroPesquisa .botao p {
   padding-top: 1vh;
-}
-
-#filtroPesquisa .seta {
-  width: 2.8vw;
-  height: 5vh;
-  margin-left: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-#seta {
-  color: var(--default-primary-color)
 }
 
 #filtroPesquisa .ativo {
