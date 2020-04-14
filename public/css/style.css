@@ -387,6 +387,23 @@ section#apoiadores img {
   margin-bottom: 1vh;
 
 }
+/* #apoiadores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  background-color: var(--text-primary-color);
+  border: 1vw solid var(--text-primary-color);
+  border-radius: 1vw;
+  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  margin-bottom: 1vh;
+} */
 
 #apoiadores .row {
   display: -webkit-box;
@@ -427,9 +444,12 @@ section#apoiadores img {
 }
 
 #apoiadores .apoiadores-header {
+  /* border-bottom: 1px solid var(--divider-color);
+  padding-bottom: 2.3vh;
+  margin: 0.5vh; */
   border-bottom: 1px solid var(--divider-color);
   padding-bottom: 2.3vh;
-  margin-bottom: 1vh;
+  margin: 0.5vh;
 }
 
 #apoiadores .apoiador {
@@ -446,8 +466,8 @@ section#apoiadores img {
 
 /* INICIO DO CSS DO COMPONENTE AULAS-RCENTES */
 section#aulas-recentes img {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
 }
 
 #aulas-recentes {
@@ -505,7 +525,21 @@ section#aulas-recentes img {
   margin: 0.5em;
 }
 
-#aulas-recentes .aulas {
+#aulas-recentes .aula {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 1vw;
+  border-bottom: 1px solid var(--divider-color);
+}
+
+#aulas-recentes .aulas-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -516,9 +550,13 @@ section#aulas-recentes img {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: initial;
+  -ms-flex-align: initial;
+  align-items: initial;
+  padding-bottom: 2.3vh;
+  margin: 0.5vh;
 }
-
-#aulas-recentes .aulas-header .tipo-aula {
+#aulas-recentes .tipo-aula {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -550,16 +588,19 @@ section#aulas-recentes img {
 /*AQUI COMEÇA O CSS DO COMPONENTE NOVAS PUBLICACOES*/
 #novaPostagem {
   width: '100%';
-  height: 20vh;
+  height: 26vh;
+  min-height: 150px;
   background-color: var(--text-primary-color);
   border-radius: 10px;
   -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  padding: 10px;
 }
 
 #novaPostagem .rowBotoes {
   width: '100%';
-  height: 12vh;
+  height: 13vh;
+  min-height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -571,7 +612,8 @@ section#aulas-recentes img {
 
 #novaPostagem .posicao {
   width: 12vw;
-  height: 12vh;
+  height: 13vh;
+  min-height: 70px;
   background-color: var(--text-primary-color);
   background-color: var(--text-primary-color);
   border: 1px solid var(--divider-color);
@@ -594,7 +636,8 @@ section#aulas-recentes img {
 
 #novaPostagem .botao {
   width: 8vw;
-  height: 12vh;
+  height: 13vh;
+  min-height: 70px;
   background-color: var(--text-primary-color);
   border: 1px solid var(--divider-color);
   display: -webkit-box;
@@ -629,7 +672,8 @@ section#aulas-recentes img {
 
 #novaPostagem .apoiados {
   width: '100%';
-  height: 8vh;
+  height: 13vh;
+  min-height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -641,7 +685,8 @@ section#aulas-recentes img {
 
 #novaPostagem .text-apoiados {
   width: 10vw;
-  height: 8vh;
+  height: 13vh;
+  min-height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -651,12 +696,14 @@ section#aulas-recentes img {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
-  color: var(--default-primary-color)
+  color: var(--default-primary-color);
+  padding: 1vh;
 }
 
 #novaPostagem .listagem-apoiados {
   width: 30vw;
-  height: 8vh;
+  height: 13vh;
+  min-height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -667,23 +714,31 @@ section#aulas-recentes img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 1vh;
 }
 
 #novaPostagem .apoiado {
-  width: 2.8vw;
-  height: 5vh;
-  background-color: cornsilk;
-  margin-left: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+#novaPostagem .apoiado img {
+  height: 50px;
+  width: 50px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  margin: 0px 5px 10px;
 }
 
 #novaPostagem .botao {
-  font-size: 28px;
+  font-size: 2vw;
   text-align: center;
   padding-bottom: 1vh;
 }
@@ -707,17 +762,23 @@ section#aulas-recentes img {
 #seta {
   color: var(--default-primary-color)
 }
+.seta:hover {
+  cursor: pointer;
+}
 
 /*AQUI FINALIZA O CSS DO COMPONENTE NOVAS PUBLICACOES*/
 
 /*AQUI COMEÇA O CSS DO COMPONENTE FILTRO DE PESQUISAS*/
 #filtroPesquisa {
   width: '100%';
-  height: 20vh;
+  min-width: 450px; /*para botao nao colapsar*/
+  height: 16vh;
+  min-height: 90px;
   background-color: var(--text-primary-color);
   border-radius: 10px;
   -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  padding: 1vw;
 }
 
 #label {
@@ -728,7 +789,9 @@ section#aulas-recentes img {
 
 #filtroPesquisa .rowBotoes {
   width: 100%;
-  height: 12vh;
+  min-width: 450px; /*para botao nao colapsar*/
+  height: 13vh;
+  min-height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -740,7 +803,9 @@ section#aulas-recentes img {
 
 #filtroPesquisa .aplicar {
   width: 9vw;
-  height: 12vh;
+  min-width: 80px; /*para botao nao colapsar*/
+  height: 13vh;
+  min-height: 70px;
   background-color: var(--text-primary-color);
   background-color: var(--text-primary-color);
   border: 1px solid var(--divider-color);
@@ -753,6 +818,7 @@ section#aulas-recentes img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding-top: 1vh;
 }
 
 #lugar {
@@ -763,7 +829,9 @@ section#aulas-recentes img {
 
 #filtroPesquisa .botao {
   width: 8vw;
-  height: 12vh;
+  min-width: 70px; /*para botao nao colapsar*/
+  height: 13vh;
+  min-height: 70px;
   background-color: var(--text-primary-color);
   border: 1px solid var(--divider-color);
   display: -webkit-box;
@@ -779,7 +847,8 @@ section#aulas-recentes img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 17px;
+  /* padding-top: 17px; */
+  padding: 3vh 0 3vh 0;
   color: var(--dark-primary-color);
 }
 
@@ -796,85 +865,15 @@ section#aulas-recentes img {
   text-transform: uppercase;
 }
 
-#filtroPesquisa .apoiados {
-  width: '100%';
-  height: 8vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-#filtroPesquisa .text-apoiados {
-  width: 10vw;
-  height: 8vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  color: var(--default-primary-color)
-}
-
-#filtroPesquisa .listagem-apoiados {
-  width: 30vw;
-  height: 8vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-#filtroPesquisa .apoiado {
-  width: 2.8vw;
-  height: 5vh;
-  background-color: cornsilk;
-  margin-left: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 #filtroPesquisa .botao {
-  font-size: 28px;
+  /* font-size: 28px; */
+  font-size: 2vw;
   text-align: center;
   padding-bottom: 1vh;
 }
 
 #filtroPesquisa .botao p {
   padding-top: 1vh;
-}
-
-#filtroPesquisa .seta {
-  width: 2.8vw;
-  height: 5vh;
-  margin-left: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-#seta {
-  color: var(--default-primary-color)
 }
 
 #filtroPesquisa .ativo {
@@ -1308,10 +1307,26 @@ section#mensagens img {
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   margin-bottom: 1vh;
 }
+#mensagens .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
 
 #mensagens .mensagens-header {
-  padding-bottom: 2.3vh;
   border-bottom: 1px solid var(--divider-color);
+  padding-bottom: 2.3vh;
+  margin: 0.5vh;
 }
 
 #mensagens h1 {
@@ -1884,14 +1899,20 @@ section#mensagens img {
 /* INICIO DO CSS PATROCINADORES MENOR */
 
 #div-geral-patrocinador-menor {
-  width: 21vw;
+  /* width: 21vw;
   height: 15vh;
-  margin-top: 10px;
+  margin-top: 10px; */
+  background-color: var(--text-primary-color);
+  border: 10px solid var(--text-primary-color);
+  border-radius: 1vw;
+  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  margin-bottom: 1vh;
 }
 
 .patrocinador-menor {
-  width: '100%';
-  height: '100%';
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1903,22 +1924,28 @@ section#mensagens img {
   align-items: center;
 }
 
-.foto-patrocinador-menor {
-  width: 20vw;
-  height: 15vh;
+.patrocinador-menor img{
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
 
 #div-geral-patrocinador-maior {
-  width: 21vw;
+  /* width: 21vw;
   height: 40vh;
-  margin-top: 10px;
+  margin-top: 10px; */
+  background-color: var(--text-primary-color);
+  border: 10px solid var(--text-primary-color);
+  border-radius: 1vw;
+  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  margin-bottom: 1vh;
 }
 
 .patrocinador-maior {
-  width: '100%';
-  height: '100%';
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1930,9 +1957,9 @@ section#mensagens img {
   align-items: center;
 }
 
-.foto-patrocinador-maior {
-  width: 20vw;
-  height: 40vh;
+.patrocinador-maior img{
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }

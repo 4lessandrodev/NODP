@@ -17,6 +17,7 @@ section#apoia{
   -moz-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   margin-bottom: 1vh;
+  margin-top: 1vh;
 }
 
 .apoia-header {
