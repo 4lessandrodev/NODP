@@ -19,15 +19,33 @@ section#apoia{
   margin-bottom: 1vh;
 }
 
-.apoia-header h1{
+.apoia-header {
   text-transform: uppercase;
-  padding-bottom:2.3vh;
+  /* padding-bottom:2.3vh; */
   border-bottom: 1px solid var(--divider-color);
+  text-align: left;
   
 }
 
 .apoia{
-  margin-bottom:30px;
-  margin-top:30px;
+  margin-bottom:15px;
+  margin-top:15px;
 }
+
+nav li {
+  list-style:none;
+  display:inline-block;
+  text-align:left;
+
+ 
+
+}
+
+nav li a{
+  text-decoration:none;
+  color:#212121;
+}
+
+
+
 

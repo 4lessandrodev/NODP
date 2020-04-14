@@ -54,4 +54,7 @@ router.get('/apoio', function (req, res, next) {
   res.render('apoio', { title: 'Apoio' });
 });
 
+router.get('/apoiadores', function (req, res, next) {
+  res.render('apoiadores', { title: 'Apoio' });
+});
 module.exports = router;
