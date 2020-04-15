@@ -42,7 +42,7 @@ nav li {
   display:inline-block;
   text-align:left;
   color:#212121;
- 
+  
 
 }
 
@@ -57,8 +57,12 @@ nav li a{
 nav li a.active{
 font-weight:500;
 color:#212121;
+text-decoration: none;
 }
 
-
+nav li a.apoiar{
+  color:#212121;
+text-decoration: none;
+}
 
 
