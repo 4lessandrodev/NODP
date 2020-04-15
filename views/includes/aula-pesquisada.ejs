@@ -1,4 +1,5 @@
-<section id="aula-pesquisada" class="container">
+<%- include('./modal-detalhes-aula') -%>
+<section id="aula-pesquisada" class="container"> 
     <div class="aula">
         <div>
             <img src="/img/mateus.jpg" class="rounded-circle" alt="foto">
@@ -9,7 +10,7 @@
             <div class="botoes">
                 <input type="button" value="1 Moeda" class=btn-1-l>
                 <input type="button" value="15 minutos" class=btn-1-l>
-                <input type="button" value="Adquirir Agora" class=btn-1b-d>
+                <input type="button" value="Adquirir Agora" class=btn-1b-d data-toggle="modal" data-target="#modalDetalhesAula">
             </div>
         </div>
     </div>
