@@ -139,6 +139,21 @@ body {
   letter-spacing: 1px;
 }
 
+.btn-3b-d {
+  width: 210px;
+  height: 32px;
+  padding: 7px;
+  border: 2px solid var(--text-primary-color);
+  border-radius: 7px;
+  font-size: 12px;
+  background: var(--dark-primary-color);
+  color: var(--text-primary-color);
+  -webkit-transition: ease-in 0.23s;
+  -o-transition: ease-in 0.23s;
+  transition: ease-in 0.23s;
+  letter-spacing: 1px;
+}
+
 /*BOTOES CLAROS DE ACORDO COM O PADRÃO UTILIZADO NA IDENTIDADE VISUAL*/
 .btn-0-l {
   width: 70px;
@@ -200,6 +215,7 @@ body {
   letter-spacing: 1px;
 }
 
+
 .btn-2-l {
   width: 154px;
   height: 37px;
@@ -230,12 +246,28 @@ body {
   letter-spacing: 1px;
 }
 
+.btn-3b-l{
+  width: 210px;
+  height: 32px;
+  padding: 7px;
+  border: 2px solid var(--dark-primary-color);
+  border-radius: 7px;
+  font-size: 12px;
+  background: var(--text-primary-color);
+  color: var(--dark-primary-color);
+  -webkit-transition: ease-in 0.23s;
+  -o-transition: ease-in 0.23s;
+  transition: ease-in 0.23s;
+  letter-spacing: 1px;
+}
+
 /*BOTOES ESCUROS EFEITO HOVER DE ACORDO COM O PADRÃO UTILIZADO NA IDENTIDADE VISUAL*/
 .btn-0-d:hover,
 .btn-1-d:hover,
 .btn-2-d:hover,
 .btn-3-d:hover,
-.btn-1b-d:hover {
+.btn-1b-d:hover,
+.btn-3b-d:hover {
   background: var(--text-primary-color);
   color: var(--dark-primary-color);
   border: 2px solid var(--dark-primary-color);
@@ -247,7 +279,8 @@ body {
 .btn-1-l:hover,
 .btn-2-l:hover,
 .btn-3-l:hover,
-.btn-1b-l:hover {
+.btn-1b-l:hover,
+.btn-3b-l:hover {
   background: var(--dark-primary-color);
   color: var(--text-primary-color);
   border: 2px solid var(--text-primary-color);
@@ -2012,11 +2045,12 @@ section#mensagens img {
   text-transform: uppercase;
   padding: 0;
   margin: 0;
-  color: white;
+  color: var(--text-primary-color);
 }
 
 #footer-lateral address{
   margin-top: 3vh;
   text-align: center;
   text-transform: uppercase;
+  color: var(--secondary-text-color);
 }
