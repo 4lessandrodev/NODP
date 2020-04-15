@@ -408,6 +408,13 @@ li {
   color: var(--text-primary-color);
   text-decoration: none;
 }
+.header-nav #notificacao{
+  background-color: red;
+  color: var(--text-primary-color);
+  border-radius:20px;
+  padding: 2px;
+  font-size: 12px;
+}
 
 /*FIM DO CSS DO HEADER */
 
