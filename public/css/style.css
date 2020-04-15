@@ -2001,9 +2001,16 @@ section#mensagens img {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-top: 2vh;
 }
 
 #main-footer address{
   padding: 0;
   vertical-align: bottom;
+}
+#main-footer address p{
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  color: white;
 }
