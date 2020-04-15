@@ -476,6 +476,10 @@ section#apoiadores img {
   background-color: var(--light-background-color);
   cursor: pointer;
 }
+#apoiadores .apoiadores-footer {
+text-align: center;
+margin: 3vh;
+}
 
 /*FIM DO CSS DO COMPONENTE APOIADORES*/
 
@@ -553,6 +557,10 @@ section#aulas-recentes img {
   border-radius: 1vw;
   border-bottom: 1px solid var(--divider-color);
 }
+#aulas-recentes .aula:hover {
+cursor: pointer;
+background-color: var(--light-background-color);
+}
 
 #aulas-recentes .aulas-header {
   display: -webkit-box;
@@ -591,7 +599,6 @@ section#aulas-recentes img {
 #aulas-recentes .tipo-aula:hover {
   cursor: pointer;
 }
-
 .seta {
   color: var(--dark-primary-color);
 }

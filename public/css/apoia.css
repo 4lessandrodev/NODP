@@ -24,27 +24,39 @@ section#apoia{
   text-transform: uppercase;
   /* padding-bottom:2.3vh; */
   border-bottom: 1px solid var(--divider-color);
-  text-align: left;
+  margin-left:-30px;
+  font-family: 'Poppins', sans-serif;
+  
+
   
 }
 
 .apoia{
   margin-bottom:15px;
   margin-top:15px;
+  
 }
 
 nav li {
   list-style:none;
   display:inline-block;
   text-align:left;
-
+  color:#212121;
  
 
 }
 
 nav li a{
   text-decoration:none;
+  
+  text-align:left;
   color:#212121;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav li a.active{
+font-weight:500;
+color:#212121;
 }
 
 
