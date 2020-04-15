@@ -36,3 +36,123 @@ body {
 ::-webkit-scrollbar {
   width: 0px;
 }
+/* inicio componente notificacoes-central */
+section#notificacoes img {
+  width: 50px;
+  height: 50px;
+}
+
+#notificacoes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  background-color: var(--text-primary-color);
+  border: 1vw solid var(--text-primary-color);
+  border-radius: 1vw;
+  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+}
+
+#notificacoes .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+#notificacoes .col {
+  margin: 0;
+  padding: 0;
+}
+
+#notificacoes h1 {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  padding-bottom: 2.3vh;
+  margin-bottom: 1vh;
+}
+
+#notificacoes h2 {
+  margin: 0;
+  padding: 0;
+}
+
+#notificacoes img {
+  margin: 0.5em;
+}
+
+#notificacoes .aula {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 1vw;
+  border-bottom: 1px solid var(--divider-color);
+  padding: 0.5em 1vw;
+}
+#notificacoes .aula:hover {
+  cursor: pointer;
+  background-color: var(--light-background-color);
+}
+
+#notificacoes .notificacoes-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: initial;
+  -ms-flex-align: initial;
+  align-items: initial;
+  padding-bottom: 2.3vh;
+  margin: 0.5vh;
+}
+#notificacoes .tipo-aula {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: initial;
+  -ms-flex-align: initial;
+  align-items: initial;
+  color: var(--dark-primary-color);
+}
+
+#notificacoes .tipo-aula:hover {
+  cursor: pointer;
+}
+.seta {
+  color: var(--dark-primary-color);
+}
