@@ -155,6 +155,21 @@ body {
   letter-spacing: 1px;
 }
 
+.btn-1-l-a{
+  width: 112px;
+  height: 32px;
+  padding: 7px;
+  border: 2px solid var(--accent-color);
+  border-radius: 7px;
+  font-size: 12px;
+  background: var(--text-primary-color);
+  color: var(--dark-primary-color);
+  -webkit-transition: ease-in 0.23s;
+  -o-transition: ease-in 0.23s;
+  transition: ease-in 0.23s;
+  letter-spacing: 1px;
+}
+
 .btn-1-l {
   width: 112px;
   height: 32px;
