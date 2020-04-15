@@ -1,0 +1,45 @@
+<!--Importar o head padrão para todas as páginas-->
+<%- include("./includes/head") -%>
+<!--Importar o css exclusivo da página que está sendo desenvolvida-->
+<link rel='stylesheet' href='/css/notificacoes.css' />
+<link rel='stylesheet' href='/css/post-feed.css' />
+<link rel='stylesheet' href='/css/modais-post.css' />
+<link rel='stylesheet' href='/css/modal-mensagem.css' />
+<!--Tag de fechamento do head que ficou aberto para possibilitar importar o css da página-->
+</head>
+
+<!--Importanto o arquivo header com a barra de pesquisa e menu-->
+<%- include('./includes/header')-%>
+
+<!--Códigos da página-->
+<body>
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-3 coluna-esquerda">
+        <%- include('./includes/perfil-usuario-home')-%>
+        <%- include('./includes/apoiadores')-%> 
+        <%- include('./includes/mensagens')-%>
+        <%- include('./includes/aulas-recentes')-%>
+      </div>
+      <div class="col-9 coluna-central">
+        
+        <div class="div-scroll-post">
+          <%- include('./includes/notificacoes')-%>
+
+          <%- include('./includes/post-feed')-%>
+          <%- include('./includes/post-feed')-%>
+        </div>
+      </div>
+      <!-- <div class="col-3 coluna-direita"> -->
+        <!-- Coluna de mensagens, aulas recentes-->
+        
+      <!--</div> -->
+    </div>
+    
+  </div>
+
+<!--Importando o arquivo scripts-->
+<%- include('./includes/scripts')-%>
+<!-- Importando o arquivo footer-->
+<%- include('./includes/footer')-%>
