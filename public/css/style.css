@@ -385,7 +385,7 @@ section#apoiadores img {
   -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   margin-bottom: 1vh;
-
+  
 }
 /* #apoiadores {
   display: -webkit-box;
@@ -462,11 +462,13 @@ section#apoiadores img {
   cursor: pointer;
 }
 #apoiadores .apoiadores-footer {
-text-align: center;
-margin: 3vh;
+  text-align: center;
+  margin: 3vh;
 }
 
 /*FIM DO CSS DO COMPONENTE APOIADORES*/
+
+
 
 /* INICIO DO CSS DO COMPONENTE AULAS-RCENTES */
 section#aulas-recentes img {
@@ -543,8 +545,8 @@ section#aulas-recentes img {
   border-bottom: 1px solid var(--divider-color);
 }
 #aulas-recentes .aula:hover {
-cursor: pointer;
-background-color: var(--light-background-color);
+  cursor: pointer;
+  background-color: var(--light-background-color);
 }
 
 #aulas-recentes .aulas-header {
@@ -1969,4 +1971,24 @@ section#mensagens img {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+#main-footer{
+  background-color: var(--dark-primary-color);
+  height: 6vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: center;
+  align-items: flex-end;
+  justify-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#main-footer address{
+  padding: 0;
+  vertical-align: bottom;
 }
