@@ -24,7 +24,7 @@ section#apoia{
   text-transform: uppercase;
   /* padding-bottom:2.3vh; */
   border-bottom: 1px solid var(--divider-color);
-  margin-left:-30px;
+  /* margin-left:-30px; */
   font-family: 'Poppins', sans-serif;
   
 
@@ -42,6 +42,7 @@ nav li {
   display:inline-block;
   text-align:left;
   color:#212121;
+  padding-right:40px;
   
 
 }
