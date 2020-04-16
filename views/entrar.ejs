@@ -1,5 +1,6 @@
 <!--Importar o head padrão para todas as páginas-->
 <%- include("./includes/head") -%>
+<%- include('./includes/modal-esqueci-senha') -%>
 <!--Importar o css exclusivo da página que está sendo desenvolvida-->
 <link rel='stylesheet' href='/css/cadastro.css' />
 <!--Tag de fechamento do head que ficou aberto para possibilitar importar o css da página-->
@@ -16,20 +17,28 @@
     <div class="login col-lg-4 col-md-8 col-sm-12">
       <form action="/home" method="">
         
-        <img src="/img/logo-rocho-letra.png" alt="logo" class="logo-letra" id="logo">
+        <img src="/img/logo-rocho-letra.png" alt="logo" class="logo-letra" id="logo"> 
         <h1 class="titulo">Entrar</h1>
         
         <div class="form-group">
           <label for="email" class="subtitulo">Email</label>
-          <input type="email" class="form-control" id="email" name="email" required>
+          <input type="email" class="form-control" id="email"
+          name="email" required placeholder="email@mail.com">
         </div>
         <div class="form-group">
           <label for="senha" class="subtitulo">Senha</label>
-          <input type="password" class="form-control" id="senha" required>
+          <input type="password" class="form-control" id="senha"
+          required placeholder="********">
         </div>
-        <button type="button" class="btn-1-l">Cadastrar</button>
-        <button type="submit" class="btn-1-d" onclick="location.href='/home'">Entrar</button>
+        <div id="row-botoes">
+          <button type="button" class="btn-1-l" onclick="location.href='/cadastro'"">Cadastrar</button>
+          <button type="submit" class="btn-1-d" onclick="location.href='/home'">Entrar</button>
+        </div>
+        
+        <input type="button" value="Esqueci minha senha" class="btn-3c-l" data-toggle="modal" data-target="#modalRecuperarSenha"></input>
       </form>
+      
+      
     </div>
   </div>
   

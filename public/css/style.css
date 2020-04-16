@@ -261,6 +261,21 @@ body {
   letter-spacing: 1px;
 }
 
+.btn-3c-l{
+  width: 230px;
+  height: 30px;
+  padding: 7px;
+  border: 2px solid var(--dark-primary-color);
+  border-radius: 7px;
+  font-size: 12px;
+  background: var(--text-primary-color);
+  color: var(--dark-primary-color);
+  -webkit-transition: ease-in 0.23s;
+  -o-transition: ease-in 0.23s;
+  transition: ease-in 0.23s;
+  letter-spacing: 1px;
+}
+
 /*BOTOES ESCUROS EFEITO HOVER DE ACORDO COM O PADRÃO UTILIZADO NA IDENTIDADE VISUAL*/
 .btn-0-d:hover,
 .btn-1-d:hover,

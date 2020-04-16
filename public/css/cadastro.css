@@ -3,7 +3,7 @@
 #cadastro .background {
   background-image: url("/img/imagem-login.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 #cadastro {
@@ -16,11 +16,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
   height: 99vh;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  justify-content: center;
   background-color: var(--light-background-color);
+ 
 }
 
 .cadastro-div-termos {
@@ -28,11 +31,20 @@
 }
 
 #cadastro form {
+  display: flex;
+  flex-direction: column;
   margin-left: 3vw;
+  align-items: center;
 }
 
 .titulo {
   margin-bottom: 3vh;
   color: var(--dark-primary-color);
   text-transform: uppercase;
+}
+
+#row-botoes{
+  width: 100%;
+  height: 10%;
+  margin-bottom: 5%;
 }
