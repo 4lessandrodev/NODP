@@ -16,13 +16,12 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  /* border: 1px solid var(--dark-primary-color); */
+  
   margin: 0;
   padding: 0;
 }
 
 .coluna-central {
-  /* border: 1px solid var(--dark-primary-color); */
   height: auto;
   min-width: 460px;
   padding: 0 0.5vw;
@@ -30,7 +29,6 @@ body {
 
 .coluna-direita {
   height: auto;
-  /* border: 1px solid var(--dark-primary-color); */
   margin: 0;
   padding: 0;
 }
@@ -38,19 +36,130 @@ body {
 .div-scroll-post {
   height: 180vh;
   overflow: scroll;
-  /* border: 1px solid red; */
 }
 
 ::-webkit-scrollbar {
   width: 0px;
 }
 
+/*AQUI COMEÇA O CSS DO COMPONENTE FILTRO DE PESQUISAS*/
+#filtroPesquisa {
+  width: '100%';
+  min-width: 450px; /*para botao nao colapsar*/
+  height: 17vh;
+  min-height: 90px;
+  background-color: var(--text-primary-color);
+  border-radius: 10px;
+  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  padding: 1vw;
+}
+
+#label {
+  color: var(--dark-primary-color);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#filtroPesquisa .rowBotoes {
+  width: 100%;
+  min-width: 450px; /*para botao nao colapsar*/
+  height: 13vh;
+  min-height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+#filtroPesquisa .aplicar {
+  width: 9vw;
+  min-width: 80px; /*para botao nao colapsar*/
+  height: 13vh;
+  min-height: 70px;
+  background-color: var(--text-primary-color);
+  background-color: var(--text-primary-color);
+  border: 1px solid var(--divider-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 1vh;
+}
+
+#lugar {
+  color: var(--dark-primary-color);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#filtroPesquisa .botao {
+  width: 9vw;
+  min-width: 70px; /*para botao nao colapsar*/
+  height: 13vh;
+  min-height: 70px;
+  background-color: var(--text-primary-color);
+  border: 1px solid var(--divider-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 3vh 0 3vh 0;
+  color: var(--dark-primary-color);
+}
+
+#filtroPesquisa .botao:hover,
+#filtroPesquisa .posicao:hover h1,
+#filtroPesquisa .posicao:hover {
+  color: var(--text-primary-color);
+  background-color: var(--default-primary-color);
+  cursor: pointer;
+}
+
+#filtroPesquisa .botao p {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+#filtroPesquisa .botao {
+  font-size: 2vw;
+  text-align: center;
+  padding-bottom: 1vh;
+}
+
+#filtroPesquisa .botao p {
+  padding-top: 1vh;
+}
+
+#filtroPesquisa .ativo {
+  color: var(--text-primary-color);
+  background-color: var(--default-primary-color);
+  cursor: pointer;
+}
+
+/*AQUI FINALIZA O CSS DO COMPONENTE FILTRO DE PESQUISAS*/
+
 /* COMPONENTE USUARIO PESQUISADO */
 section#usuario-pesquisado .usuario img {
   width: 50px;
   height: 50px;
-
-
 }
 
 section#usuario-pesquisado {
@@ -66,7 +175,6 @@ section#usuario-pesquisado {
   border-radius: 1vw;
   height: auto;
   padding: 0 0.5vw;
-
 }
 
 section#aula-pesquisada {
@@ -84,7 +192,7 @@ section#aula-pesquisada {
   padding: 0 0.5vw;
 }
 
-section#aula-pesquisada .aula-pesq img {
+section#aula-pesquisada .aula img {
   width: 50px;
   height: 50px;
 
