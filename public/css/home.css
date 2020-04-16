@@ -27,7 +27,7 @@ body {
 }
 
 .div-scroll-post {
-  height: 120vh;
+  height: 108vh;
   overflow: scroll;
   scrollbar-width: none;
   /* border: 1px solid red; */
