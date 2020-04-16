@@ -371,9 +371,7 @@ li {
 }
 
 .header-nav .input-group-text {
-  line-height: 0.9;
-  position: relative;
-  left: -15px;
+  line-height: 0.8;
   background-color: transparent;
   border: none;
   color: var(--text-primary-color);
@@ -381,6 +379,14 @@ li {
 
 .header-nav .form-inline {
   width: 25vw;
+}
+
+.header-nav #caixa-pesquisar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 50%;
 }
 
 .header-nav input[type='search'] {
@@ -400,6 +406,10 @@ li {
   -ms-flex-align: center;
   align-items: center;
   justify-items: center;
+}
+
+.no-focus{
+  outline: none; 
 }
 
 .header-nav-ul li {
