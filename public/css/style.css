@@ -411,7 +411,7 @@ li {
 .header-nav #notificacao{
   background-color: red;
   color: var(--text-primary-color);
-  border-radius:20px;
+  border-radius:2px;
   padding: 2px;
   font-size: 12px;
 }
@@ -1238,6 +1238,11 @@ section#mensagens img {
   margin: 0.5em;
   -o-object-fit: contain;
   object-fit: contain;
+}
+#mensagens .mensagem-titulo {
+  display: flex;
+  justify-content: space-between;
+  
 }
 
 #mensagens {
