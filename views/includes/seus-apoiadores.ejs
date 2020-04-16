@@ -1,3 +1,4 @@
+
 <section id="apoia" class="container">
     <div class="row apoia-header">
         <!-- <div class="col"> -->
@@ -13,14 +14,15 @@
 
     <div class="row apoia">
      
-    
+      
     <img src="/img/MarinaSilva foto.jpg" class="rounded-circle" alt="marina">
     <div class="col">
       <h2 class="subtitulo">Marina</h2>
       <h3 class="texto">Biologia</h3>
     </div>
     <div class="col">
-      <input type="button" value="Apoiar" class=btn-0-d>
+      <input type="button" value="Apoiar" class=btn-0-d data-toggle="modal" data-target="#modalDeApoiar">
+    
     </div>
 
 
@@ -154,6 +156,5 @@
     <div class="col">
       <input type="button" value="Apoiado" class=btn-0-l>
     </div>
-
+    <%- include('./model-apoia') -%>
 </section>
-    
