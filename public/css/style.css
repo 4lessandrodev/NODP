@@ -446,12 +446,12 @@ li {
     font-size: 12px;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 899px) {
   #header-desktop {
     display: none;
   }
 }
-@media screen and (max-width: 899px) {
+@media screen and (max-width: 599px) {
   #header-desktop {
     display: none;
   }
