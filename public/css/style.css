@@ -687,9 +687,6 @@ section#apoiadores img {
 }
 
 #apoiadores .apoiadores-header {
-  /* border-bottom: 1px solid var(--divider-color);
-  padding-bottom: 2.3vh;
-  margin: 0.5vh; */
   border-bottom: 1px solid var(--divider-color);
   padding-bottom: 2.3vh;
   margin: 0.5vh;

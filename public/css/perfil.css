@@ -20,7 +20,7 @@ body {
 }
 @media screen and (max-width: 1199px) {
   .container {
-    margin-top: 8vh;
+    margin-top: 5vh;
   }
   .coluna-central {
     /* col-8 */
@@ -32,7 +32,6 @@ body {
     /* col-4 */
     height: auto;
     width: 32.2666666667%;
-    padding: 0vh;
   }
 }
 @media screen and (max-width: 599px) {
@@ -43,11 +42,13 @@ body {
     margin:0;
     padding:0;
   } */
+  .container {
+    margin-top: 1.5vh;
+  }
   .coluna-central {
     display: inline-block;
     height: auto;
     width: 100%;
     padding: 0;
-    margin-top: 1vh;
   }
 }
