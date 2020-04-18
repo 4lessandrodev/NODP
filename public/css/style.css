@@ -350,7 +350,14 @@ li {
 }
 
 /*CSS DO HEADER */
+/* header padrão web (sites) a partir de 1200 pixeis */
 @media screen and (min-width: 1200px) {
+  #header-tablet {
+    display: none;
+  }
+  #header-celular {
+    display: none;
+  }
   #header-desktop {
     display: inline-block;
   }
@@ -446,14 +453,148 @@ li {
     font-size: 12px;
   }
 }
-@media screen and (max-width: 899px) {
-  #header-desktop {
+/* header para tablets de 600 a 1199 pixeis (iPads entram nessa gama, sendo o  maior o iPad Pro) */
+@media screen and (max-width: 1199px) {
+  #header-tablet {
     display: none;
   }
+  #header-celular {
+    display: none;
+  }
+  #header-desktop {
+    display: inline-block;
+  }
+  .header-nav {
+    background-color: var(--dark-primary-color);
+    height: 4vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 1vh;
+  }
+  .header-nav .form-control {
+    height: calc(0.7em + .75rem + 2px);
+  }
+  .header-nav .input-group-text {
+    line-height: 0.8;
+    background-color: transparent;
+    border: none;
+    color: var(--text-primary-color);
+  }
+  .header-nav .form-inline {
+    width: 35vw;
+  }
+  .header-nav #caixa-pesquisar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 50%;
+  }
+  .header-nav input[type='search'] {
+    width: 25vw;
+  }
+  .header-nav-ul {
+    list-style: none;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-items: center;
+  }
+  .focus {
+    outline: none;
+  }
+  .header-nav-ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1em;
+    margin: 0 1.2vw;
+    color: var(--text-primary-color);
+  }
+  .header-nav-ul li:hover {
+    cursor: pointer;
+  }
+  #pesquisar:hover {
+    cursor: pointer;
+  }
+  .header-nav a {
+    color: var(--text-primary-color);
+    text-decoration: none;
+  }
+  .header-nav #notificacao {
+    background-color: red;
+    color: var(--text-primary-color);
+    border-radius: 2px;
+    padding: 2px;
+    font-size: 12px;
+  }
 }
+/* header para celulares até 599 pixeis */
 @media screen and (max-width: 599px) {
   #header-desktop {
     display: none;
+  }
+  #header-tablet {
+    display: none;
+  }
+  #header-celular {
+    display: inline-block;
+  }
+  .header-nav {
+    background-color: var(--light-background-color);
+    height: 2vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 1vh 0;
+  }
+  .header-nav-ul {
+    list-style: none;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header-nav-ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.2em;
+    margin: 0 13vw;
+    color: var(--default-primary-color);
+  }
+  .header-nav-ul li:hover {
+    cursor: pointer;
+  }
+  .header-nav a {
+    color: var(--default-primary-color);
+    text-decoration: none;
+  }
+  .logo-letra {
+    width: 70px;
+    padding: 0;
   }
 }
 /*FIM DO CSS DO HEADER */
@@ -482,24 +623,6 @@ section#apoiadores img {
   margin-bottom: 1vh;
 
 }
-
-/* #apoiadores {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  background-color: var(--text-primary-color);
-  border: 1vw solid var(--text-primary-color);
-  border-radius: 1vw;
-  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  margin-bottom: 1vh;
-} */
 
 #apoiadores .row {
   display: -webkit-box;
