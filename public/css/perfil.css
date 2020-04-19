@@ -32,6 +32,8 @@ body {
     /* col-4 */
     height: auto;
     width: 32.2666666667%;
+    padding: 0 1vh;
+    margin-top: -5vh;
   }
 }
 @media screen and (max-width: 599px) {
