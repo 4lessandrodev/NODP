@@ -1256,7 +1256,7 @@ section#aulas-recentes img {
   }
 }
 
-/* media query celular*/
+/* Conquistas do usuário - media query celular*/
 @media screen and (max-width: 599px) {
   #conquistas-usuario {
     background-color: var(--text-primary-color);
@@ -1269,10 +1269,12 @@ section#aulas-recentes img {
     align-items: center;
     /* padding: 0 0vh; */
   }
+
   #conquistas-usuario h1 {
     text-transform: uppercase;
     /* margin-left: 5vw; */
   }
+
   #conquistas-usuario ul {
     list-style: none;
   }
@@ -1322,81 +1324,162 @@ section#aulas-recentes img {
 
 
 /*INICIO DO CSS COMPONENTE CONQUISTA ALUNO*/
-#conquista-aluno {
-  background-color: var(--text-primary-color);
-  border: 1vw solid var(--text-primary-color);
-  border-radius: 1vw;
-  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-top: 1vh;
+@media screen and (min-width: 600px) {
+  #conquista-aluno {
+    background-color: var(--text-primary-color);
+    border: 1vw solid var(--text-primary-color);
+    border-radius: 1vw;
+    -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 1vh;
+  }
+
+  #conquista-aluno h1 {
+    text-transform: uppercase;
+  }
+
+  #conquista-aluno .conquistas-div-interna {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid var(--divider-color);
+    border-radius: 10px;
+    margin: 2vh 0;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  #conquista-aluno .conquistas-div-interna ul li .icone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.8em;
+    padding: 1em 0.5em 0.5em 0;
+    color: var(--accent-color);
+    -ms-flex-item-align: baseline;
+    align-self: baseline;
+  }
+
+  #conquista-aluno .conquistas-div-interna ul li .numero {
+    font-size: 1.2em;
+    padding: 0 0.2em 0 0;
+    font-weight: 500;
+  }
+
+
+  #conquista-aluno .conquistas-div-interna ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+  }
+
+  #conquista-aluno .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  #conquista-aluno .header .fas {
+    color: var(--accent-color);
+  }
+
+  #conquista-aluno .header .far {
+    color: var(--divider-color);
+  }
 }
 
-#conquista-aluno h1 {
-  text-transform: uppercase;
-}
+/* Conquista aluno - media query para celulares */
+@media screen and (max-width: 599px) {
+  #conquista-aluno {
+    background-color: var(--text-primary-color);
+    border: 1vw solid var(--text-primary-color);
+    border-radius: 1vw;
+    -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 1vh;
+  }
 
-#conquista-aluno .conquistas-div-interna {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: 1px solid var(--divider-color);
-  border-radius: 10px;
-  margin: 2vh 0;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-}
+  #conquista-aluno h1 {
+    text-transform: uppercase;
+  }
 
-#conquista-aluno .conquistas-div-interna ul li .icone {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 1.8em;
-  padding: 1em 0.5em 0.5em 0;
-  color: var(--accent-color);
-  -ms-flex-item-align: baseline;
-  align-self: baseline;
-}
+  #conquista-aluno .conquistas-div-interna {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* border: 1px solid var(--divider-color); */
+    border-radius: 10px;
+    margin: 2vh 0;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
 
-#conquista-aluno .conquistas-div-interna ul li .numero {
-  font-size: 1.2em;
-  padding: 0 0.2em 0 0;
-  font-weight: 500;
-}
+  #conquista-aluno .conquistas-div-interna ul li .icone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.8em;
+    padding: 1em 0.5em 0.5em 0;
+    color: var(--accent-color);
+    -ms-flex-item-align: baseline;
+    align-self: baseline;
+  }
 
+  #conquista-aluno .conquistas-div-interna ul li .numero {
+    font-size: 1.2em;
+    padding: 0 0.2em 0 0;
+    font-weight: 500;
+  }
 
-#conquista-aluno .conquistas-div-interna ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-}
+  #conquista-aluno .conquistas-div-interna ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+  }
 
-#conquista-aluno .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
+  #conquista-aluno .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
 
-#conquista-aluno .header .fas {
-  color: var(--accent-color);
-}
+  #conquista-aluno .header .fas {
+    color: var(--accent-color);
+  }
 
-#conquista-aluno .header .far {
-  color: var(--divider-color);
+  #conquista-aluno .header .far {
+    color: var(--divider-color);
+  }
 }
 
 /*FIM DO CSS PARA COMPONENTE CONQUISTA ALUNO*/
@@ -1405,81 +1488,164 @@ section#aulas-recentes img {
 
 
 /*INICIO DO CSS COMPONENTE CONQUISTA PROFESSOR*/
-#conquista-professor {
-  background-color: var(--text-primary-color);
-  border: 1vw solid var(--text-primary-color);
-  border-radius: 1vw;
-  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-top: 1vh;
+@media screen and (min-width: 600px) {
+  #conquista-professor {
+    background-color: var(--text-primary-color);
+    border: 1vw solid var(--text-primary-color);
+    border-radius: 1vw;
+    -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 1vh;
+  }
+
+  #conquista-professor h1 {
+    text-transform: uppercase;
+  }
+
+  #conquista-professor .conquistas-div-interna {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid var(--divider-color);
+    border-radius: 10px;
+    margin: 2vh 0;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  #conquista-professor .conquistas-div-interna ul li .icone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.8em;
+    padding: 1em 0.5em 0.5em 0;
+    color: var(--accent-color);
+    -ms-flex-item-align: baseline;
+    align-self: baseline;
+  }
+
+  #conquista-professor .conquistas-div-interna ul li .numero {
+    font-size: 1.2em;
+    padding: 0 0.2em 0 0;
+    font-weight: 500;
+  }
+
+
+  #conquista-professor .conquistas-div-interna ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+  }
+
+  #conquista-professor .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  #conquista-professor .header .fas {
+    color: var(--accent-color);
+  }
+
+  #conquista-professor .header .far {
+    color: var(--divider-color);
+  }
 }
 
-#conquista-professor h1 {
-  text-transform: uppercase;
-}
+/* conquista professor - media query para celulares */
+@media screen and (max-width: 599px) {
+  #conquista-professor {
+    background-color: var(--text-primary-color);
+    border: 1vw solid var(--text-primary-color);
+    border-radius: 1vw;
+    -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 1vh;
+  }
 
-#conquista-professor .conquistas-div-interna {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: 1px solid var(--divider-color);
-  border-radius: 10px;
-  margin: 2vh 0;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-}
+  #conquista-professor h1 {
+    text-transform: uppercase;
+  }
 
-#conquista-professor .conquistas-div-interna ul li .icone {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 1.8em;
-  padding: 1em 0.5em 0.5em 0;
-  color: var(--accent-color);
-  -ms-flex-item-align: baseline;
-  align-self: baseline;
-}
+  #conquista-professor .conquistas-div-interna {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* border: 1px solid var(--divider-color); */
+    /* border-radius: 10px; */
+    /* margin: 2vh 0; */
+    /* -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; */
+  }
 
-#conquista-professor .conquistas-div-interna ul li .numero {
-  font-size: 1.2em;
-  padding: 0 0.2em 0 0;
-  font-weight: 500;
-}
+  #conquista-professor .conquistas-div-interna ul li .icone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.8em;
+    padding: 1em 0.5em 0.5em 0;
+    color: var(--accent-color);
+    -ms-flex-item-align: baseline;
+    align-self: baseline;
+    /* list-style: none; */
+  }
 
+  #conquista-professor .conquistas-div-interna ul li .numero {
+    font-size: 1.2em;
+    padding: 0 0.2em 0 0;
+    font-weight: 500;
+    /* list-style: none; */
+  }
 
-#conquista-professor .conquistas-div-interna ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-}
+  #conquista-professor .conquistas-div-interna ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+  }
 
-#conquista-professor .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
+  #conquista-professor .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
 
-#conquista-professor .header .fas {
-  color: var(--accent-color);
-}
+  #conquista-professor .header .fas {
+    color: var(--accent-color);
+  }
 
-#conquista-professor .header .far {
-  color: var(--divider-color);
+  #conquista-professor .header .far {
+    color: var(--divider-color);
+  }
 }
 
 /*FIM DO CSS PARA COMPONENTE CONQUISTA ALUNO*/
@@ -2358,11 +2524,13 @@ section#mensagens img {
   -o-object-fit: cover;
   object-fit: cover;
 }
+
 /* footer principal - desktop */
 @media screen and (min-width: 1200px) {
   #mobile-footer {
     display: none;
   }
+
   #main-footer {
     background-color: var(--dark-primary-color);
     height: 6vh;
@@ -2391,11 +2559,13 @@ section#mensagens img {
     color: var(--text-primary-color);
   }
 }
+
 /* footer tablets */
 @media screen and (max-width: 1199px) {
   #mobile-footer {
     display: none;
   }
+
   #main-footer {
     background-color: var(--dark-primary-color);
     height: 4vh;
@@ -2424,6 +2594,7 @@ section#mensagens img {
     color: var(--text-primary-color);
   }
 }
+
 /* footer celulares */
 @media screen and (max-width: 599px) {
   #main-footer {
