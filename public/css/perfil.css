@@ -40,10 +40,6 @@ body {
   .coluna-direita {
     display: none;
   }
-  /* .row {
-    margin:0;
-    padding:0;
-  } */
   .container {
     margin-top: 1.5vh;
   }
@@ -52,5 +48,6 @@ body {
     height: auto;
     width: 100%;
     padding: 0;
+    margin-bottom: 8vh;
   }
 }

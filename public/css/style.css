@@ -373,7 +373,7 @@ li {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    margin-bottom: 3vh;
+    margin-bottom: 1vh;
   }
 
   .header-nav .form-control {
@@ -464,7 +464,7 @@ li {
     position: fixed;
     top: 0;
     left: 0;
-    margin-bottom: 5vh;
+    /* margin-bottom: 10vh; */
   }
 
   .header-nav {
@@ -570,52 +570,61 @@ li {
     display: inline-block;
   }
 
-  .header-nav {
+  #header-celular .header-nav {
     background-color: var(--light-background-color);
-    height: 4vh;
-    display: -webkit-box;
+    height: 5vh;
+    width: 100%;
+    /* display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
+    display: flex; */
+    /* -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
-    justify-items: center;
+    align-items: center; */
+    /* justify-items: center;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin: 0;
+    -ms-flex-pack: center; */
+    /* justify-content: center; */
+    /* margin: 0; */
     position: fixed;
     top: 0;
     left: 0;
   }
 
-  .header-nav-ul {
+  #header-celular .header-nav-ul ul {
     list-style: none;
     margin: 0;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: flex !important;
+    justify-content: center !important;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
-  .header-nav-ul li {
-    display: -webkit-box;
+  #header-celular .header-nav-ul li {
+    /* display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: flex; */
+    flex-grow: 1;
     font-size: 1.2em;
-    margin: 0 10vw;
+    margin-right: 20vw;
+    margin-left: 10vw;
+    /* margin-top: 1vh; */
     color: var(--default-primary-color);
   }
 
-  .header-nav-ul li:hover {
+  #header-celular .header-nav-ul li:hover {
     cursor: pointer;
   }
 
-  .header-nav a {
+  #header-celular .header-nav a {
     color: var(--default-primary-color);
     text-decoration: none;
   }
 
-  .logo-letra {
+  #header-celular .logo-letra {
     width: 70px;
     padding: 0;
   }
@@ -2610,6 +2619,13 @@ section#mensagens img {
     color: white;
     height: 40px;
     display: flex;
+  }
+  ul {
+    
+  }
+  li {
+    list-style: none;
+    display: inline-block;
   }
 }
 
