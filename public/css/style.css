@@ -2618,14 +2618,24 @@ section#mensagens img {
     background: black;
     color: white;
     height: 40px;
-    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex !important;
+    justify-content: center !important;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
-  ul {
-    
+  #mobile-footer ul {
+    /* display: flex; */
+    margin: 0 18vw 0 5vw;
   }
-  li {
+  #mobile-footer li {
     list-style: none;
     display: inline-block;
+  }
+  #mobile-footer .logo-letra {
+    width: 30vw;
   }
 }
 
