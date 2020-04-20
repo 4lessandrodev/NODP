@@ -2615,7 +2615,7 @@ section#mensagens img {
     position: fixed;
     bottom: 0;
     right: 0;
-    background: black;
+    background-color: var(--light-background-color);
     color: white;
     height: 40px;
     display: -webkit-box;
@@ -2633,6 +2633,14 @@ section#mensagens img {
   #mobile-footer li {
     list-style: none;
     display: inline-block;
+    /* flex-grow: 1; */
+    font-size: 1.2em;
+    /* margin-right: 20vw; */
+    /* margin-left: 10vw; */
+    /* margin-top: 1vh; */
+  }
+  #mobile-footer i {
+    color: var(--default-primary-color);
   }
   #mobile-footer .logo-letra {
     width: 30vw;
