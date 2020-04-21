@@ -16,11 +16,11 @@
   <div class="container">
     
     <div class="row">
-      <div class="col-3 coluna-esquerda">
+      <div class="coluna-esquerda">
         <%- include('./includes/perfil-usuario-home')-%>
         <%- include('./includes/apoiadores')-%> 
       </div>
-      <div class="col-6 coluna-central">
+      <div class="coluna-central">
         <%- include('./includes/btn-nova-postagem')-%>
         <div class="div-scroll-post">
           <%- include('./includes/post-feed')-%>
@@ -29,7 +29,7 @@
           <%- include('./includes/post-feed')-%>
         </div>
       </div>
-      <div class="col-3 coluna-direita">
+      <div class="coluna-direita">
         <!--Coluna de mensagens, aulas recentes-->
         <%- include('./includes/mensagens')-%>
         <%- include('./includes/aulas-recentes')-%>
@@ -42,4 +42,5 @@
 <!--Importando o arquivo scripts-->
 <%- include('./includes/scripts')-%>
 <!-- Importando o arquivo footer-->
+<%- include('./includes/footer-principal') %>
 </html>

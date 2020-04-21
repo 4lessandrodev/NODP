@@ -848,6 +848,7 @@ section#aulas-recentes img {
 
 
 /*AQUI COMEÇA O CSS DO COMPONENTE NOVAS PUBLICACOES*/
+@media screen and (min-width: 1200px) {
 #novaPostagem {
   width: '100%';
   height: 26vh;
@@ -1029,7 +1030,191 @@ section#aulas-recentes img {
 .seta:hover {
   cursor: pointer;
 }
+}
+@media screen and (max-width: 1199px) {
+  #novaPostagem {
+    width: '100%';
+    height: 14vh;
+    min-height: 100px;
+    background-color: var(--text-primary-color);
+    border-radius: 10px;
+    -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    padding: 10px;
+  }
+  
+  #novaPostagem .rowBotoes {
+    width: '100%';
+    height: 7vh;
+    min-height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  
+  #novaPostagem .posicao {
+    width: 12vw;
+    height: 7vh;
+    min-height: 50px;
+    background-color: var(--text-primary-color);
+    background-color: var(--text-primary-color);
+    border: 1px solid var(--divider-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  #lugar {
+    color: var(--dark-primary-color);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  #novaPostagem .botao {
+    width: 12vw;
+    height: 7vh;
+    min-height: 50px;
+    background-color: var(--text-primary-color);
+    border: 1px solid var(--divider-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 17px;
+    color: var(--dark-primary-color);
+  }
+  
+  #novaPostagem .botao:hover,
+  #novaPostagem .posicao:hover h1,
+  #novaPostagem .posicao:hover {
+    color: var(--text-primary-color);
+    background-color: var(--default-primary-color);
+    cursor: pointer;
+  }
+  
+  #novaPostagem .botao p {
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+  
+  #novaPostagem .apoiados {
+    width: '100%';
+    height: 7vh;
+    min-height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  
+  #novaPostagem .text-apoiados {
+    width: 10vw;
+    height: 7vh;
+    min-height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    color: var(--default-primary-color);
+    padding: 1vh;
+  }
+  
+  #novaPostagem .listagem-apoiados {
+    width: 100%;
+    height: 7vh;
+    min-height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 1vh;
 
+  }
+  
+  #novaPostagem .apoiado {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  
+  #novaPostagem .apoiado img {
+    height: 50px;
+    width: 50px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    margin: 0px 5px 10px;
+  }
+  
+  #novaPostagem .botao {
+    font-size: 2vw;
+    text-align: center;
+    padding-bottom: 1vh;
+  }
+  
+  #novaPostagem .botao p {
+    padding-top: 1vh;
+  }
+  
+  #novaPostagem .seta {
+    width: 2.8vw;
+    height: 5vh;
+    margin-left: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  #seta {
+    color: var(--default-primary-color)
+  }
+  
+  .seta:hover {
+    cursor: pointer;
+  }
+  }
 /*AQUI FINALIZA O CSS DO COMPONENTE NOVAS PUBLICACOES*/
 
 
