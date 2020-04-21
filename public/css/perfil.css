@@ -50,4 +50,16 @@ body {
     padding: 0;
     margin-bottom: 8vh;
   }
+  #ranking-aluno .btn-ranking {
+    text-align: end;
+    position: relative;
+    bottom: 1vh;
+    overflow: hidden;
+  }
+  #ranking-professor .btn-ranking {
+    text-align: end;
+    position: relative;
+    bottom: 1vh;
+    overflow: hidden;
+  }
 }

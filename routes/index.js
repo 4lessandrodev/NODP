@@ -23,9 +23,9 @@ router.get('/home', function (req, res, next) {
   res.render('home', { title: 'Home' });
 });
 
-/* GET home page. */
+/* GET perfil usuario id page. */
 router.get('/perfil-usuario/:id?', function (req, res, next) {
-  res.render('perfil-usuario', { title: 'Usuario' });
+  res.render('perfil-usuario', { title: 'Usuário' });
 });
 
 /* GET perfil page. */
@@ -39,12 +39,12 @@ router.get('/pesquisas', function (req, res, next) {
 });
 
 
-/* GET pesquisas page. */
+/* GET ranking alunos page. */
 router.get('/ranking-alunos', function (req, res, next) {
   res.render('ranking-alunos', { title: 'Ranking' });
 });
 
-/* GET pesquisas page. */
+/* GET ranking professores page. */
 router.get('/ranking-professores', function (req, res, next) {
   res.render('ranking-professores', { title: 'Ranking' });
 });
@@ -55,10 +55,17 @@ router.get('/apoio', function (req, res, next) {
 });
 
 router.get('/apoiadores', function (req, res, next) {
-  res.render('apoiadores', { title: 'Apoio' });
+  res.render('apoiadores', { title: 'Apoiadores' });
 });
 
+/* GET notificacoes page. */
 router.get('/notificacoes', function (req, res, next) {
   res.render('notificacoes', { title: 'Últimas notificações' });
 });
+
+/* GET mensagens page. */
+router.get('/mensagens', function (req, res, next) {
+  res.render('mensagens', { title: 'Últimas Mensagens' });
+});
+
 module.exports = router;

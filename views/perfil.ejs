@@ -11,28 +11,30 @@
 <%- include('./includes/header')-%>
 
 <!--Códigos da página-->
-<body>
-    <div class="container">
-      
-      <div class="row">
-        
-        <div class="coluna-central">
-          <%- include('./includes/detalhes-perfil-usuario')-%>
-          <%- include('./includes/conquistas-do-usuario')-%> 
-          <%- include('./includes/conquista-aluno')-%> 
-          <%- include('./includes/conquista-professor')-%> 
-        </div>
-        <div class="coluna-direita">
-          <!--Coluna de mensagens, aulas recentes-->
-          <%- include('./includes/apoiadores')-%> 
-          <%- include('./includes/mensagens')-%>
-        </div>
 
+<body>
+  <div class="container">
+
+    <div class="row">
+
+      <div class="coluna-central">
+        <%- include('./includes/detalhes-perfil-usuario')-%>
+        <%- include('./includes/conquistas-do-usuario')-%>
+        <%- include('./includes/conquista-aluno')-%>
+        <%- include('./includes/conquista-professor')-%>
       </div>
-    
+
+      <div class="coluna-direita">
+        <!--Coluna de mensagens, aulas recentes-->
+        <%- include('./includes/apoiadores')-%>
+        <%- include('./includes/mensagens-lateral')-%>
+      </div>
+
     </div>
-      
-    <!--Importando o arquivo scripts-->
+
+  </div>
+
+  <!--Importando o arquivo scripts-->
   <%- include('./includes/scripts')-%>
   <!-- Importando o arquivo footer-->
   <%- include('./includes/footer-principal')-%>
