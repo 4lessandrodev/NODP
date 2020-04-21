@@ -20,6 +20,55 @@ section#apoia{
   margin-top: 1vh;
 }
 
+
+@media screen and (min-width: 1200px) {
+  
+  @media screen and (min-width: 1200px) {
+  
+    .coluna-central {
+      /* col-9 */
+      height: auto;
+      width: 50%;
+      padding: 0 1vh;
+    }
+  
+    .coluna-direita {
+      /* col-3 */
+      height: auto;
+      width: 25%;
+      padding: 0vh;
+    }
+
+    .coluna-esquerda {
+      /* col-3 */
+      height: auto;
+      width: 25%;
+      padding: 0vh;
+  }
+
+
+
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    margin-top: 5vh;
+  }
+  .div-scroll-post {
+    /* col-9 */
+    height: auto;
+    width: 80%;
+    padding: 0 1vh;
+  }
+  .coluna-esquerda {
+    /* col-3 */
+    height: auto;
+    width: 20%;
+    padding: 0 1vh;
+    margin-top: -5vh;
+  }
+}
+
 .apoia-header {
   text-transform: uppercase;
   /* padding-bottom:2.3vh; */
