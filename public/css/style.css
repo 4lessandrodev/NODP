@@ -383,7 +383,7 @@ section#apoiadores img {
   -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   margin-bottom: 1vh;
-
+  
 }
 
 #apoiadores .row {
@@ -778,7 +778,7 @@ section#mensagens {
 #mensagens .mensagem-titulo {
   display: flex;
   justify-content: space-between;
-
+  
 }
 
 #mensagens .row {
@@ -1305,71 +1305,51 @@ section#mensagens {
   #header-desktop {
     display: none;
   }
-
+  
   #header-celular {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
   }
-
+  
   #header-celular .header-nav {
     background-color: var(--light-background-color);
+    color: var(--default-primary-color);
     height: 5vh;
     width: 100%;
-    /* display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; */
-    /* -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; */
-    /* justify-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center; */
-    /* justify-content: center; */
-    /* margin: 0; */
+    display: flex;
     position: fixed;
+    flex-direction: row;
     top: 0;
     left: 0;
-  }
-
-  #header-celular .header-nav-ul ul {
-    list-style: none;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
     margin: 0;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex !important;
-    justify-content: center !important;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    padding: 0;
   }
 
+  
   #header-celular .header-nav-ul li {
-    /* display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; */
-    flex-grow: 1;
     font-size: 1.2em;
-    margin-right: 20vw;
-    margin-left: 10vw;
-    /* margin-top: 1vh; */
-    color: var(--default-primary-color);
+    list-style: none;
   }
-
+  
   #header-celular .header-nav-ul li:hover {
     cursor: pointer;
   }
-
+  
   #header-celular .header-nav a {
     color: var(--default-primary-color);
     text-decoration: none;
   }
-
+  
   #header-celular .logo-letra {
     width: 70px;
-    padding: 0;
   }
-
-
+  
+  
   /*Conquista de usuario*/
   #conquistas-usuario {
     background-color: var(--text-primary-color);
@@ -1382,28 +1362,25 @@ section#mensagens {
     align-items: center;
     /* padding: 0 0vh; */
   }
-
+  
   #conquistas-usuario h1 {
     text-transform: uppercase;
     /* margin-left: 5vw; */
   }
-
+  
   #conquistas-usuario ul {
     list-style: none;
+    display: flex;
   }
-
+  
   #conquistas-usuario .conquistas-div-interna {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    /* border: 1px solid var(--divider-color); */
-    /* border-radius: 10px; */
-    /* margin: 2vh -5vw; */
-    /* padding: 0; */
     -ms-flex-pack: distribute;
     justify-content: space-around;
   }
-
+  
   #conquistas-usuario .conquistas-div-interna-ul-1 ul li {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1411,10 +1388,8 @@ section#mensagens {
     -webkit-box-align: baseline;
     -ms-flex-align: baseline;
     align-items: baseline;
-    /* padding: 0.5em 0.5em 0.5em 0; */
-    /* margin: 0; */
   }
-
+  
   #conquistas-usuario .conquistas-div-interna ul li .icone {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1425,16 +1400,16 @@ section#mensagens {
     -ms-flex-item-align: baseline;
     align-self: baseline;
   }
-
+  
   #conquistas-usuario .conquistas-div-interna ul li .numero {
     font-size: 1.2em;
     padding: 0 0.2em 0 0;
     font-weight: 500;
   }
-
-
+  
+  
   /*Fim*/
-
+  
   /* Conquista aluno - media query para celulares */
   #conquista-aluno {
     background-color: var(--text-primary-color);
@@ -1447,11 +1422,11 @@ section#mensagens {
     align-items: center;
     margin-top: 1vh;
   }
-
+  
   #conquista-aluno h1 {
     text-transform: uppercase;
   }
-
+  
   #conquista-aluno .conquistas-div-interna {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1463,7 +1438,7 @@ section#mensagens {
     -ms-flex-pack: start;
     justify-content: flex-start;
   }
-
+  
   #conquista-aluno .conquistas-div-interna ul li .icone {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1474,13 +1449,13 @@ section#mensagens {
     -ms-flex-item-align: baseline;
     align-self: baseline;
   }
-
+  
   #conquista-aluno .conquistas-div-interna ul li .numero {
     font-size: 1.2em;
     padding: 0 0.2em 0 0;
     font-weight: 500;
   }
-
+  
   #conquista-aluno .conquistas-div-interna ul li {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1490,7 +1465,7 @@ section#mensagens {
     -ms-flex-align: baseline;
     align-items: baseline;
   }
-
+  
   #conquista-aluno .header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1503,18 +1478,18 @@ section#mensagens {
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
-
+  
   #conquista-aluno .header .fas {
     color: var(--accent-color);
   }
-
+  
   #conquista-aluno .header .far {
     color: var(--divider-color);
   }
-
+  
   /*FIM DO CSS PARA COMPONENTE CONQUISTA ALUNO*/
-
-
+  
+  
   /* conquista professor - media query para celulares */
   #conquista-professor {
     background-color: var(--text-primary-color);
@@ -1527,23 +1502,17 @@ section#mensagens {
     align-items: center;
     margin-top: 1vh;
   }
-
+  
   #conquista-professor h1 {
     text-transform: uppercase;
   }
-
+  
   #conquista-professor .conquistas-div-interna {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    /* border: 1px solid var(--divider-color); */
-    /* border-radius: 10px; */
-    /* margin: 2vh 0; */
-    /* -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start; */
   }
-
+  
   #conquista-professor .conquistas-div-interna ul li .icone {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1555,14 +1524,14 @@ section#mensagens {
     align-self: baseline;
     /* list-style: none; */
   }
-
+  
   #conquista-professor .conquistas-div-interna ul li .numero {
     font-size: 1.2em;
     padding: 0 0.2em 0 0;
     font-weight: 500;
     /* list-style: none; */
   }
-
+  
   #conquista-professor .conquistas-div-interna ul li {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1572,7 +1541,7 @@ section#mensagens {
     -ms-flex-align: baseline;
     align-items: baseline;
   }
-
+  
   #conquista-professor .header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1585,18 +1554,18 @@ section#mensagens {
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
-
+  
   #conquista-professor .header .fas {
     color: var(--accent-color);
   }
-
+  
   #conquista-professor .header .far {
     color: var(--divider-color);
   }
-
+  
   /*FIM DO CSS PARA COMPONENTE CONQUISTA ALUNO*/
-
-
+  
+  
   /* mediaquery do celular */
   #perfil-detalhe {
     display: -webkit-box;
@@ -1619,7 +1588,7 @@ section#mensagens {
     margin-bottom: 1vh;
     min-width: 100%;
   }
-
+  
   #perfil-detalhe .avatar {
     width: 140px;
     border-radius: 100%;
@@ -1634,7 +1603,7 @@ section#mensagens {
     position: relative;
     top: 30px;
   }
-
+  
   #perfil-detalhe .capa-perfil-detalhe {
     background-image: url('/img/capa.jpg');
     height: 190px;
@@ -1650,29 +1619,29 @@ section#mensagens {
     -ms-flex-pack: start;
     justify-content: start;
   }
-
+  
   #perfil-detalhe .capa-perfil-detalhe:hover,
   #perfil-detalhe .info:hover,
   #perfil-detalhe .avatar:hover {
     cursor: pointer;
   }
-
+  
   #perfil-detalhe .valor {
     padding: 0 0.7vw;
     font-size: medium;
     font-weight: 500;
   }
-
+  
   #perfil-detalhe .icone {
     font-size: 1.2em;
     color: var(--accent-color);
   }
-
+  
   #perfil-detalhe .info {
     text-align: left;
     margin: 4vh 1vw;
   }
-
+  
   #perfil-detalhe .info .faculdade,
   #perfil-detalhe .info .cidade,
   #perfil-detalhe .info .frase,
@@ -1682,7 +1651,7 @@ section#mensagens {
   #perfil-detalhe .info .nome {
     margin-bottom: 0.8vh;
   }
-
+  
   #perfil-detalhe .editar {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1692,11 +1661,11 @@ section#mensagens {
     color: var(--dark-primary-color);
     margin-top: 0.5em;
   }
-
+  
   #perfil-detalhe .editar:hover {
     cursor: pointer;
   }
-
+  
   #perfil-detalhe .interesses-ensino ul,
   #perfil-detalhe .interesses-aprendizado ul {
     list-style: none;
@@ -1716,28 +1685,28 @@ section#mensagens {
     margin: 0;
     padding: 0;
   }
-
+  
   #perfil-detalhe .interesses-ensino ul {
     margin-bottom: 2vh;
   }
-
+  
   #perfil-detalhe .interesses-aprendizado {
     margin-top: 1em;
   }
-
+  
   #perfil-detalhe li {
     padding: 0 1vh 2vh 0;
     margin: 0;
     color: var(--dark-primary-color);
   }
-
+  
   #perfil-detalhe .interesses-div {
     display: inline-block;
     border-top: 1px solid var(--divider-color);
     min-width: 40vw;
     margin-top: 4vh;
   }
-
+  
   #perfil-detalhe .icone {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1745,7 +1714,7 @@ section#mensagens {
     justify-self: flex-end;
     color: white;
   }
-
+  
   #perfil-detalhe .trofeu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1760,15 +1729,15 @@ section#mensagens {
     -ms-flex-item-align: end;
     align-self: flex-end;
   }
-
+  
   /*FIM DO CSS DO COMPONENTE PERFIL*/
-
-
+  
+  
   /* footer celulares */
   #main-footer {
     display: none;
   }
-
+  
   #mobile-footer {
     width: 100%;
     position: fixed;
@@ -1785,12 +1754,12 @@ section#mensagens {
     -ms-flex-align: center;
     align-items: center;
   }
-
+  
   #mobile-footer ul {
     /* display: flex; */
     margin: 0 18vw 0 5vw;
   }
-
+  
   #mobile-footer li {
     list-style: none;
     display: inline-block;
@@ -1800,15 +1769,15 @@ section#mensagens {
     /* margin-left: 10vw; */
     /* margin-top: 1vh; */
   }
-
+  
   #mobile-footer i {
     color: var(--default-primary-color);
   }
-
+  
   #mobile-footer .logo-letra {
     width: 30vw;
   }
-
+  
   /* footer lateral celulares - display none*/
   #footer-lateral {
     display: none;
@@ -1834,15 +1803,15 @@ section#mensagens {
     align-items: center;
     margin-top: 1vh;
   }
-
+  
   #conquistas-usuario h1 {
     text-transform: uppercase;
   }
-
+  
   #conquistas-usuario ul {
     list-style: none;
   }
-
+  
   #conquistas-usuario .conquistas-div-interna {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1853,7 +1822,7 @@ section#mensagens {
     -ms-flex-pack: distribute;
     justify-content: space-around;
   }
-
+  
   #conquistas-usuario .conquistas-div-interna ul li {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1862,7 +1831,7 @@ section#mensagens {
     -ms-flex-align: baseline;
     align-items: baseline;
   }
-
+  
   #conquistas-usuario .conquistas-div-interna ul li .icone {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1873,13 +1842,13 @@ section#mensagens {
     -ms-flex-item-align: baseline;
     align-self: baseline;
   }
-
+  
   #conquistas-usuario .conquistas-div-interna ul li .numero {
     font-size: 1.2em;
     padding: 0 0.2em 0 0;
     font-weight: 500;
   }
-
+  
   /*INICIO DO CSS COMPONENTE CONQUISTA ALUNO*/
   #conquista-aluno {
     background-color: var(--text-primary-color);
@@ -1892,11 +1861,11 @@ section#mensagens {
     align-items: center;
     margin-top: 1vh;
   }
-
+  
   #conquista-aluno h1 {
     text-transform: uppercase;
   }
-
+  
   #conquista-aluno .conquistas-div-interna {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1908,7 +1877,7 @@ section#mensagens {
     -ms-flex-pack: start;
     justify-content: flex-start;
   }
-
+  
   #conquista-aluno .conquistas-div-interna ul li .icone {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1919,14 +1888,14 @@ section#mensagens {
     -ms-flex-item-align: baseline;
     align-self: baseline;
   }
-
+  
   #conquista-aluno .conquistas-div-interna ul li .numero {
     font-size: 1.2em;
     padding: 0 0.2em 0 0;
     font-weight: 500;
   }
-
-
+  
+  
   #conquista-aluno .conquistas-div-interna ul li {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1936,7 +1905,7 @@ section#mensagens {
     -ms-flex-align: baseline;
     align-items: baseline;
   }
-
+  
   #conquista-aluno .header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1949,18 +1918,18 @@ section#mensagens {
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
-
+  
   #conquista-aluno .header .fas {
     color: var(--accent-color);
   }
-
+  
   #conquista-aluno .header .far {
     color: var(--divider-color);
   }
-
+  
   /*Fim*/
-
-
+  
+  
   #conquista-professor {
     background-color: var(--text-primary-color);
     border: 1vw solid var(--text-primary-color);
@@ -1972,11 +1941,11 @@ section#mensagens {
     align-items: center;
     margin-top: 1vh;
   }
-
+  
   #conquista-professor h1 {
     text-transform: uppercase;
   }
-
+  
   #conquista-professor .conquistas-div-interna {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1988,7 +1957,7 @@ section#mensagens {
     -ms-flex-pack: start;
     justify-content: flex-start;
   }
-
+  
   #conquista-professor .conquistas-div-interna ul li .icone {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1999,14 +1968,14 @@ section#mensagens {
     -ms-flex-item-align: baseline;
     align-self: baseline;
   }
-
+  
   #conquista-professor .conquistas-div-interna ul li .numero {
     font-size: 1.2em;
     padding: 0 0.2em 0 0;
     font-weight: 500;
   }
-
-
+  
+  
   #conquista-professor .conquistas-div-interna ul li {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2016,7 +1985,7 @@ section#mensagens {
     -ms-flex-align: baseline;
     align-items: baseline;
   }
-
+  
   #conquista-professor .header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2029,17 +1998,17 @@ section#mensagens {
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
-
+  
   #conquista-professor .header .fas {
     color: var(--accent-color);
   }
-
+  
   #conquista-professor .header .far {
     color: var(--divider-color);
   }
-
+  
   /*Fim*/
-
+  
   /*INICIA DO CSS DO COMPONENTE PERFIL*/
   /* mediaquery site e tablet */
   #perfil-detalhe {
@@ -2063,7 +2032,7 @@ section#mensagens {
     margin-bottom: 1vh;
     min-width: 100%;
   }
-
+  
   #perfil-detalhe .avatar {
     width: 140px;
     border-radius: 100%;
@@ -2078,7 +2047,7 @@ section#mensagens {
     position: relative;
     top: 30px;
   }
-
+  
   #perfil-detalhe .capa-perfil-detalhe {
     background-image: url('/img/capa.jpg');
     height: 190px;
@@ -2094,29 +2063,29 @@ section#mensagens {
     -ms-flex-pack: start;
     justify-content: start;
   }
-
+  
   #perfil-detalhe .capa-perfil-detalhe:hover,
   #perfil-detalhe .info:hover,
   #perfil-detalhe .avatar:hover {
     cursor: pointer;
   }
-
+  
   #perfil-detalhe .valor {
     padding: 0 0.7vw;
     font-size: medium;
     font-weight: 500;
   }
-
+  
   #perfil-detalhe .icone {
     font-size: 1.2em;
     color: var(--accent-color);
   }
-
+  
   #perfil-detalhe .info {
     text-align: left;
     margin: 4vh 1vw;
   }
-
+  
   #perfil-detalhe .info .faculdade,
   #perfil-detalhe .info .cidade,
   #perfil-detalhe .info .frase,
@@ -2126,7 +2095,7 @@ section#mensagens {
   #perfil-detalhe .info .nome {
     margin-bottom: 0.8vh;
   }
-
+  
   #perfil-detalhe .editar {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2136,11 +2105,11 @@ section#mensagens {
     color: var(--dark-primary-color);
     margin-top: 0.5em;
   }
-
+  
   #perfil-detalhe .editar:hover {
     cursor: pointer;
   }
-
+  
   #perfil-detalhe .interesses-ensino ul,
   #perfil-detalhe .interesses-aprendizado ul {
     list-style: none;
@@ -2154,28 +2123,28 @@ section#mensagens {
     margin: 0;
     padding: 0;
   }
-
+  
   #perfil-detalhe .interesses-ensino ul {
     margin-bottom: 2vh;
   }
-
+  
   #perfil-detalhe .interesses-aprendizado {
     margin-top: 1em;
   }
-
+  
   #perfil-detalhe li {
     padding: 0 1vh 2vh 0;
     margin: 0;
     color: var(--dark-primary-color);
   }
-
+  
   #perfil-detalhe .interesses-div {
     display: inline-block;
     border-top: 1px solid var(--divider-color);
     min-width: 40vw;
     margin-top: 4vh;
   }
-
+  
   #perfil-detalhe .icone {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2183,7 +2152,7 @@ section#mensagens {
     justify-self: flex-end;
     color: white;
   }
-
+  
   #perfil-detalhe .trofeu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2198,16 +2167,16 @@ section#mensagens {
     -ms-flex-item-align: end;
     align-self: flex-end;
   }
-
+  
   /* footer lateral tablets e desktop*/
-
+  
   #footer-lateral address {
     margin-top: 3vh;
     text-align: center;
     text-transform: uppercase;
     color: var(--secondary-text-color);
   }
-
+  
 }
 /*AQUI FINALIZA O CSS PARA MOBILE MAIOR QUE 600 PX*/
 /*-----------------------------------------------------------------------------------*/
@@ -2221,7 +2190,7 @@ section#mensagens {
   #header-celular {
     display: none;
   }
-
+  
   #header-desktop {
     display: inline-block;
     position: fixed;
@@ -2229,7 +2198,7 @@ section#mensagens {
     left: 0;
     /* margin-bottom: 10vh; */
   }
-
+  
   .header-nav {
     background-color: var(--dark-primary-color);
     height: 4vh;
@@ -2245,22 +2214,22 @@ section#mensagens {
     justify-content: center;
     margin-bottom: 1vh;
   }
-
+  
   .header-nav .form-control {
     height: calc(0.7em + .75rem + 2px);
   }
-
+  
   .header-nav .input-group-text {
     line-height: 0.8;
     background-color: transparent;
     border: none;
     color: var(--text-primary-color);
   }
-
+  
   .header-nav .form-inline {
     width: 35vw;
   }
-
+  
   .header-nav #caixa-pesquisar {
     display: flex;
     justify-content: center;
@@ -2268,11 +2237,11 @@ section#mensagens {
     width: 70%;
     height: 50%;
   }
-
+  
   .header-nav input[type='search'] {
     width: 25vw;
   }
-
+  
   .header-nav-ul {
     list-style: none;
     margin: 0;
@@ -2287,11 +2256,11 @@ section#mensagens {
     align-items: center;
     justify-items: center;
   }
-
+  
   .focus {
     outline: none;
   }
-
+  
   .header-nav-ul li {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2300,20 +2269,20 @@ section#mensagens {
     margin: 0 1.2vw;
     color: var(--text-primary-color);
   }
-
+  
   .header-nav-ul li:hover {
     cursor: pointer;
   }
-
+  
   #pesquisar:hover {
     cursor: pointer;
   }
-
+  
   .header-nav a {
     color: var(--text-primary-color);
     text-decoration: none;
   }
-
+  
   .header-nav #notificacao {
     background-color: red;
     color: var(--text-primary-color);
@@ -2321,7 +2290,7 @@ section#mensagens {
     padding: 2px;
     font-size: 12px;
   }
-
+  
   /*Nova postagem */
   #novaPostagem {
     width: '100%';
@@ -2333,7 +2302,7 @@ section#mensagens {
     box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
     padding: 10px;
   }
-
+  
   #novaPostagem .rowBotoes {
     width: '100%';
     height: 7vh;
@@ -2346,7 +2315,7 @@ section#mensagens {
     -ms-flex-direction: row;
     flex-direction: row;
   }
-
+  
   #novaPostagem .posicao {
     width: 12vw;
     height: 7vh;
@@ -2364,13 +2333,13 @@ section#mensagens {
     -ms-flex-align: center;
     align-items: center;
   }
-
+  
   #lugar {
     color: var(--dark-primary-color);
     text-align: center;
     text-transform: uppercase;
   }
-
+  
   #novaPostagem .botao {
     width: 12vw;
     height: 7vh;
@@ -2393,7 +2362,7 @@ section#mensagens {
     padding-top: 17px;
     color: var(--dark-primary-color);
   }
-
+  
   #novaPostagem .botao:hover,
   #novaPostagem .posicao:hover h1,
   #novaPostagem .posicao:hover {
@@ -2401,12 +2370,12 @@ section#mensagens {
     background-color: var(--default-primary-color);
     cursor: pointer;
   }
-
+  
   #novaPostagem .botao p {
     font-size: 10px;
     text-transform: uppercase;
   }
-
+  
   #novaPostagem .apoiados {
     width: '100%';
     height: 7vh;
@@ -2419,7 +2388,7 @@ section#mensagens {
     -ms-flex-direction: row;
     flex-direction: row;
   }
-
+  
   #novaPostagem .text-apoiados {
     width: 10vw;
     height: 7vh;
@@ -2436,7 +2405,7 @@ section#mensagens {
     color: var(--default-primary-color);
     padding: 1vh;
   }
-
+  
   #novaPostagem .listagem-apoiados {
     width: 100%;
     height: 7vh;
@@ -2452,9 +2421,9 @@ section#mensagens {
     -ms-flex-align: center;
     align-items: center;
     padding: 1vh;
-
+    
   }
-
+  
   #novaPostagem .apoiado {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2467,7 +2436,7 @@ section#mensagens {
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
-
+  
   #novaPostagem .apoiado img {
     height: 50px;
     width: 50px;
@@ -2475,17 +2444,17 @@ section#mensagens {
     object-fit: contain;
     margin: 0px 5px 10px;
   }
-
+  
   #novaPostagem .botao {
     font-size: 2vw;
     text-align: center;
     padding-bottom: 1vh;
   }
-
+  
   #novaPostagem .botao p {
     padding-top: 1vh;
   }
-
+  
   #novaPostagem .seta {
     width: 2.8vw;
     height: 5vh;
@@ -2497,23 +2466,23 @@ section#mensagens {
     -ms-flex-align: center;
     align-items: center;
   }
-
+  
   #seta {
     color: var(--default-primary-color)
   }
-
+  
   .seta:hover {
     cursor: pointer;
   }
-
+  
   /*AQUI FINALIZA O CSS DO COMPONENTE NOVAS PUBLICACOES*/
-
-
+  
+  
   /* footer tablets */
   #mobile-footer {
     display: none;
   }
-
+  
   #main-footer {
     background-color: var(--dark-primary-color);
     height: 4vh;
@@ -2529,20 +2498,20 @@ section#mensagens {
     justify-content: center;
     margin-top: 1vh;
   }
-
+  
   #main-footer address {
     padding: 0;
     vertical-align: bottom;
   }
-
+  
   #main-footer address p {
     text-transform: uppercase;
     padding: 0;
     margin: 0;
     color: var(--text-primary-color);
   }
-
-
+  
+  
 }
 /*AQUI FINALIZA O CSS PARA TABLET E NOTEPAD*/
 /*-----------------------------------------------------------------------------------*/
