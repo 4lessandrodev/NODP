@@ -3,20 +3,26 @@
 body {
   background-color: var(--light-background-color);
 }
-
+@media screen and (min-width: 1200px) {
 .coluna-esquerda {
+  /* col-3 */
   height: auto;
+  width: 23.8%;
   margin: 0;
   padding: 0;
 }
 
 .coluna-central {
+  /* col-6 */
   height: auto;
+  width: 50%;
   padding: 0 1vh;
 }
 
 .coluna-direita {
+  /* col-3 */
   height: auto;
+  width: 23.8%;
   padding: 0;
 }
 
@@ -28,6 +34,43 @@ body {
 
 ::-webkit-scrollbar {
   width: 0px;
+}
+}
+@media screen and (max-width: 1199px) {
+  .coluna-esquerda {
+    /* col-4 */
+    height: auto;
+    width: 32.2666666667%;
+    /* margin: 0; */
+    padding: 0 0vh;
+    margin-top: 5vh;
+  }
+  .coluna-central {
+    /* col-8 */
+    height: auto;
+    width: 66.1333333333%;
+    padding: 0 1vh;
+    margin-top: 5vh;
+  }
+  .coluna-direita {
+    display: none;
+  }
+}
+@media screen and (max-width: 599px) {
+  .coluna-esquerda {
+    display: none;
+  }
+  /* col-12 */
+  .coluna-central {
+    display: inline-block;
+    height: auto;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 8vh;
+  }
+  .coluna-direita {
+    display: none;
+  }
 }
 
 /* inicio componente notificacoes-central */

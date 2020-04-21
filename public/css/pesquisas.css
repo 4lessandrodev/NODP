@@ -3,43 +3,111 @@
 body {
   background-color: var(--light-background-color);
 }
-
+@media screen and (min-width: 1200px) {
 .coluna-esquerda {
+  /* col-3 */
+  height: auto;
+  width: 23.8%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  
   margin: 0;
   padding: 0;
 }
 
 .coluna-central {
+  /* col-6 */
   height: auto;
+  width: 50%;
+  /* padding: 0 1vh; */
   min-width: 460px;
   padding: 0 0.5vw;
 }
 
 .coluna-direita {
+  /* col-3 */
   height: auto;
-  margin: 0;
-  padding: 0;
+  width: 23.8%;
+  padding: 0vh;
 }
 
 .div-scroll-post {
   height: 142vh;
   overflow: scroll;
 }
+#filtroPesquisaMobile {
+  display: none;
+}
 
 ::-webkit-scrollbar {
   width: 0px;
+}
+}
+@media screen and (max-width: 1199px) {
+  .container {
+    margin-top: 5vh;
+  }
+  .coluna-esquerda {
+    display: none;
+  }
+  .coluna-central {
+    /* col-8 */
+    height: auto;
+    width: 66.1333333333%;
+    padding: 0 1vh;
+  }
+  .coluna-direita {
+    /* col-4 */
+    height: auto;
+    width: 32.2666666667%;
+    padding: 0 1vh;
+    margin-top: 0vh;
+  }
+  #filtroPesquisaMobile {
+    display: none;
+  }
+  .div-scroll-post {
+    height: 142vh;
+    overflow: scroll;
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .container {
+    margin-top: 1.5vh;
+  }
+  .coluna-esquerda {
+    display: none;
+  }
+  .coluna-central {
+    /* display: inline-block; */
+    height: auto;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 8vh;
+  }
+  .coluna-direita {
+    display: none;
+  }
+  #filtroPesquisa {
+    display: none;
+  }
+  #filtroPesquisaMobile {
+    display: block;
+  }
+  .div-scroll-post {
+    height: 142vh;
+    overflow: scroll;
+  }
 }
 
 /*AQUI COMEÇA O CSS DO COMPONENTE FILTRO DE PESQUISAS*/
