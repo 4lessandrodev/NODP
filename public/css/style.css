@@ -1986,10 +1986,10 @@ section#mensagens {
     font-weight: 500;
   }
 
-  #perfil-detalhe .icone {
+  /* #perfil-detalhe .icone {
     font-size: 1.2em;
     color: var(--accent-color);
-  }
+  } */
 
   #perfil-detalhe .info {
     text-align: left;
@@ -2079,7 +2079,7 @@ section#mensagens {
     align-self: flex-end;
   }
   .row-botoes-perfil {
-    width: 58vw;
+    /* width: 58vw; */
     height: 8vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2093,7 +2093,7 @@ section#mensagens {
   }
   
   .campo-ocupado {
-    width: 60%;
+    width: 100%;
     height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
