@@ -1308,29 +1308,27 @@ section#mensagens {
   }
   
   #header-celular {
+    width: 100vw;
     display: flex;
+    justify-content: space-around;
   }
   
-  #header-celular .header-nav {
+  #header-celular .header-nav-ul-mobile {
+    width: 100vw;
     background-color: var(--light-background-color);
     color: var(--default-primary-color);
-    height: 5vh;
-    width: 100%;
     display: flex;
-    top: 0;
-    left: 0;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
   }
 
   
-  #header-celular .header-nav-ul li {
+  #header-celular .header-nav-ul-mobile li {
     font-size: 1.2em;
     list-style: none;
     display: flex;
+    padding: 2% 5%;
   }
   
   #header-celular .header-nav-ul li:hover {
