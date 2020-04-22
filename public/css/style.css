@@ -1373,11 +1373,9 @@ section#mensagens {
   }
   
   #conquistas-usuario .conquistas-div-interna {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
+    flex-wrap: wrap;
   }
   
   #conquistas-usuario .conquistas-div-interna-ul-1 ul li {
@@ -1478,6 +1476,10 @@ section#mensagens {
     justify-content: space-between;
   }
   
+  #conquista-aluno .header .nota{
+    display: none;
+  }
+  
   #conquista-aluno .header .fas {
     color: var(--accent-color);
   }
@@ -1557,6 +1559,10 @@ section#mensagens {
   #conquista-professor .header .fas {
     color: var(--accent-color);
   }
+
+    #conquista-professor .nota {
+      display: none;
+    }
   
   #conquista-professor .header .far {
     color: var(--divider-color);
@@ -1638,7 +1644,7 @@ section#mensagens {
   
   #perfil-detalhe .info {
     text-align: left;
-    margin: 4vh 1vw;
+    margin: 4vh 0 0 7vw;
     font-size: 10px;
   }
   
@@ -1730,6 +1736,20 @@ section#mensagens {
     align-self: flex-end;
   }
   
+  #perfil-detalhe .row-botoes-perfil {
+    width: 60vw;
+    height: 8vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+  
   /*FIM DO CSS DO COMPONENTE PERFIL*/
   
   
@@ -1737,11 +1757,11 @@ section#mensagens {
   #main-footer {
     display: none;
   }
-
+  
   #mobile-footer{
     position: fixed;
     bottom: 0px;
-    padding: 2% 0 0 0;
+    padding: 4% 0 0 0;
   }
   
   #mobile-footer ul{
@@ -1763,6 +1783,7 @@ section#mensagens {
     /* margin-left: 10vw; */
     /* margin-top: 1vh; */
     justify-content: space-around;
+    padding-bottom: 1%;
   }
   
   #mobile-footer i {
@@ -2172,256 +2193,240 @@ section#mensagens {
     color: var(--secondary-text-color);
   }
   
+  /*FIM DO CSS DO COMPONENTE PERFIL*/
+  /*INICIO DO CSS COMPONENTE RANKING DE ALUNO*/
+  #ranking-aluno {
+    background-color: var(--text-primary-color);
+    border: 1vw solid var(--text-primary-color);
+    border-radius: 1vw;
+    -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 1vh;
+  }
+  
+  #ranking-aluno h1 {
+    text-transform: uppercase;
+  }
+  
+  #ranking-aluno .ranking-div-interna {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid var(--divider-color);
+    border-radius: 10px;
+    margin: 2vh 0;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  
+  #ranking-aluno .ranking-div-interna ul li .icone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.8em;
+    padding: 1em 0.5em 0.5em 0;
+    color: var(--accent-color);
+    -ms-flex-item-align: baseline;
+    align-self: baseline;
+  }
+  
+  #ranking-aluno .ranking-div-interna ul li .numero {
+    font-size: 1.2em;
+    padding: 0 0.2em 0 0;
+    font-weight: 500;
+  }
+  
+  
+  #ranking-aluno .ranking-div-interna ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  #ranking-aluno .ranking-div-interna ul li img {
+    width: 50px;
+    height: 50px;
+    margin: 2vh 1vh 0 0;
+  }
+  
+  #ranking-aluno .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  
+  #ranking-aluno .header .fas {
+    color: var(--accent-color);
+  }
+  
+  #ranking-aluno .header .far {
+    color: var(--divider-color);
+  }
+  
+  #ranking-aluno .btn-ranking {
+    text-align: end;
+    position: relative;
+    bottom: 5vh;
+    overflow: hidden;
+  }
+  
+  /*FIM DO CSS PARA COMPONENTE CONQUISTA ALUNO*/
   
   
   
   
-  /*MEDIA 901 - 1199*/
+  
+  /*INICIO DO CSS COMPONENTE RANKING DE PROFESSOR*/
+  #ranking-professor {
+    background-color: var(--text-primary-color);
+    border: 1vw solid var(--text-primary-color);
+    border-radius: 1vw;
+    -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 1vh;
+  }
+  
+  #ranking-professor h1 {
+    text-transform: uppercase;
+  }
+  
+  #ranking-professor .ranking-div-interna {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid var(--divider-color);
+    border-radius: 10px;
+    margin: 2vh 0;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  
+  #ranking-professor .ranking-div-interna ul li .icone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.8em;
+    padding: 1em 0.5em 0.5em 0;
+    color: var(--accent-color);
+    -ms-flex-item-align: baseline;
+    align-self: baseline;
+  }
+  
+  #ranking-professor .ranking-div-interna ul li .numero {
+    font-size: 1.2em;
+    padding: 0 0.2em 0 0;
+    font-weight: 500;
+  }
+  
+  
+  #ranking-professor .ranking-div-interna ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  #ranking-professor .ranking-div-interna ul li img {
+    width: 50px;
+    height: 50px;
+    margin: 2vh 1vh 0 0;
+  }
+  
+  #ranking-professor .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  
+  #ranking-professor .header .fas {
+    color: var(--accent-color);
+  }
+  
+  #ranking-professor .header .far {
+    color: var(--divider-color);
+  }
+  
+  #ranking-professor .btn-ranking {
+    text-align: end;
+    position: relative;
+    bottom: 5vh;
+    overflow: hidden;
+  }
+  
+  /*FIM DO CSS PARA COMPONENTE CONQUISTA PROFESSOR*/
+  
+  
+  
+  
+  
+  
+  
+  /*INICIO DO CSS COMPONENTE USUARIO PESQUISADO*/
+  #usuario-pesquisado {
+    background-color: var(--text-primary-color);
+    border: 1vw solid var(--text-primary-color);
+    border-radius: 1vw;
+    -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 1vh;
+  }
+  
+  #usuario-pesquisado .usuario {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+  }
+  
+  #usuario-pesquisado .usuario img {
+    width: 50px;
+    height: 50px;
+    margin-right: 3vw;
+  }
+  
+  #usuario-pesquisado .col-foto {
+    /*col-2*/
+    width: 16, 66666%
+  }
+  
+  #usuario-pesquisado .col-nome {
+    /*col-10*/
+    width: 83, 3333333%
+  }
   /*-------------------------------------------------------------------*/
-}
-
-/*FIM DO CSS DO COMPONENTE PERFIL*/
-
-
-/*INICIO DO CSS COMPONENTE RANKING DE ALUNO*/
-#ranking-aluno {
-  background-color: var(--text-primary-color);
-  border: 1vw solid var(--text-primary-color);
-  border-radius: 1vw;
-  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-top: 1vh;
-}
-
-#ranking-aluno h1 {
-  text-transform: uppercase;
-}
-
-#ranking-aluno .ranking-div-interna {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: 1px solid var(--divider-color);
-  border-radius: 10px;
-  margin: 2vh 0;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-}
-
-#ranking-aluno .ranking-div-interna ul li .icone {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 1.8em;
-  padding: 1em 0.5em 0.5em 0;
-  color: var(--accent-color);
-  -ms-flex-item-align: baseline;
-  align-self: baseline;
-}
-
-#ranking-aluno .ranking-div-interna ul li .numero {
-  font-size: 1.2em;
-  padding: 0 0.2em 0 0;
-  font-weight: 500;
-}
-
-
-#ranking-aluno .ranking-div-interna ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-#ranking-aluno .ranking-div-interna ul li img {
-  width: 50px;
-  height: 50px;
-  margin: 2vh 1vh 0 0;
-}
-
-#ranking-aluno .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-#ranking-aluno .header .fas {
-  color: var(--accent-color);
-}
-
-#ranking-aluno .header .far {
-  color: var(--divider-color);
-}
-
-#ranking-aluno .btn-ranking {
-  text-align: end;
-  position: relative;
-  bottom: 5vh;
-  overflow: hidden;
-}
-
-/*FIM DO CSS PARA COMPONENTE CONQUISTA ALUNO*/
-
-
-
-
-
-/*INICIO DO CSS COMPONENTE RANKING DE PROFESSOR*/
-#ranking-professor {
-  background-color: var(--text-primary-color);
-  border: 1vw solid var(--text-primary-color);
-  border-radius: 1vw;
-  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-top: 1vh;
-}
-
-#ranking-professor h1 {
-  text-transform: uppercase;
-}
-
-#ranking-professor .ranking-div-interna {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: 1px solid var(--divider-color);
-  border-radius: 10px;
-  margin: 2vh 0;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-}
-
-#ranking-professor .ranking-div-interna ul li .icone {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 1.8em;
-  padding: 1em 0.5em 0.5em 0;
-  color: var(--accent-color);
-  -ms-flex-item-align: baseline;
-  align-self: baseline;
-}
-
-#ranking-professor .ranking-div-interna ul li .numero {
-  font-size: 1.2em;
-  padding: 0 0.2em 0 0;
-  font-weight: 500;
-}
-
-
-#ranking-professor .ranking-div-interna ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-#ranking-professor .ranking-div-interna ul li img {
-  width: 50px;
-  height: 50px;
-  margin: 2vh 1vh 0 0;
-}
-
-#ranking-professor .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-#ranking-professor .header .fas {
-  color: var(--accent-color);
-}
-
-#ranking-professor .header .far {
-  color: var(--divider-color);
-}
-
-#ranking-professor .btn-ranking {
-  text-align: end;
-  position: relative;
-  bottom: 5vh;
-  overflow: hidden;
-}
-
-/*FIM DO CSS PARA COMPONENTE CONQUISTA PROFESSOR*/
-
-
-
-
-
-
-
-/*INICIO DO CSS COMPONENTE USUARIO PESQUISADO*/
-#usuario-pesquisado {
-  background-color: var(--text-primary-color);
-  border: 1vw solid var(--text-primary-color);
-  border-radius: 1vw;
-  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-top: 1vh;
-}
-
-#usuario-pesquisado .usuario {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  align-items: center;
-}
-#usuario-pesquisado .usuario img {
-  width: 50px;
-  height: 50px;
-  margin-right: 3vw;
-}
-#usuario-pesquisado .col-foto {
-  /*col-2*/
-  width: 16,66666%
-}
-#usuario-pesquisado .col-nome {
-  /*col-10*/
-  width: 83,3333333%
-}
-
-/*FIM DO CSS COMPONENTE USUARIO PESQUISADO*/
-/*AQUI FINALIZA O CSS PARA MOBILE MAIOR QUE 600 PX*/
-/*-----------------------------------------------------------------------------------*/
-
-
-
-
-/*AQUI INICIA O CSS PARA TABLET E NOTEPAD*/
-/*-----------------------------------------------------------------------------------*/
-@media screen and (min-width: 901px) and (max-width: 1199px) {
+  
   #header-celular {
     display: none;
   }
@@ -2745,8 +2750,9 @@ section#mensagens {
     margin: 0;
     color: var(--text-primary-color);
   }
-  
 }
+
+/*FIM DO CSS COMPONENTE USUARIO PESQUISADO*/
 /*AQUI FINALIZA O CSS PARA MOBILE MAIOR QUE 600 PX*/
 /*-----------------------------------------------------------------------------------*/
 
