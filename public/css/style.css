@@ -1311,6 +1311,7 @@ section#mensagens {
     width: 100vw;
     display: flex;
     justify-content: space-around;
+    color: var(--default-primary-color);
   }
   
   #header-celular .header-nav-ul-mobile {
@@ -1322,13 +1323,14 @@ section#mensagens {
     margin: 0;
     padding: 0;
   }
-
+  
   
   #header-celular .header-nav-ul-mobile li {
     font-size: 1.2em;
     list-style: none;
     display: flex;
     padding: 2% 5%;
+    color: var(--default-primary-color);
   }
   
   #header-celular .header-nav-ul li:hover {
@@ -1735,37 +1737,32 @@ section#mensagens {
   #main-footer {
     display: none;
   }
-  
-  #mobile-footer {
-    width: 100%;
+
+  #mobile-footer{
     position: fixed;
-    bottom: 0;
-    right: 0;
-    background-color: var(--light-background-color);
-    color: white;
-    height: 40px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex !important;
-    justify-content: center !important;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    bottom: 0px;
+    padding: 2% 0 0 0;
   }
   
-  #mobile-footer ul {
-    /* display: flex; */
-    margin: 0 18vw 0 5vw;
+  #mobile-footer ul{
+    background-color: var(--light-background-color);
+    display: flex;
+    justify-content: space-around;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    
   }
   
   #mobile-footer li {
     list-style: none;
     display: inline-block;
     /* flex-grow: 1; */
-    font-size: 1.2em;
+    font-size: 1.5em;
     /* margin-right: 20vw; */
     /* margin-left: 10vw; */
     /* margin-top: 1vh; */
+    justify-content: space-around;
   }
   
   #mobile-footer i {
@@ -1789,7 +1786,7 @@ section#mensagens {
 
 /*AQUI INICIA O CSS PARA MOBILE MAIOR QUE 600 PX*/
 /*-----------------------------------------------------------------------------------*/
-@media screen and (min-width: 600px) and (max-width: 900px) {
+@media screen and (min-width: 600px) and (max-width: 1199px) {
   #conquistas-usuario {
     background-color: var(--text-primary-color);
     border: 1vw solid var(--text-primary-color);
@@ -2175,16 +2172,12 @@ section#mensagens {
     color: var(--secondary-text-color);
   }
   
-}
-/*AQUI FINALIZA O CSS PARA MOBILE MAIOR QUE 600 PX*/
-/*-----------------------------------------------------------------------------------*/
-
-
-
-
-/*AQUI INICIA O CSS PARA TABLET E NOTEPAD*/
-/*-----------------------------------------------------------------------------------*/
-@media screen and (min-width: 901px) and (max-width: 1199px) {
+  
+  
+  
+  
+  /*MEDIA 901 - 1199*/
+  /*-------------------------------------------------------------------*/
   #header-celular {
     display: none;
   }
@@ -2509,6 +2502,18 @@ section#mensagens {
     color: var(--text-primary-color);
   }
   
+}
+/*AQUI FINALIZA O CSS PARA MOBILE MAIOR QUE 600 PX*/
+/*-----------------------------------------------------------------------------------*/
+
+
+
+
+/*AQUI INICIA O CSS PARA TABLET E NOTEPAD*/
+/*-----------------------------------------------------------------------------------*/
+@media screen and (min-width: 901px) and (max-width: 1199px) {
+  
+  /*O CSS DAQUI VOU MOVIDO PARA A MEDIA @ 600px - 1199*/
   
 }
 /*AQUI FINALIZA O CSS PARA TABLET E NOTEPAD*/
