@@ -258,13 +258,12 @@
     background-color: var(--light-background-color);
   }
   
-  nav li {
+  .ul-apoio li {
     list-style: none;
     display: inline-block;
     text-align: left;
     color: #212121;
     padding-right: 40px;
-    
     
   }
   
