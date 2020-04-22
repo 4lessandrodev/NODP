@@ -348,290 +348,19 @@ li {
 .container-xl {
   padding: 0;
 }
+/*AQUI FINALIZA O CSS PADRÃO PARA A IDENTIDADE VISUAL DO SITE*/
 
-/*CSS DO HEADER */
-/* header padrão web (sites) a partir de 1200 pixeis */
-@media screen and (min-width: 1200px) {
-  #header-celular {
-    display: none;
-  }
 
-  #header-desktop {
-    display: inline-block;
-  }
 
-  .header-nav {
-    background-color: var(--dark-primary-color);
-    height: 6vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    justify-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-bottom: 1vh;
-  }
 
-  .header-nav .form-control {
-    height: calc(0.7em + .75rem + 2px);
-  }
 
-  .header-nav .input-group-text {
-    line-height: 0.8;
-    background-color: transparent;
-    border: none;
-    color: var(--text-primary-color);
-  }
 
-  .header-nav .form-inline {
-    width: 25vw;
-  }
 
-  .header-nav #caixa-pesquisar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-    height: 50%;
-  }
 
-  .header-nav input[type='search'] {
-    width: 20vw;
-  }
 
-  .header-nav-ul {
-    list-style: none;
-    margin: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    justify-items: center;
-  }
-
-  .no-focus {
-    outline: none;
-  }
-
-  .header-nav-ul li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 1em;
-    margin: 0 1.2vw;
-    color: var(--text-primary-color);
-  }
-
-  .header-nav-ul li:hover {
-    cursor: pointer;
-  }
-
-  #pesquisar:hover {
-    cursor: pointer;
-  }
-
-  .header-nav a {
-    color: var(--text-primary-color);
-    text-decoration: none;
-  }
-
-  .header-nav #notificacao {
-    background-color: red;
-    color: var(--text-primary-color);
-    border-radius: 2px;
-    padding: 2px;
-    font-size: 12px;
-  }
-}
-
-/* header para tablets de 600 a 1199 pixeis (iPads entram nessa gama, sendo o  maior o iPad Pro) */
-@media screen and (max-width: 1199px) {
-  #header-celular {
-    display: none;
-  }
-
-  #header-desktop {
-    display: inline-block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    /* margin-bottom: 10vh; */
-  }
-
-  .header-nav {
-    background-color: var(--dark-primary-color);
-    height: 4vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    justify-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-bottom: 1vh;
-  }
-
-  .header-nav .form-control {
-    height: calc(0.7em + .75rem + 2px);
-  }
-
-  .header-nav .input-group-text {
-    line-height: 0.8;
-    background-color: transparent;
-    border: none;
-    color: var(--text-primary-color);
-  }
-
-  .header-nav .form-inline {
-    width: 35vw;
-  }
-
-  .header-nav #caixa-pesquisar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-    height: 50%;
-  }
-
-  .header-nav input[type='search'] {
-    width: 25vw;
-  }
-
-  .header-nav-ul {
-    list-style: none;
-    margin: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    justify-items: center;
-  }
-
-  .focus {
-    outline: none;
-  }
-
-  .header-nav-ul li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 1em;
-    margin: 0 1.2vw;
-    color: var(--text-primary-color);
-  }
-
-  .header-nav-ul li:hover {
-    cursor: pointer;
-  }
-
-  #pesquisar:hover {
-    cursor: pointer;
-  }
-
-  .header-nav a {
-    color: var(--text-primary-color);
-    text-decoration: none;
-  }
-
-  .header-nav #notificacao {
-    background-color: red;
-    color: var(--text-primary-color);
-    border-radius: 2px;
-    padding: 2px;
-    font-size: 12px;
-  }
-}
-
-/* header para celulares até 599 pixeis */
-@media screen and (max-width: 599px) {
-  #header-desktop {
-    display: none;
-  }
-
-  #header-celular {
-    display: inline-block;
-  }
-
-  #header-celular .header-nav {
-    background-color: var(--light-background-color);
-    height: 5vh;
-    width: 100%;
-    /* display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; */
-    /* -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; */
-    /* justify-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center; */
-    /* justify-content: center; */
-    /* margin: 0; */
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-
-  #header-celular .header-nav-ul ul {
-    list-style: none;
-    margin: 0;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex !important;
-    justify-content: center !important;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-
-  #header-celular .header-nav-ul li {
-    /* display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; */
-    flex-grow: 1;
-    font-size: 1.2em;
-    margin-right: 20vw;
-    margin-left: 10vw;
-    /* margin-top: 1vh; */
-    color: var(--default-primary-color);
-  }
-
-  #header-celular .header-nav-ul li:hover {
-    cursor: pointer;
-  }
-
-  #header-celular .header-nav a {
-    color: var(--default-primary-color);
-    text-decoration: none;
-  }
-
-  #header-celular .logo-letra {
-    width: 70px;
-    padding: 0;
-  }
-}
-
+/*AQUI INICIA O CSS PADRÃO PARA TODOS OS TAMANHO*/
+/*-----------------------------------------------------------------------------------*/
 /*FIM DO CSS DO HEADER */
-
 /*SECTION APOIADORES*/
 section#apoiadores img {
   width: 50px;
@@ -654,7 +383,7 @@ section#apoiadores img {
   -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   margin-bottom: 1vh;
-
+  
 }
 
 #apoiadores .row {
@@ -848,375 +577,8 @@ section#aulas-recentes img {
 
 
 
-/*AQUI COMEÇA O CSS DO COMPONENTE NOVAS PUBLICACOES*/
-@media screen and (min-width: 1200px) {
-#novaPostagem {
-  width: '100%';
-  height: 26vh;
-  min-height: 150px;
-  background-color: var(--text-primary-color);
-  border-radius: 10px;
-  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  padding: 10px;
-}
 
-#novaPostagem .rowBotoes {
-  width: '100%';
-  height: 13vh;
-  min-height: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
 
-#novaPostagem .posicao {
-  width: 12vw;
-  height: 13vh;
-  min-height: 70px;
-  background-color: var(--text-primary-color);
-  background-color: var(--text-primary-color);
-  border: 1px solid var(--divider-color);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-#lugar {
-  color: var(--dark-primary-color);
-  text-align: center;
-  text-transform: uppercase;
-}
-
-#novaPostagem .botao {
-  width: 8vw;
-  height: 13vh;
-  min-height: 70px;
-  background-color: var(--text-primary-color);
-  border: 1px solid var(--divider-color);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-top: 17px;
-  color: var(--dark-primary-color);
-}
-
-#novaPostagem .botao:hover,
-#novaPostagem .posicao:hover h1,
-#novaPostagem .posicao:hover {
-  color: var(--text-primary-color);
-  background-color: var(--default-primary-color);
-  cursor: pointer;
-}
-
-#novaPostagem .botao p {
-  font-size: 10px;
-  text-transform: uppercase;
-}
-
-#novaPostagem .apoiados {
-  width: '100%';
-  height: 13vh;
-  min-height: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-#novaPostagem .text-apoiados {
-  width: 10vw;
-  height: 13vh;
-  min-height: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  color: var(--default-primary-color);
-  padding: 1vh;
-}
-
-#novaPostagem .listagem-apoiados {
-  width: 30vw;
-  height: 13vh;
-  min-height: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 1vh;
-}
-
-#novaPostagem .apoiado {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-#novaPostagem .apoiado img {
-  height: 50px;
-  width: 50px;
-  -o-object-fit: contain;
-  object-fit: contain;
-  margin: 0px 5px 10px;
-}
-
-#novaPostagem .botao {
-  font-size: 2vw;
-  text-align: center;
-  padding-bottom: 1vh;
-}
-
-#novaPostagem .botao p {
-  padding-top: 1vh;
-}
-
-#novaPostagem .seta {
-  width: 2.8vw;
-  height: 5vh;
-  margin-left: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-#seta {
-  color: var(--default-primary-color)
-}
-
-.seta:hover {
-  cursor: pointer;
-}
-}
-@media screen and (max-width: 1199px) {
-  #novaPostagem {
-    width: '100%';
-    height: 14vh;
-    min-height: 100px;
-    background-color: var(--text-primary-color);
-    border-radius: 10px;
-    -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-    box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-    padding: 10px;
-  }
-  
-  #novaPostagem .rowBotoes {
-    width: '100%';
-    height: 7vh;
-    min-height: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-  
-  #novaPostagem .posicao {
-    width: 12vw;
-    height: 7vh;
-    min-height: 50px;
-    background-color: var(--text-primary-color);
-    background-color: var(--text-primary-color);
-    border: 1px solid var(--divider-color);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-  
-  #lugar {
-    color: var(--dark-primary-color);
-    text-align: center;
-    text-transform: uppercase;
-  }
-  
-  #novaPostagem .botao {
-    width: 12vw;
-    height: 7vh;
-    min-height: 50px;
-    background-color: var(--text-primary-color);
-    border: 1px solid var(--divider-color);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding-top: 17px;
-    color: var(--dark-primary-color);
-  }
-  
-  #novaPostagem .botao:hover,
-  #novaPostagem .posicao:hover h1,
-  #novaPostagem .posicao:hover {
-    color: var(--text-primary-color);
-    background-color: var(--default-primary-color);
-    cursor: pointer;
-  }
-  
-  #novaPostagem .botao p {
-    font-size: 10px;
-    text-transform: uppercase;
-  }
-  
-  #novaPostagem .apoiados {
-    width: '100%';
-    height: 7vh;
-    min-height: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-  
-  #novaPostagem .text-apoiados {
-    width: 10vw;
-    height: 7vh;
-    min-height: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    color: var(--default-primary-color);
-    padding: 1vh;
-  }
-  
-  #novaPostagem .listagem-apoiados {
-    width: 100%;
-    height: 7vh;
-    min-height: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 1vh;
-
-  }
-  
-  #novaPostagem .apoiado {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-  }
-  
-  #novaPostagem .apoiado img {
-    height: 50px;
-    width: 50px;
-    -o-object-fit: contain;
-    object-fit: contain;
-    margin: 0px 5px 10px;
-  }
-  
-  #novaPostagem .botao {
-    font-size: 2vw;
-    text-align: center;
-    padding-bottom: 1vh;
-  }
-  
-  #novaPostagem .botao p {
-    padding-top: 1vh;
-  }
-  
-  #novaPostagem .seta {
-    width: 2.8vw;
-    height: 5vh;
-    margin-left: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-  
-  #seta {
-    color: var(--default-primary-color)
-  }
-  
-  .seta:hover {
-    cursor: pointer;
-  }
-  }
-/*AQUI FINALIZA O CSS DO COMPONENTE NOVAS PUBLICACOES*/
 
 
 
@@ -1355,464 +717,36 @@ section#aulas-recentes img {
   cursor: pointer;
 }
 
-/*FIM DO CSS DO COMPONENTE PERFIL*/
-
-
-/*INICIO DO CSS COMPONENTE CONQUISTA DO USUARIO*/
-@media screen and (min-width: 600px) {
-  #conquistas-usuario {
-    background-color: var(--text-primary-color);
-    border: 1vw solid var(--text-primary-color);
-    border-radius: 1vw;
-    -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-    box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-top: 1vh;
-  }
-
-  #conquistas-usuario h1 {
-    text-transform: uppercase;
-  }
-
-  #conquistas-usuario ul {
-    list-style: none;
-  }
-
-  #conquistas-usuario .conquistas-div-interna {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    border: 1px solid var(--divider-color);
-    border-radius: 10px;
-    /* margin: 2vh 0; */
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-  }
-
-  #conquistas-usuario .conquistas-div-interna ul li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: baseline;
-    -ms-flex-align: baseline;
-    align-items: baseline;
-  }
-
-  #conquistas-usuario .conquistas-div-interna ul li .icone {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 1.8em;
-    padding: 1em 0.5em 0.5em 0;
-    color: var(--accent-color);
-    -ms-flex-item-align: baseline;
-    align-self: baseline;
-  }
-
-  #conquistas-usuario .conquistas-div-interna ul li .numero {
-    font-size: 1.2em;
-    padding: 0 0.2em 0 0;
-    font-weight: 500;
-  }
+.row-botoes-perfil {
+  width: 58vw;
+  height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 
-/* Conquistas do usuário - media query celular*/
-@media screen and (max-width: 599px) {
-  #conquistas-usuario {
-    background-color: var(--text-primary-color);
-    border: 1vw solid var(--text-primary-color);
-    border-radius: 1vw;
-    -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-    box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    /* padding: 0 0vh; */
-  }
-
-  #conquistas-usuario h1 {
-    text-transform: uppercase;
-    /* margin-left: 5vw; */
-  }
-
-  #conquistas-usuario ul {
-    list-style: none;
-  }
-
-  #conquistas-usuario .conquistas-div-interna {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    /* border: 1px solid var(--divider-color); */
-    /* border-radius: 10px; */
-    /* margin: 2vh -5vw; */
-    /* padding: 0; */
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-  }
-
-  #conquistas-usuario .conquistas-div-interna-ul-1 ul li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: baseline;
-    -ms-flex-align: baseline;
-    align-items: baseline;
-    /* padding: 0.5em 0.5em 0.5em 0; */
-    /* margin: 0; */
-  }
-
-  #conquistas-usuario .conquistas-div-interna ul li .icone {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 1.8em;
-    padding: 0.5em 0em 0.5em 0;
-    color: var(--accent-color);
-    -ms-flex-item-align: baseline;
-    align-self: baseline;
-  }
-
-  #conquistas-usuario .conquistas-div-interna ul li .numero {
-    font-size: 1.2em;
-    padding: 0 0.2em 0 0;
-    font-weight: 500;
-  }
+.campo-ocupado {
+  width: 60%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
-
-/*FIM DO CSS PARA COMPONENTE CONQUISTA DO USUARIO*/
-
-
-/*INICIO DO CSS COMPONENTE CONQUISTA ALUNO*/
-@media screen and (min-width: 600px) {
-  #conquista-aluno {
-    background-color: var(--text-primary-color);
-    border: 1vw solid var(--text-primary-color);
-    border-radius: 1vw;
-    -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-    box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-top: 1vh;
-  }
-
-  #conquista-aluno h1 {
-    text-transform: uppercase;
-  }
-
-  #conquista-aluno .conquistas-div-interna {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    border: 1px solid var(--divider-color);
-    border-radius: 10px;
-    margin: 2vh 0;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-  }
-
-  #conquista-aluno .conquistas-div-interna ul li .icone {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 1.8em;
-    padding: 1em 0.5em 0.5em 0;
-    color: var(--accent-color);
-    -ms-flex-item-align: baseline;
-    align-self: baseline;
-  }
-
-  #conquista-aluno .conquistas-div-interna ul li .numero {
-    font-size: 1.2em;
-    padding: 0 0.2em 0 0;
-    font-weight: 500;
-  }
-
-
-  #conquista-aluno .conquistas-div-interna ul li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    list-style: none;
-    -webkit-box-align: baseline;
-    -ms-flex-align: baseline;
-    align-items: baseline;
-  }
-
-  #conquista-aluno .header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    list-style: none;
-    -webkit-box-align: baseline;
-    -ms-flex-align: baseline;
-    align-items: baseline;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-  }
-
-  #conquista-aluno .header .fas {
-    color: var(--accent-color);
-  }
-
-  #conquista-aluno .header .far {
-    color: var(--divider-color);
-  }
-}
-
-/* Conquista aluno - media query para celulares */
-@media screen and (max-width: 599px) {
-  #conquista-aluno {
-    background-color: var(--text-primary-color);
-    border: 1vw solid var(--text-primary-color);
-    border-radius: 1vw;
-    -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-    box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-top: 1vh;
-  }
-
-  #conquista-aluno h1 {
-    text-transform: uppercase;
-  }
-
-  #conquista-aluno .conquistas-div-interna {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    /* border: 1px solid var(--divider-color); */
-    border-radius: 10px;
-    margin: 2vh 0;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-  }
-
-  #conquista-aluno .conquistas-div-interna ul li .icone {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 1.8em;
-    padding: 1em 0.5em 0.5em 0;
-    color: var(--accent-color);
-    -ms-flex-item-align: baseline;
-    align-self: baseline;
-  }
-
-  #conquista-aluno .conquistas-div-interna ul li .numero {
-    font-size: 1.2em;
-    padding: 0 0.2em 0 0;
-    font-weight: 500;
-  }
-
-  #conquista-aluno .conquistas-div-interna ul li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    list-style: none;
-    -webkit-box-align: baseline;
-    -ms-flex-align: baseline;
-    align-items: baseline;
-  }
-
-  #conquista-aluno .header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    list-style: none;
-    -webkit-box-align: baseline;
-    -ms-flex-align: baseline;
-    align-items: baseline;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-  }
-
-  #conquista-aluno .header .fas {
-    color: var(--accent-color);
-  }
-
-  #conquista-aluno .header .far {
-    color: var(--divider-color);
-  }
-}
-
-/*FIM DO CSS PARA COMPONENTE CONQUISTA ALUNO*/
-
-
-
-
-/*INICIO DO CSS COMPONENTE CONQUISTA PROFESSOR*/
-@media screen and (min-width: 600px) {
-  #conquista-professor {
-    background-color: var(--text-primary-color);
-    border: 1vw solid var(--text-primary-color);
-    border-radius: 1vw;
-    -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-    box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-top: 1vh;
-  }
-
-  #conquista-professor h1 {
-    text-transform: uppercase;
-  }
-
-  #conquista-professor .conquistas-div-interna {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    border: 1px solid var(--divider-color);
-    border-radius: 10px;
-    margin: 2vh 0;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-  }
-
-  #conquista-professor .conquistas-div-interna ul li .icone {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 1.8em;
-    padding: 1em 0.5em 0.5em 0;
-    color: var(--accent-color);
-    -ms-flex-item-align: baseline;
-    align-self: baseline;
-  }
-
-  #conquista-professor .conquistas-div-interna ul li .numero {
-    font-size: 1.2em;
-    padding: 0 0.2em 0 0;
-    font-weight: 500;
-  }
-
-
-  #conquista-professor .conquistas-div-interna ul li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    list-style: none;
-    -webkit-box-align: baseline;
-    -ms-flex-align: baseline;
-    align-items: baseline;
-  }
-
-  #conquista-professor .header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    list-style: none;
-    -webkit-box-align: baseline;
-    -ms-flex-align: baseline;
-    align-items: baseline;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-  }
-
-  #conquista-professor .header .fas {
-    color: var(--accent-color);
-  }
-
-  #conquista-professor .header .far {
-    color: var(--divider-color);
-  }
-}
-
-/* conquista professor - media query para celulares */
-@media screen and (max-width: 599px) {
-  #conquista-professor {
-    background-color: var(--text-primary-color);
-    border: 1vw solid var(--text-primary-color);
-    border-radius: 1vw;
-    -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-    box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-top: 1vh;
-  }
-
-  #conquista-professor h1 {
-    text-transform: uppercase;
-  }
-
-  #conquista-professor .conquistas-div-interna {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    /* border: 1px solid var(--divider-color); */
-    /* border-radius: 10px; */
-    /* margin: 2vh 0; */
-    /* -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start; */
-  }
-
-  #conquista-professor .conquistas-div-interna ul li .icone {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 1.8em;
-    padding: 1em 0.5em 0.5em 0;
-    color: var(--accent-color);
-    -ms-flex-item-align: baseline;
-    align-self: baseline;
-    /* list-style: none; */
-  }
-
-  #conquista-professor .conquistas-div-interna ul li .numero {
-    font-size: 1.2em;
-    padding: 0 0.2em 0 0;
-    font-weight: 500;
-    /* list-style: none; */
-  }
-
-  #conquista-professor .conquistas-div-interna ul li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    list-style: none;
-    -webkit-box-align: baseline;
-    -ms-flex-align: baseline;
-    align-items: baseline;
-  }
-
-  #conquista-professor .header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    list-style: none;
-    -webkit-box-align: baseline;
-    -ms-flex-align: baseline;
-    align-items: baseline;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-  }
-
-  #conquista-professor .header .fas {
-    color: var(--accent-color);
-  }
-
-  #conquista-professor .header .far {
-    color: var(--divider-color);
-  }
-}
-
-/*FIM DO CSS PARA COMPONENTE CONQUISTA ALUNO*/
-
-
 
 
 /* INICIO DO CSS DO COMPONENTE MENSAGENS */
@@ -1833,6 +767,7 @@ section#mensagens {
   box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
   margin-bottom: 1vh;
 }
+
 #mensagens img {
   width: 50px;
   height: 50px;
@@ -1844,7 +779,7 @@ section#mensagens {
 #mensagens .mensagem-titulo {
   display: flex;
   justify-content: space-between;
-
+  
 }
 
 #mensagens .row {
@@ -1916,11 +851,719 @@ section#mensagens {
 
 
 
+/*INICIO DO CSS COMPONENTE RANKING DE ALUNO*/
+#ranking-aluno {
+  background-color: var(--text-primary-color);
+  border: 1vw solid var(--text-primary-color);
+  border-radius: 1vw;
+  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 1vh;
+}
+
+#ranking-aluno h1 {
+  text-transform: uppercase;
+}
+
+#ranking-aluno .ranking-div-interna {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid var(--divider-color);
+  border-radius: 10px;
+  margin: 2vh 0;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+#ranking-aluno .ranking-div-interna ul li .icone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.8em;
+  padding: 1em 0.5em 0.5em 0;
+  color: var(--accent-color);
+  -ms-flex-item-align: baseline;
+  align-self: baseline;
+}
+
+#ranking-aluno .ranking-div-interna ul li .numero {
+  font-size: 1.2em;
+  padding: 0 0.2em 0 0;
+  font-weight: 500;
+}
 
 
-/*INICIA DO CSS DO COMPONENTE PERFIL*/
-/* mediaquery site e tablet */
-@media screen and (min-width: 600px) {
+#ranking-aluno .ranking-div-interna ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#ranking-aluno .ranking-div-interna ul li img {
+  width: 50px;
+  height: 50px;
+  margin: 2vh 1vh 0 0;
+}
+
+#ranking-aluno .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#ranking-aluno .header .fas {
+  color: var(--accent-color);
+}
+
+#ranking-aluno .header .far {
+  color: var(--divider-color);
+}
+
+#ranking-aluno .btn-ranking {
+  text-align: end;
+  position: relative;
+  bottom: 5vh;
+  overflow: hidden;
+}
+
+/*FIM DO CSS PARA COMPONENTE CONQUISTA ALUNO*/
+
+
+/*INICIO DO CSS COMPONENTE RANKING DE PROFESSOR*/
+#ranking-professor {
+  background-color: var(--text-primary-color);
+  border: 1vw solid var(--text-primary-color);
+  border-radius: 1vw;
+  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 1vh;
+}
+
+#ranking-professor h1 {
+  text-transform: uppercase;
+}
+
+#ranking-professor .ranking-div-interna {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid var(--divider-color);
+  border-radius: 10px;
+  margin: 2vh 0;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+#ranking-professor .ranking-div-interna ul li .icone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.8em;
+  padding: 1em 0.5em 0.5em 0;
+  color: var(--accent-color);
+  -ms-flex-item-align: baseline;
+  align-self: baseline;
+}
+
+#ranking-professor .ranking-div-interna ul li .numero {
+  font-size: 1.2em;
+  padding: 0 0.2em 0 0;
+  font-weight: 500;
+}
+
+
+#ranking-professor .ranking-div-interna ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#ranking-professor .ranking-div-interna ul li img {
+  width: 50px;
+  height: 50px;
+  margin: 2vh 1vh 0 0;
+}
+
+#ranking-professor .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#ranking-professor .header .fas {
+  color: var(--accent-color);
+}
+
+#ranking-professor .header .far {
+  color: var(--divider-color);
+}
+
+#ranking-professor .btn-ranking {
+  text-align: end;
+  position: relative;
+  bottom: 5vh;
+  overflow: hidden;
+}
+
+/*FIM DO CSS PARA COMPONENTE CONQUISTA PROFESSOR*/
+
+
+
+
+
+
+
+/*INICIO DO CSS COMPONENTE USUARIO PESQUISADO*/
+#usuario-pesquisado {
+  background-color: var(--text-primary-color);
+  border: 1vw solid var(--text-primary-color);
+  border-radius: 1vw;
+  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 1vh;
+}
+
+#usuario-pesquisado .usuario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+/*FIM DO CSS COMPONENTE USUARIO PESQUISADO*/
+
+
+/*INICIO DO CSS COMPONENTE AULA PESQUISADA*/
+#aula-pesquisada {
+  background-color: var(--text-primary-color);
+  border: 1vw solid var(--text-primary-color);
+  border-radius: 1vw;
+  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 1vh;
+}
+
+#aula-pesquisada .aula {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+}
+
+#aula-pesquisada .aula img {
+  width: 50px;
+  height: 50px;
+  margin-right: 3vw;
+}
+
+#aula-pesquisada .botoes {
+  display: flex;
+  align-content: space-between;
+}
+
+#aula-pesquisada .botoes-btn {
+  display: flex;
+  margin: 0 2vw 0 0;
+}
+
+#aula-pesquisada .icone {
+  color: var(--accent-color);
+}
+
+/*FIM DO CSS COMPONENTE AULA PESQUISADA*/
+
+
+
+
+
+
+/*INICIO DO CSS COMPONENTE MODAL EDITAR PERFIL*/
+#modalEditarPerfil .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+#modalEditarPerfil .header-avatar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#modalEditarPerfil .header-avatar img {
+  width: 90px;
+  border-radius: 100%;
+  height: 90px;
+  border: 3px solid var(--text-primary-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  top: 25px;
+  position: relative;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -webkit-transition: ease-in-out 0.5s;
+  -o-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+#modalEditarPerfil .header-avatar img:hover {
+  width: 100px;
+  border-radius: 100%;
+  height: 100px;
+  border: 5px solid var(--text-primary-color);
+}
+
+#modalEditarPerfil .header .imagem-background {
+  background-image: url('/img/capa.jpg');
+  width: 100%;
+  height: 15vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 5vh;
+  -webkit-transition: ease-in-out 0.5s;
+  -o-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+#modalEditarPerfil .header .imagem-background:hover {
+  cursor: pointer;
+  background-position: center;
+}
+
+#modalEditarPerfil .modal-body {
+  padding: 0 1rem;
+}
+
+
+#modalEditarPerfil input,
+#modalEditarPerfil select {
+  border: 1px solid var(--divider-color);
+  border-radius: 5px;
+  width: 100%;
+  height: 4.5vh;
+  padding: 0.2rem;
+  color: var(--dark-primary-color);
+  margin-bottom: 2vh;
+}
+
+#modalEditarPerfil label {
+  font-weight: 500;
+}
+
+#modalEditarPerfil textarea {
+  margin-top: 2vh;
+  padding: 0.5rem;
+  border-radius: 10px;
+  resize: none;
+}
+
+#modalEditarPerfil .quantidade-caracteres {
+  color: var(--secondary-text-color);
+  text-align: right;
+}
+
+#modalEditarPerfil .modal-dialog {
+  min-width: 800px;
+  width: 800px;
+}
+
+/*FIM DO CSS COMPONENTE MODAL EDITAR PERFIL*/
+
+/* INICIO DO CSS PATROCINADORES MENOR */
+
+#div-geral-patrocinador-menor {
+  /* width: 21vw;
+  height: 15vh;
+  margin-top: 10px; */
+  background-color: var(--text-primary-color);
+  border: 10px solid var(--text-primary-color);
+  border-radius: 1vw;
+  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  margin-bottom: 1vh;
+}
+
+.patrocinador-menor {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.patrocinador-menor img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+#div-geral-patrocinador-maior {
+  /* width: 21vw;
+  height: 40vh;
+  margin-top: 10px; */
+  background-color: var(--text-primary-color);
+  border: 10px solid var(--text-primary-color);
+  border-radius: 1vw;
+  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+  margin-bottom: 1vh;
+}
+
+.patrocinador-maior {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.patrocinador-maior img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+/*AQUI FINALIZA O CSS PARA PADRÃO PARA TODOS OS TAMANOOS*/
+/*-----------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*AQUI INICIA O CSS PARA MOBILE DE ATE 599 PX*/
+/*-----------------------------------------------------------------------------------*/
+/* header para celulares até 599 pixeis */
+@media screen and (max-width: 599px) {
+  #header-desktop {
+    display: none;
+  }
+  
+  #header-celular {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #header-celular .header-nav-ul-mobile {
+    width: 100vw;
+    background-color: var(--light-background-color);
+    color: var(--default-primary-color);
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  #header-celular .header-nav-ul-mobile li {
+    font-size: 1.2em;
+    list-style: none;
+    display: flex;
+    padding: 2% 5%;
+  }
+  
+  #header-celular .header-nav-ul li:hover {
+    cursor: pointer;
+  }
+  
+  #header-celular .header-nav a {
+    color: var(--default-primary-color);
+    text-decoration: none;
+    display: flex;
+  }
+  
+  #header-celular .logo-letra {
+    width: 70px;
+    display: flex;
+  }
+  
+  
+  /*Conquista de usuario*/
+  #conquistas-usuario {
+    background-color: var(--text-primary-color);
+    border: 1vw solid var(--text-primary-color);
+    border-radius: 1vw;
+    -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    /* padding: 0 0vh; */
+  }
+  
+  #conquistas-usuario h1 {
+    text-transform: uppercase;
+    /* margin-left: 5vw; */
+  }
+  
+  #conquistas-usuario ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  #conquistas-usuario .conquistas-div-interna {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  
+  #conquistas-usuario .conquistas-div-interna-ul-1 ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+  }
+  
+  #conquistas-usuario .conquistas-div-interna ul li .icone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.8em;
+    padding: 0.5em 0em 0.5em 0;
+    color: var(--accent-color);
+    -ms-flex-item-align: baseline;
+    align-self: baseline;
+  }
+  
+  #conquistas-usuario .conquistas-div-interna ul li .numero {
+    font-size: 1.2em;
+    padding: 0 0.2em 0 0;
+    font-weight: 500;
+  }
+  
+  
+  /*Fim*/
+  
+  /* Conquista aluno - media query para celulares */
+  #conquista-aluno {
+    background-color: var(--text-primary-color);
+    border: 1vw solid var(--text-primary-color);
+    border-radius: 1vw;
+    -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 1vh;
+  }
+  
+  #conquista-aluno h1 {
+    text-transform: uppercase;
+  }
+  
+  #conquista-aluno .conquistas-div-interna {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* border: 1px solid var(--divider-color); */
+    border-radius: 10px;
+    margin: 2vh 0;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  
+  #conquista-aluno .conquistas-div-interna ul li .icone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.8em;
+    padding: 1em 0.5em 0.5em 0;
+    color: var(--accent-color);
+    -ms-flex-item-align: baseline;
+    align-self: baseline;
+  }
+  
+  #conquista-aluno .conquistas-div-interna ul li .numero {
+    font-size: 1.2em;
+    padding: 0 0.2em 0 0;
+    font-weight: 500;
+  }
+  
+  #conquista-aluno .conquistas-div-interna ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+  }
+  
+  #conquista-aluno .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  
+  #conquista-aluno .header .fas {
+    color: var(--accent-color);
+  }
+  
+  #conquista-aluno .header .far {
+    color: var(--divider-color);
+  }
+  
+  /*FIM DO CSS PARA COMPONENTE CONQUISTA ALUNO*/
+  
+  
+  /* conquista professor - media query para celulares */
+  #conquista-professor {
+    background-color: var(--text-primary-color);
+    border: 1vw solid var(--text-primary-color);
+    border-radius: 1vw;
+    -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 1vh;
+  }
+  
+  #conquista-professor h1 {
+    text-transform: uppercase;
+  }
+  
+  #conquista-professor .conquistas-div-interna {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  #conquista-professor .conquistas-div-interna ul li .icone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.8em;
+    padding: 1em 0.5em 0.5em 0;
+    color: var(--accent-color);
+    -ms-flex-item-align: baseline;
+    align-self: baseline;
+    /* list-style: none; */
+  }
+  
+  #conquista-professor .conquistas-div-interna ul li .numero {
+    font-size: 1.2em;
+    padding: 0 0.2em 0 0;
+    font-weight: 500;
+    /* list-style: none; */
+  }
+  
+  #conquista-professor .conquistas-div-interna ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+  }
+  
+  #conquista-professor .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  
+  #conquista-professor .header .fas {
+    color: var(--accent-color);
+  }
+  
+  #conquista-professor .header .far {
+    color: var(--divider-color);
+  }
+  
+  /*FIM DO CSS PARA COMPONENTE CONQUISTA ALUNO*/
+  
+  
+  /* mediaquery do celular */
   #perfil-detalhe {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1942,7 +1585,7 @@ section#mensagens {
     margin-bottom: 1vh;
     min-width: 100%;
   }
-
+  
   #perfil-detalhe .avatar {
     width: 140px;
     border-radius: 100%;
@@ -1957,7 +1600,7 @@ section#mensagens {
     position: relative;
     top: 30px;
   }
-
+  
   #perfil-detalhe .capa-perfil-detalhe {
     background-image: url('/img/capa.jpg');
     height: 190px;
@@ -1973,30 +1616,30 @@ section#mensagens {
     -ms-flex-pack: start;
     justify-content: start;
   }
-
+  
   #perfil-detalhe .capa-perfil-detalhe:hover,
   #perfil-detalhe .info:hover,
   #perfil-detalhe .avatar:hover {
     cursor: pointer;
   }
-
+  
   #perfil-detalhe .valor {
     padding: 0 0.7vw;
     font-size: medium;
     font-weight: 500;
   }
-
-  /* #perfil-detalhe .icone {
+  
+  #perfil-detalhe .icone {
     font-size: 1.2em;
     color: var(--accent-color);
-  } */
-
+  }
+  
   #perfil-detalhe .info {
     text-align: left;
     margin: 4vh 1vw;
     font-size: 10px;
   }
-
+  
   #perfil-detalhe .info .faculdade,
   #perfil-detalhe .info .cidade,
   #perfil-detalhe .info .frase,
@@ -2006,7 +1649,7 @@ section#mensagens {
   #perfil-detalhe .info .nome {
     margin-bottom: 0.8vh;
   }
-
+  
   #perfil-detalhe .editar {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2016,11 +1659,11 @@ section#mensagens {
     color: var(--dark-primary-color);
     margin-top: 0.5em;
   }
-
+  
   #perfil-detalhe .editar:hover {
     cursor: pointer;
   }
-
+  
   #perfil-detalhe .interesses-ensino ul,
   #perfil-detalhe .interesses-aprendizado ul {
     list-style: none;
@@ -2031,31 +1674,37 @@ section#mensagens {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
     margin: 0;
     padding: 0;
   }
-
+  
   #perfil-detalhe .interesses-ensino ul {
     margin-bottom: 2vh;
   }
-
+  
   #perfil-detalhe .interesses-aprendizado {
     margin-top: 1em;
   }
-
+  
   #perfil-detalhe li {
     padding: 0 1vh 2vh 0;
     margin: 0;
     color: var(--dark-primary-color);
   }
-
+  
   #perfil-detalhe .interesses-div {
     display: inline-block;
     border-top: 1px solid var(--divider-color);
     min-width: 40vw;
     margin-top: 4vh;
   }
-
+  
   #perfil-detalhe .icone {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2063,7 +1712,7 @@ section#mensagens {
     justify-self: flex-end;
     color: white;
   }
-
+  
   #perfil-detalhe .trofeu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2078,40 +1727,288 @@ section#mensagens {
     -ms-flex-item-align: end;
     align-self: flex-end;
   }
-  .row-botoes-perfil {
-    /* width: 58vw; */
-    height: 8vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
+  
+  /*FIM DO CSS DO COMPONENTE PERFIL*/
+  
+  
+  /* footer celulares */
+  #main-footer {
+    display: none;
   }
   
-  .campo-ocupado {
+  #mobile-footer {
     width: 100%;
-    height: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: var(--light-background-color);
+    color: white;
+    height: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
+    display: flex !important;
+    justify-content: center !important;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
   }
+  
+  #mobile-footer ul {
+    /* display: flex; */
+    margin: 0 18vw 0 5vw;
+  }
+  
+  #mobile-footer li {
+    list-style: none;
+    display: inline-block;
+    /* flex-grow: 1; */
+    font-size: 1.2em;
+    /* margin-right: 20vw; */
+    /* margin-left: 10vw; */
+    /* margin-top: 1vh; */
+  }
+  
+  #mobile-footer i {
+    color: var(--default-primary-color);
+  }
+  
+  #mobile-footer .logo-letra {
+    width: 30vw;
+  }
+  
+  /* footer lateral celulares - display none*/
+  #footer-lateral {
+    display: none;
+  }
 }
+/*AQUI FINALIZA O CSS PARA MOBILE*/
+/*-----------------------------------------------------------------------------------*/
 
-/* mediaquery do celular */
-@media screen and (max-width: 599px) {
+
+
+
+/*AQUI INICIA O CSS PARA MOBILE MAIOR QUE 600 PX*/
+/*-----------------------------------------------------------------------------------*/
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  #conquistas-usuario {
+    background-color: var(--text-primary-color);
+    border: 1vw solid var(--text-primary-color);
+    border-radius: 1vw;
+    -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 1vh;
+  }
+  
+  #conquistas-usuario h1 {
+    text-transform: uppercase;
+  }
+  
+  #conquistas-usuario ul {
+    list-style: none;
+  }
+  
+  #conquistas-usuario .conquistas-div-interna {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid var(--divider-color);
+    border-radius: 10px;
+    /* margin: 2vh 0; */
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  
+  #conquistas-usuario .conquistas-div-interna ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+  }
+  
+  #conquistas-usuario .conquistas-div-interna ul li .icone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.8em;
+    padding: 1em 0.5em 0.5em 0;
+    color: var(--accent-color);
+    -ms-flex-item-align: baseline;
+    align-self: baseline;
+  }
+  
+  #conquistas-usuario .conquistas-div-interna ul li .numero {
+    font-size: 1.2em;
+    padding: 0 0.2em 0 0;
+    font-weight: 500;
+  }
+  
+  /*INICIO DO CSS COMPONENTE CONQUISTA ALUNO*/
+  #conquista-aluno {
+    background-color: var(--text-primary-color);
+    border: 1vw solid var(--text-primary-color);
+    border-radius: 1vw;
+    -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 1vh;
+  }
+  
+  #conquista-aluno h1 {
+    text-transform: uppercase;
+  }
+  
+  #conquista-aluno .conquistas-div-interna {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid var(--divider-color);
+    border-radius: 10px;
+    margin: 2vh 0;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  
+  #conquista-aluno .conquistas-div-interna ul li .icone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.8em;
+    padding: 1em 0.5em 0.5em 0;
+    color: var(--accent-color);
+    -ms-flex-item-align: baseline;
+    align-self: baseline;
+  }
+  
+  #conquista-aluno .conquistas-div-interna ul li .numero {
+    font-size: 1.2em;
+    padding: 0 0.2em 0 0;
+    font-weight: 500;
+  }
+  
+  
+  #conquista-aluno .conquistas-div-interna ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+  }
+  
+  #conquista-aluno .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  
+  #conquista-aluno .header .fas {
+    color: var(--accent-color);
+  }
+  
+  #conquista-aluno .header .far {
+    color: var(--divider-color);
+  }
+  
+  /*Fim*/
+  
+  
+  #conquista-professor {
+    background-color: var(--text-primary-color);
+    border: 1vw solid var(--text-primary-color);
+    border-radius: 1vw;
+    -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 1vh;
+  }
+  
+  #conquista-professor h1 {
+    text-transform: uppercase;
+  }
+  
+  #conquista-professor .conquistas-div-interna {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid var(--divider-color);
+    border-radius: 10px;
+    margin: 2vh 0;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  
+  #conquista-professor .conquistas-div-interna ul li .icone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.8em;
+    padding: 1em 0.5em 0.5em 0;
+    color: var(--accent-color);
+    -ms-flex-item-align: baseline;
+    align-self: baseline;
+  }
+  
+  #conquista-professor .conquistas-div-interna ul li .numero {
+    font-size: 1.2em;
+    padding: 0 0.2em 0 0;
+    font-weight: 500;
+  }
+  
+  
+  #conquista-professor .conquistas-div-interna ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+  }
+  
+  #conquista-professor .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  
+  #conquista-professor .header .fas {
+    color: var(--accent-color);
+  }
+  
+  #conquista-professor .header .far {
+    color: var(--divider-color);
+  }
+  
+  /*Fim*/
+  
+  /*INICIA DO CSS DO COMPONENTE PERFIL*/
+  /* mediaquery site e tablet */
   #perfil-detalhe {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2133,7 +2030,7 @@ section#mensagens {
     margin-bottom: 1vh;
     min-width: 100%;
   }
-
+  
   #perfil-detalhe .avatar {
     width: 140px;
     border-radius: 100%;
@@ -2148,7 +2045,7 @@ section#mensagens {
     position: relative;
     top: 30px;
   }
-
+  
   #perfil-detalhe .capa-perfil-detalhe {
     background-image: url('/img/capa.jpg');
     height: 190px;
@@ -2164,29 +2061,29 @@ section#mensagens {
     -ms-flex-pack: start;
     justify-content: start;
   }
-
+  
   #perfil-detalhe .capa-perfil-detalhe:hover,
   #perfil-detalhe .info:hover,
   #perfil-detalhe .avatar:hover {
     cursor: pointer;
   }
-
+  
   #perfil-detalhe .valor {
     padding: 0 0.7vw;
     font-size: medium;
     font-weight: 500;
   }
-
+  
   #perfil-detalhe .icone {
     font-size: 1.2em;
     color: var(--accent-color);
   }
-
+  
   #perfil-detalhe .info {
     text-align: left;
     margin: 4vh 1vw;
   }
-
+  
   #perfil-detalhe .info .faculdade,
   #perfil-detalhe .info .cidade,
   #perfil-detalhe .info .frase,
@@ -2196,7 +2093,7 @@ section#mensagens {
   #perfil-detalhe .info .nome {
     margin-bottom: 0.8vh;
   }
-
+  
   #perfil-detalhe .editar {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2206,11 +2103,11 @@ section#mensagens {
     color: var(--dark-primary-color);
     margin-top: 0.5em;
   }
-
+  
   #perfil-detalhe .editar:hover {
     cursor: pointer;
   }
-
+  
   #perfil-detalhe .interesses-ensino ul,
   #perfil-detalhe .interesses-aprendizado ul {
     list-style: none;
@@ -2221,37 +2118,31 @@ section#mensagens {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
     margin: 0;
     padding: 0;
   }
-
+  
   #perfil-detalhe .interesses-ensino ul {
     margin-bottom: 2vh;
   }
-
+  
   #perfil-detalhe .interesses-aprendizado {
     margin-top: 1em;
   }
-
+  
   #perfil-detalhe li {
     padding: 0 1vh 2vh 0;
     margin: 0;
     color: var(--dark-primary-color);
   }
-
+  
   #perfil-detalhe .interesses-div {
     display: inline-block;
     border-top: 1px solid var(--divider-color);
     min-width: 40vw;
     margin-top: 4vh;
   }
-
+  
   #perfil-detalhe .icone {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2259,7 +2150,7 @@ section#mensagens {
     justify-self: flex-end;
     color: white;
   }
-
+  
   #perfil-detalhe .trofeu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2274,6 +2165,16 @@ section#mensagens {
     -ms-flex-item-align: end;
     align-self: flex-end;
   }
+  
+  /* footer lateral tablets e desktop*/
+  
+  #footer-lateral address {
+    margin-top: 3vh;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+  }
+  
 }
 
 /*FIM DO CSS DO COMPONENTE PERFIL*/
@@ -2509,266 +2410,311 @@ section#mensagens {
 }
 
 /*FIM DO CSS COMPONENTE USUARIO PESQUISADO*/
-
-
-/*INICIO DO CSS COMPONENTE AULA PESQUISADA*/
-#aula-pesquisada {
-  background-color: var(--text-primary-color);
-  border: 1vw solid var(--text-primary-color);
-  border-radius: 1vw;
-  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-top: 1vh;
-}
-
-#aula-pesquisada .aula {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  align-items: center;
-}
-
-#aula-pesquisada .aula img {
-  width: 50px;
-  height: 50px;
-  margin-right: 3vw;
-}
-
-#aula-pesquisada .botoes {
-  display: flex;
-  align-content: space-between;
-}
-
-#aula-pesquisada .botoes-btn {
-  display: flex;
-  margin: 0 2vw 0 0;
-}
-
-#aula-pesquisada .icone {
-  color: var(--accent-color);
-}
-
-/*FIM DO CSS COMPONENTE AULA PESQUISADA*/
+/*AQUI FINALIZA O CSS PARA MOBILE MAIOR QUE 600 PX*/
+/*-----------------------------------------------------------------------------------*/
 
 
 
 
-
-
-/*INICIO DO CSS COMPONENTE MODAL EDITAR PERFIL*/
-#modalEditarPerfil .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-}
-
-#modalEditarPerfil .header-avatar {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-  align-self: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-#modalEditarPerfil .header-avatar img {
-  width: 90px;
-  border-radius: 100%;
-  height: 90px;
-  border: 3px solid var(--text-primary-color);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
-  top: 25px;
-  position: relative;
-  -o-object-fit: contain;
-  object-fit: contain;
-  -webkit-transition: ease-in-out 0.5s;
-  -o-transition: ease-in-out 0.5s;
-  transition: ease-in-out 0.5s;
-}
-
-#modalEditarPerfil .header-avatar img:hover {
-  width: 100px;
-  border-radius: 100%;
-  height: 100px;
-  border: 5px solid var(--text-primary-color);
-}
-
-#modalEditarPerfil .header .imagem-background {
-  background-image: url('/img/capa.jpg');
-  width: 100%;
-  height: 15vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 5vh;
-  -webkit-transition: ease-in-out 0.5s;
-  -o-transition: ease-in-out 0.5s;
-  transition: ease-in-out 0.5s;
-}
-
-#modalEditarPerfil .header .imagem-background:hover {
-  cursor: pointer;
-  background-position: center;
-}
-
-#modalEditarPerfil .modal-body {
-  padding: 0 1rem;
-}
-
-
-#modalEditarPerfil input,
-#modalEditarPerfil select {
-  border: 1px solid var(--divider-color);
-  border-radius: 5px;
-  width: 100%;
-  height: 4.5vh;
-  padding: 0.2rem;
-  color: var(--dark-primary-color);
-  margin-bottom: 2vh;
-}
-
-#modalEditarPerfil label {
-  font-weight: 500;
-}
-
-#modalEditarPerfil textarea {
-  margin-top: 2vh;
-  padding: 0.5rem;
-  border-radius: 10px;
-  resize: none;
-}
-
-#modalEditarPerfil .quantidade-caracteres {
-  color: var(--secondary-text-color);
-  text-align: right;
-}
-
-#modalEditarPerfil .modal-dialog {
-  min-width: 800px;
-  width: 800px;
-}
-
-/*FIM DO CSS COMPONENTE MODAL EDITAR PERFIL*/
-
-/* INICIO DO CSS PATROCINADORES MENOR */
-
-#div-geral-patrocinador-menor {
-  /* width: 21vw;
-  height: 15vh;
-  margin-top: 10px; */
-  background-color: var(--text-primary-color);
-  border: 10px solid var(--text-primary-color);
-  border-radius: 1vw;
-  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  margin-bottom: 1vh;
-}
-
-.patrocinador-menor {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.patrocinador-menor img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-#div-geral-patrocinador-maior {
-  /* width: 21vw;
-  height: 40vh;
-  margin-top: 10px; */
-  background-color: var(--text-primary-color);
-  border: 10px solid var(--text-primary-color);
-  border-radius: 1vw;
-  -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
-  margin-bottom: 1vh;
-}
-
-.patrocinador-maior {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.patrocinador-maior img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-/* footer principal - desktop */
-@media screen and (min-width: 1200px) {
-  #mobile-footer {
+/*AQUI INICIA O CSS PARA TABLET E NOTEPAD*/
+/*-----------------------------------------------------------------------------------*/
+@media screen and (min-width: 901px) and (max-width: 1199px) {
+  #header-celular {
     display: none;
   }
-
-  #main-footer {
+  
+  #header-desktop {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* margin-bottom: 10vh; */
+  }
+  
+  .header-nav {
     background-color: var(--dark-primary-color);
-    height: 6vh;
+    height: 4vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: flex-end;
+    -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: flex-end;
+    align-items: center;
     justify-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    margin-top: 2vh;
+    margin-bottom: 1vh;
   }
-
-  #main-footer address {
-    padding: 0;
-    vertical-align: bottom;
+  
+  .header-nav .form-control {
+    height: calc(0.7em + .75rem + 2px);
   }
-
-  #main-footer address p {
-    text-transform: uppercase;
-    padding: 0;
-    margin: 0;
+  
+  .header-nav .input-group-text {
+    line-height: 0.8;
+    background-color: transparent;
+    border: none;
     color: var(--text-primary-color);
   }
-}
-
-/* footer tablets */
-@media screen and (max-width: 1199px) {
+  
+  .header-nav .form-inline {
+    width: 35vw;
+  }
+  
+  .header-nav #caixa-pesquisar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 50%;
+  }
+  
+  .header-nav input[type='search'] {
+    width: 25vw;
+  }
+  
+  .header-nav-ul {
+    list-style: none;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .focus {
+    outline: none;
+  }
+  
+  .header-nav-ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1em;
+    margin: 0 1.2vw;
+    color: var(--text-primary-color);
+  }
+  
+  .header-nav-ul li:hover {
+    cursor: pointer;
+  }
+  
+  #pesquisar:hover {
+    cursor: pointer;
+  }
+  
+  .header-nav a {
+    color: var(--text-primary-color);
+    text-decoration: none;
+  }
+  
+  .header-nav #notificacao {
+    background-color: red;
+    color: var(--text-primary-color);
+    border-radius: 2px;
+    padding: 2px;
+    font-size: 12px;
+  }
+  
+  /*Nova postagem */
+  #novaPostagem {
+    width: '100%';
+    height: 14vh;
+    min-height: 100px;
+    background-color: var(--text-primary-color);
+    border-radius: 10px;
+    -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    padding: 10px;
+  }
+  
+  #novaPostagem .rowBotoes {
+    width: '100%';
+    height: 7vh;
+    min-height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  
+  #novaPostagem .posicao {
+    width: 12vw;
+    height: 7vh;
+    min-height: 50px;
+    background-color: var(--text-primary-color);
+    background-color: var(--text-primary-color);
+    border: 1px solid var(--divider-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  #lugar {
+    color: var(--dark-primary-color);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  #novaPostagem .botao {
+    width: 12vw;
+    height: 7vh;
+    min-height: 50px;
+    background-color: var(--text-primary-color);
+    border: 1px solid var(--divider-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 17px;
+    color: var(--dark-primary-color);
+  }
+  
+  #novaPostagem .botao:hover,
+  #novaPostagem .posicao:hover h1,
+  #novaPostagem .posicao:hover {
+    color: var(--text-primary-color);
+    background-color: var(--default-primary-color);
+    cursor: pointer;
+  }
+  
+  #novaPostagem .botao p {
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+  
+  #novaPostagem .apoiados {
+    width: '100%';
+    height: 7vh;
+    min-height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  
+  #novaPostagem .text-apoiados {
+    width: 10vw;
+    height: 7vh;
+    min-height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    color: var(--default-primary-color);
+    padding: 1vh;
+  }
+  
+  #novaPostagem .listagem-apoiados {
+    width: 100%;
+    height: 7vh;
+    min-height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 1vh;
+    
+  }
+  
+  #novaPostagem .apoiado {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  
+  #novaPostagem .apoiado img {
+    height: 50px;
+    width: 50px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    margin: 0px 5px 10px;
+  }
+  
+  #novaPostagem .botao {
+    font-size: 2vw;
+    text-align: center;
+    padding-bottom: 1vh;
+  }
+  
+  #novaPostagem .botao p {
+    padding-top: 1vh;
+  }
+  
+  #novaPostagem .seta {
+    width: 2.8vw;
+    height: 5vh;
+    margin-left: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  #seta {
+    color: var(--default-primary-color)
+  }
+  
+  .seta:hover {
+    cursor: pointer;
+  }
+  
+  /*AQUI FINALIZA O CSS DO COMPONENTE NOVAS PUBLICACOES*/
+  
+  
+  /* footer tablets */
   #mobile-footer {
     display: none;
   }
-
+  
   #main-footer {
     background-color: var(--dark-primary-color);
     height: 4vh;
@@ -2784,76 +2730,360 @@ section#mensagens {
     justify-content: center;
     margin-top: 1vh;
   }
-
+  
   #main-footer address {
     padding: 0;
     vertical-align: bottom;
   }
-
+  
   #main-footer address p {
     text-transform: uppercase;
     padding: 0;
     margin: 0;
     color: var(--text-primary-color);
   }
+  
+  
 }
+/*AQUI FINALIZA O CSS PARA TABLET E NOTEPAD*/
+/*-----------------------------------------------------------------------------------*/
 
-/* footer celulares */
-@media screen and (max-width: 599px) {
-  #main-footer {
+
+
+
+/*AQUI INICIA O CSS PARA DESKTOP*/
+/*-----------------------------------------------------------------------------------*/
+@media screen and (min-width: 1200px) {
+  #header-celular {
     display: none;
   }
-
-  #mobile-footer {
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    background-color: var(--light-background-color);
-    color: white;
-    height: 40px;
+  
+  #header-desktop {
+    display: inline-block;
+  }
+  
+  .header-nav {
+    background-color: var(--dark-primary-color);
+    height: 6vh;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex !important;
-    justify-content: center !important;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 1vh;
+  }
+  
+  .header-nav .form-control {
+    height: calc(0.7em + .75rem + 2px);
+  }
+  
+  .header-nav .input-group-text {
+    line-height: 0.8;
+    background-color: transparent;
+    border: none;
+    color: var(--text-primary-color);
+  }
+  
+  .header-nav .form-inline {
+    width: 25vw;
+  }
+  
+  .header-nav #caixa-pesquisar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 50%;
+  }
+  
+  .header-nav input[type='search'] {
+    width: 20vw;
+  }
+  
+  .header-nav-ul {
+    list-style: none;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .no-focus {
+    outline: none;
+  }
+  
+  .header-nav-ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1em;
+    margin: 0 1.2vw;
+    color: var(--text-primary-color);
+  }
+  
+  .header-nav-ul li:hover {
+    cursor: pointer;
+  }
+  
+  #pesquisar:hover {
+    cursor: pointer;
+  }
+  
+  .header-nav a {
+    color: var(--text-primary-color);
+    text-decoration: none;
+  }
+  
+  .header-nav #notificacao {
+    background-color: red;
+    color: var(--text-primary-color);
+    border-radius: 2px;
+    padding: 2px;
+    font-size: 12px;
+  }
+  
+  /*Fim*/
+  
+  
+  /*AQUI COMEÇA O CSS DO COMPONENTE NOVAS PUBLICACOES*/
+  #novaPostagem {
+    width: '100%';
+    height: 26vh;
+    min-height: 150px;
+    background-color: var(--text-primary-color);
+    border-radius: 10px;
+    -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    padding: 10px;
+  }
+  
+  #novaPostagem .rowBotoes {
+    width: '100%';
+    height: 13vh;
+    min-height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  
+  #novaPostagem .posicao {
+    width: 12vw;
+    height: 13vh;
+    min-height: 70px;
+    background-color: var(--text-primary-color);
+    background-color: var(--text-primary-color);
+    border: 1px solid var(--divider-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
   }
-  #mobile-footer ul {
-    /* display: flex; */
-    margin: 0 18vw 0 5vw;
-  }
-  #mobile-footer li {
-    list-style: none;
-    display: inline-block;
-    /* flex-grow: 1; */
-    font-size: 1.2em;
-    /* margin-right: 20vw; */
-    /* margin-left: 10vw; */
-    /* margin-top: 1vh; */
-  }
-  #mobile-footer i {
-    color: var(--default-primary-color);
-  }
-  #mobile-footer .logo-letra {
-    width: 30vw;
-  }
-}
-
-/* footer lateral tablets e desktop*/
-@media screen and (min-width: 600px) {
-  #footer-lateral address {
-    margin-top: 3vh;
+  
+  #lugar {
+    color: var(--dark-primary-color);
     text-align: center;
     text-transform: uppercase;
-    color: var(--secondary-text-color);
   }
-}
-
-/* footer lateral celulares - display none*/
-@media screen and (max-width: 599px) {
-  #footer-lateral {
+  
+  #novaPostagem .botao {
+    width: 8vw;
+    height: 13vh;
+    min-height: 70px;
+    background-color: var(--text-primary-color);
+    border: 1px solid var(--divider-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 17px;
+    color: var(--dark-primary-color);
+  }
+  
+  #novaPostagem .botao:hover,
+  #novaPostagem .posicao:hover h1,
+  #novaPostagem .posicao:hover {
+    color: var(--text-primary-color);
+    background-color: var(--default-primary-color);
+    cursor: pointer;
+  }
+  
+  #novaPostagem .botao p {
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+  
+  #novaPostagem .apoiados {
+    width: '100%';
+    height: 13vh;
+    min-height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  
+  #novaPostagem .text-apoiados {
+    width: 10vw;
+    height: 13vh;
+    min-height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    color: var(--default-primary-color);
+    padding: 1vh;
+  }
+  
+  #novaPostagem .listagem-apoiados {
+    width: 30vw;
+    height: 13vh;
+    min-height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 1vh;
+  }
+  
+  #novaPostagem .apoiado {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  
+  #novaPostagem .apoiado img {
+    height: 50px;
+    width: 50px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    margin: 0px 5px 10px;
+  }
+  
+  #novaPostagem .botao {
+    font-size: 2vw;
+    text-align: center;
+    padding-bottom: 1vh;
+  }
+  
+  #novaPostagem .botao p {
+    padding-top: 1vh;
+  }
+  
+  #novaPostagem .seta {
+    width: 2.8vw;
+    height: 5vh;
+    margin-left: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  #seta {
+    color: var(--default-primary-color)
+  }
+  
+  .seta:hover {
+    cursor: pointer;
+  }
+  
+  /*Fim*/
+  
+  /* footer principal - desktop */
+  #mobile-footer {
     display: none;
   }
+  
+  #main-footer {
+    background-color: var(--dark-primary-color);
+    height: 6vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: center;
+    align-items: flex-end;
+    justify-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 2vh;
+  }
+  
+  #main-footer address {
+    padding: 0;
+    vertical-align: bottom;
+  }
+  
+  #main-footer address p {
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    color: var(--text-primary-color);
+  }
+  
+  
 }
+/*AQUI FINALIZA O CSS PARA DESKTOP*/
+/*-----------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+

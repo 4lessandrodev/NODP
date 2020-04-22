@@ -31,11 +31,13 @@
     </div>
     <div class="row-botoes-perfil">
       <div class="campo-ocupado">
-        <input type="button" value="Postagens" class="btn-1-l no-focus">
-        <input type="button" value="Denunciar" class="btn-1-l no-focus">
-        <input type="button" value="Mensagem" class="btn-1-l no-focus">
-        <input type="button" value="Apoiar" class="btn-1-l no-focus">
+        <input type="button" value="Postagens" class="btn-1-d no-focus">
+        <input type="button" value="Denunciar" class="btn-1-d no-focus">
+        <input type="button" value="Mensagem" class="btn-1-d no-focus" data-toggle="modal" data-target="#modalMensagem">
+        <input type="button" value="Apoiar" class="btn-1-d no-focus" data-toggle="modal" data-target="#modalDeApoiar">
       </div>
     </div>
   </div>
+  <%- include('./model-apoia') -%>
+  <%- include('./modal-mensagem') -%>
 </section>
