@@ -442,7 +442,8 @@ section#apoiadores img {
 
 #apoiadores .apoiadores-footer {
   text-align: center;
-  margin: 3vh;
+  margin-top: 2vh;
+  
 }
 
 /*FIM DO CSS DO COMPONENTE APOIADORES*/
@@ -1308,7 +1309,6 @@ section#mensagens {
   
   #header-celular {
     display: flex;
-    flex-direction: column;
   }
   
   #header-celular .header-nav {
@@ -1317,14 +1317,10 @@ section#mensagens {
     height: 5vh;
     width: 100%;
     display: flex;
-    position: fixed;
-    flex-direction: row;
     top: 0;
     left: 0;
-    justify-content: space-between;
     margin-top: 0;
     margin-bottom: 1rem;
-    display: flex;
     justify-content: space-around;
     margin: 0;
     padding: 0;
@@ -1334,6 +1330,7 @@ section#mensagens {
   #header-celular .header-nav-ul li {
     font-size: 1.2em;
     list-style: none;
+    display: flex;
   }
   
   #header-celular .header-nav-ul li:hover {
@@ -1343,10 +1340,12 @@ section#mensagens {
   #header-celular .header-nav a {
     color: var(--default-primary-color);
     text-decoration: none;
+    display: flex;
   }
   
   #header-celular .logo-letra {
     width: 70px;
+    display: flex;
   }
   
   
@@ -1640,6 +1639,7 @@ section#mensagens {
   #perfil-detalhe .info {
     text-align: left;
     margin: 4vh 1vw;
+    font-size: 10px;
   }
   
   #perfil-detalhe .info .faculdade,

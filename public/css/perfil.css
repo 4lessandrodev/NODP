@@ -50,4 +50,22 @@ body {
     padding: 0;
     margin-bottom: 8vh;
   }
+  #perfil-detalhe .campo-ocupado {
+    align-items: center;
+  }
+  #perfil-detalhe .trofeu {
+    font-size: 3em;
+  }
+  #ranking-aluno .btn-ranking {
+    text-align: end;
+    position: relative;
+    bottom: 1vh;
+    overflow: hidden;
+  }
+  #ranking-professor .btn-ranking {
+    text-align: end;
+    position: relative;
+    bottom: 1vh;
+    overflow: hidden;
+  }
 }

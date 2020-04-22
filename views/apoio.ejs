@@ -4,6 +4,7 @@
 <link rel='stylesheet' href='/css/home.css' />
 <link rel='stylesheet' href='/css/post-feed.css' />
 <link rel='stylesheet' href='/css/apoia.css' />
+<link rel='stylesheet' href='/css/modal-mensagem.css' />
 
 
 <!--Tag de fechamento do head que ficou aberto para possibilitar importar o css da página-->
@@ -17,20 +18,20 @@
   <div class="container">
     
     <div class="row">
-      <div class="col-3 coluna-esquerda">
+      <div class="coluna-esquerda">
         <%- include('./includes/perfil-usuario-home')-%>
       
       </div>
-      <div class="col-6 coluna-central">
+      <div class="coluna-central">
         
         <div class="div-scroll-post">
           <%- include('./includes/apoia')-%>
           
         </div>
       </div>
-      <div class="col-3 coluna-direita">
+      <div class="coluna-direita">
         <!--Coluna de mensagens, aulas recentes-->
-        <%- include('./includes/mensagens')-%>
+        <%- include('./includes/mensagens-lateral')-%>
         <%- include('./includes/aulas-recentes')-%>
       </div>
     </div>

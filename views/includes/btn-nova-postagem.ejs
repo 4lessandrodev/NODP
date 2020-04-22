@@ -60,10 +60,24 @@
                 </div>  
             </div>
         </div>
-        <!-- Modal de criar publicação-->
-        <%- include('../includes/modal-criar-publicacao')-%>
+        
     </section> 
-    <section id="novaPostagemMobile">
-        <div>...Bem-vindo User, </br>....Nova Postagem para Mobile Aqui</div>
+    <section id="usuario-pesquisado" class="container">
+        <div>Bem-vindo,  User </br></div>
+        <!-- <div id="aula-pesquisada" class="aula"> -->
+            <div class="post-coment">
+                <form action="" class="post-coment-form">
+                <div class="img-avatar-coment">
+                    <img src="/img/kate.jpg" alt="">
+                </div>
+                <div class="div-input-comentario">
+                    <input type="text" name="comentario" class="input-comentario" autocomplete="off" required placeholder="O que você quer publicar hoje?"
+                    data-toggle="modal" data-target="#modalMobile">
+                </div>
+                </form>
+            </div>
+        <!-- </div> -->
     </section>
+    <!-- Modal de criar publicação-->
+    <%- include('../includes/modal-criar-publicacao')-%>
     
