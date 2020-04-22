@@ -1803,6 +1803,11 @@ section#mensagens {
   #footer-lateral {
     display: none;
   }
+  #usuario-pesquisado .col-nome {
+    /*col-10*/
+    width: 83, 3333333%;
+    margin-left: 3.2%;
+
 }
 /*AQUI FINALIZA O CSS PARA MOBILE*/
 /*-----------------------------------------------------------------------------------*/
@@ -2432,7 +2437,7 @@ section#mensagens {
   #usuario-pesquisado .col-nome {
     /*col-10*/
     width: 83, 3333333%;
-    
+   
 
   }
   /*-------------------------------------------------------------------*/
