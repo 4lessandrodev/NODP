@@ -1358,7 +1358,10 @@ section#mensagens {
     display: flex;
   }
   
-  
+  .boas-vendas{
+    text-align: center;
+  }
+
   /*Conquista de usuario*/
   #conquistas-usuario {
     background-color: var(--text-primary-color);

@@ -316,7 +316,23 @@
   cursor: pointer;
 }
 
-
-
-
 /*FIM DO CSS PARA O MODAL ENSINANDO*/
+
+#modalMobile .img-post {
+  font-size: 50px;
+  text-align: center;
+  margin: 2vh 0;
+  padding: 0vw;
+  font-weight: lighter;
+  line-height: 0.4;
+  background-color: var(--light-background-color);
+  color: var(--text-primary-color);
+  -webkit-transition: ease-in-out 0.5s;
+  -o-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+  border: 2px dashed var(--secondary-text-color);
+}
+
+#modalMobile .modal-footer{
+  flex-wrap: nowrap;
+}
