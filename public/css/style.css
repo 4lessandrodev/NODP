@@ -1063,7 +1063,7 @@ section#mensagens {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
- 
+  
 }
 
 /*FIM DO CSS COMPONENTE USUARIO PESQUISADO*/
@@ -1290,10 +1290,10 @@ section#mensagens {
   width: 83, 3333333%;
   margin-left: 8%;
 }
-  #modalAvaliar .nota{
-color:#FF9800;
-padding-left: 5%;
-  }
+#modalAvaliar .nota{
+  color:#FF9800;
+  padding-left: 5%;
+}
 
 /*AQUI FINALIZA O CSS PARA PADRÃO PARA TODOS OS TAMANOOS*/
 /*-----------------------------------------------------------------------------------*/
@@ -1569,10 +1569,10 @@ padding-left: 5%;
   #conquista-professor .header .fas {
     color: var(--accent-color);
   }
-
-    #conquista-professor .nota {
-      display: none;
-    }
+  
+  #conquista-professor .nota {
+    display: none;
+  }
   
   #conquista-professor .header .far {
     color: var(--divider-color);
@@ -1813,8 +1813,8 @@ padding-left: 5%;
     width: 83, 3333333%;
     margin-left: 3.2%;
   }
-
-
+  
+  
 }
 /*AQUI FINALIZA O CSS PARA MOBILE*/
 /*-----------------------------------------------------------------------------------*/
@@ -2444,8 +2444,8 @@ padding-left: 5%;
   #usuario-pesquisado .col-nome {
     /*col-10*/
     width: 83, 3333333%;
-   
-
+    
+    
   }
   /*-------------------------------------------------------------------*/
   
@@ -3117,7 +3117,392 @@ padding-left: 5%;
     margin: 0;
     color: var(--text-primary-color);
   }
-
+  
+  #conquistas-usuario {
+    background-color: var(--text-primary-color);
+    border: 1vw solid var(--text-primary-color);
+    border-radius: 1vw;
+    -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 1vh;
+  }
+  
+  #conquistas-usuario h1 {
+    text-transform: uppercase;
+  }
+  
+  #conquistas-usuario ul {
+    list-style: none;
+  }
+  
+  #conquistas-usuario .conquistas-div-interna {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid var(--divider-color);
+    border-radius: 10px;
+    /* margin: 2vh 0; */
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  
+  #conquistas-usuario .conquistas-div-interna ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+  }
+  
+  #conquistas-usuario .conquistas-div-interna ul li .icone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.8em;
+    padding: 1em 0.5em 0.5em 0;
+    color: var(--accent-color);
+    -ms-flex-item-align: baseline;
+    align-self: baseline;
+  }
+  
+  #conquistas-usuario .conquistas-div-interna ul li .numero {
+    font-size: 1.2em;
+    padding: 0 0.2em 0 0;
+    font-weight: 500;
+  }
+  
+  /*INICIO DO CSS COMPONENTE CONQUISTA ALUNO*/
+  #conquista-aluno {
+    background-color: var(--text-primary-color);
+    border: 1vw solid var(--text-primary-color);
+    border-radius: 1vw;
+    -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 1vh;
+  }
+  
+  #conquista-aluno h1 {
+    text-transform: uppercase;
+  }
+  
+  #conquista-aluno .conquistas-div-interna {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid var(--divider-color);
+    border-radius: 10px;
+    margin: 2vh 0;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  
+  #conquista-aluno .conquistas-div-interna ul li .icone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.8em;
+    padding: 1em 0.5em 0.5em 0;
+    color: var(--accent-color);
+    -ms-flex-item-align: baseline;
+    align-self: baseline;
+  }
+  
+  #conquista-aluno .conquistas-div-interna ul li .numero {
+    font-size: 1.2em;
+    padding: 0 0.2em 0 0;
+    font-weight: 500;
+  }
+  
+  
+  #conquista-aluno .conquistas-div-interna ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+  }
+  
+  #conquista-aluno .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  
+  #conquista-aluno .header .fas {
+    color: var(--accent-color);
+  }
+  
+  #conquista-aluno .header .far {
+    color: var(--divider-color);
+  }
+  
+  /*Fim*/
+  
+  
+  #conquista-professor {
+    background-color: var(--text-primary-color);
+    border: 1vw solid var(--text-primary-color);
+    border-radius: 1vw;
+    -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 1vh;
+  }
+  
+  #conquista-professor h1 {
+    text-transform: uppercase;
+  }
+  
+  #conquista-professor .conquistas-div-interna {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid var(--divider-color);
+    border-radius: 10px;
+    margin: 2vh 0;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  
+  #conquista-professor .conquistas-div-interna ul li .icone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.8em;
+    padding: 1em 0.5em 0.5em 0;
+    color: var(--accent-color);
+    -ms-flex-item-align: baseline;
+    align-self: baseline;
+  }
+  
+  #conquista-professor .conquistas-div-interna ul li .numero {
+    font-size: 1.2em;
+    padding: 0 0.2em 0 0;
+    font-weight: 500;
+  }
+  
+  
+  #conquista-professor .conquistas-div-interna ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+  }
+  
+  #conquista-professor .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  
+  #conquista-professor .header .fas {
+    color: var(--accent-color);
+  }
+  
+  #conquista-professor .header .far {
+    color: var(--divider-color);
+  }
+  
+  /*Fim*/
+  
+  /*INICIA DO CSS DO COMPONENTE PERFIL*/
+  /* mediaquery site e tablet */
+  #perfil-detalhe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    background-color: var(--text-primary-color);
+    border: 1vw solid var(--text-primary-color);
+    border-radius: 1vw;
+    -webkit-box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    box-shadow: -2px 7px 17px 3px rgba(0, 0, 0, 0.19);
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-bottom: 1vh;
+    min-width: 100%;
+  }
+  
+  #perfil-detalhe .avatar {
+    width: 140px;
+    border-radius: 100%;
+    height: 140px;
+    border: 5px solid var(--text-primary-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    margin-left: 1vw;
+    position: relative;
+    top: 30px;
+  }
+  
+  #perfil-detalhe .capa-perfil-detalhe {
+    background-image: url('/img/capa.jpg');
+    height: 190px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+  }
+  
+  #perfil-detalhe .capa-perfil-detalhe:hover,
+  #perfil-detalhe .info:hover,
+  #perfil-detalhe .avatar:hover {
+    cursor: pointer;
+  }
+  
+  #perfil-detalhe .valor {
+    padding: 0 0.7vw;
+    font-size: medium;
+    font-weight: 500;
+  }
+  
+  #perfil-detalhe .icone {
+    font-size: 1.2em;
+    color: var(--accent-color);
+  }
+  
+  #perfil-detalhe .info {
+    text-align: left;
+    margin: 4vh 1vw;
+  }
+  
+  #perfil-detalhe .info .faculdade,
+  #perfil-detalhe .info .cidade,
+  #perfil-detalhe .info .frase,
+  #perfil-detalhe .info .email,
+  #perfil-detalhe .info .contato,
+  #perfil-detalhe .info .profissao,
+  #perfil-detalhe .info .nome {
+    margin-bottom: 0.8vh;
+  }
+  
+  #perfil-detalhe .editar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    color: var(--dark-primary-color);
+    margin-top: 0.5em;
+  }
+  
+  #perfil-detalhe .editar:hover {
+    cursor: pointer;
+  }
+  
+  #perfil-detalhe .interesses-ensino ul,
+  #perfil-detalhe .interesses-aprendizado ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #perfil-detalhe .interesses-ensino ul {
+    margin-bottom: 2vh;
+  }
+  
+  #perfil-detalhe .interesses-aprendizado {
+    margin-top: 1em;
+  }
+  
+  #perfil-detalhe li {
+    padding: 0 1vh 2vh 0;
+    margin: 0;
+    color: var(--dark-primary-color);
+  }
+  
+  #perfil-detalhe .interesses-div {
+    display: inline-block;
+    border-top: 1px solid var(--divider-color);
+    min-width: 40vw;
+    margin-top: 4vh;
+  }
+  
+  #perfil-detalhe .icone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-self: flex-end;
+    color: white;
+  }
+  
+  #perfil-detalhe .trofeu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    font-size: 5em;
+    color: var(--text-primary-color);
+    width: 40vw;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+  }
+  
+  /* footer lateral tablets e desktop*/
+  
+  #footer-lateral address {
+    margin-top: 3vh;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+  }
+  
 }
 /*AQUI FINALIZA O CSS PARA DESKTOP*/
 /*-----------------------------------------------------------------------------------*/
