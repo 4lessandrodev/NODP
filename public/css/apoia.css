@@ -38,14 +38,15 @@
   
   .ul-apoio {
     display: flex;
-    margin: 0;
-    padding: 1% 0;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: baseline;
+    color: #212121;
   }
   
   .apoia img {
-    width: 30px;
-    height: 30px;
-    
+    width: 40px;
+    height: 40px;
     text-align: center
   }
   
@@ -58,31 +59,22 @@
   }
   
   .apoia {
-    margin-bottom: 15px;
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid var(--divider-color);
+    padding: 2vh 0;
+    border-radius: 15px;
     margin-left: 4%;
   }
   
-  nav li {
+  .ul-apoio li {
     list-style: none;
-    display: flex;
-    text-align: left;
-    color: #212121;
-    padding-right: 15px;
-    padding-left: 15px;
-    justify-content: baseline;
-    align-items: baseline;
+    padding: 5vw 5vw 0 5vw;
   }
   
   nav li a {
     text-decoration: none;
-    text-align: left;
     color: #212121;
     font-family: 'Poppins', sans-serif;
-    
   }
   
   nav li a.active {
@@ -256,9 +248,14 @@
   }
   
   .apoia {
-    margin-bottom: 15px;
-    margin-top: 15px;
-    
+    cursor: pointer;
+    border-bottom: 1px solid var(--divider-color);
+    padding: 2vh 0;
+    border-radius: 15px;
+  }
+  
+  .apoia:hover{
+    background-color: var(--light-background-color);
   }
   
   nav li {
