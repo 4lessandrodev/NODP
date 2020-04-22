@@ -1285,6 +1285,11 @@ section#mensagens {
   -o-object-fit: cover;
   object-fit: cover;
 }
+#usuario-pesquisado .col-nome {
+  /*col-10*/
+  width: 83, 3333333%;
+  margin-left: 8%;
+}
 /*AQUI FINALIZA O CSS PARA PADRÃO PARA TODOS OS TAMANOOS*/
 /*-----------------------------------------------------------------------------------*/
 
