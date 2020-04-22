@@ -1290,6 +1290,11 @@ section#mensagens {
   width: 83, 3333333%;
   margin-left: 8%;
 }
+  #modalAvaliar .nota{
+color:#FF9800;
+padding-left: 5%;
+  }
+
 /*AQUI FINALIZA O CSS PARA PADRÃO PARA TODOS OS TAMANOOS*/
 /*-----------------------------------------------------------------------------------*/
 
@@ -1808,6 +1813,8 @@ section#mensagens {
     width: 83, 3333333%;
     margin-left: 3.2%;
   }
+
+
 }
 /*AQUI FINALIZA O CSS PARA MOBILE*/
 /*-----------------------------------------------------------------------------------*/

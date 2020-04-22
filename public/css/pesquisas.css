@@ -246,6 +246,10 @@ body {
     background-color: var(--default-primary-color);
     cursor: pointer;
   }
+
+  #iconeSearch{
+padding-left: 3%;
+  }
 }
 @media screen and (min-width: 1200px) {
 #filtroPesquisa {
