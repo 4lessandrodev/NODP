@@ -2492,9 +2492,20 @@ section#mensagens {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  align-items: center;
+}
+#usuario-pesquisado .usuario img {
+  width: 50px;
+  height: 50px;
+  margin-right: 3vw;
+}
+#usuario-pesquisado .col-foto {
+  /*col-2*/
+  width: 16,66666%
+}
+#usuario-pesquisado .col-nome {
+  /*col-10*/
+  width: 83,3333333%
 }
 
 /*FIM DO CSS COMPONENTE USUARIO PESQUISADO*/
