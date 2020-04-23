@@ -12,8 +12,6 @@
     position: relative;
 }
 
-
-
 #modalDetalhesAula #detalhes-container{
     display: flex;
     flex-direction: row;
@@ -42,4 +40,68 @@
     padding-left: 2%;
     padding-right: 2%;
 
+}
+
+@media(max-width:599px){
+    #modalDetalhesAula .msg-feed-header-avatar img {
+        width: 150px;
+        height: 150px;
+        -o-object-fit: contain;
+        object-fit: contain;
+        -webkit-transition: ease-in-out 0.5s;
+        -o-transition: ease-in-out 0.5s;
+        transition: ease-in-out 0.5s;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: relative;
+    }
+    
+    #modalDetalhesAula #detalhes-container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 20%;
+    }
+    
+    #modalDetalhesAula .modal-body{
+        width: 100%;
+        height: 40%;
+    }
+    
+    #modalDetalhesAula #container-descricao-botoes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        height: 40%;
+        padding-left: 3%;
+        padding-bottom: 5%;
+    }
+
+    
+    
+    #modalDetalhesAula #container-texto-detalhes{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    #container-botaoUnico{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        height: 10%;
+    }
+    #container-botaoDuplo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        height: 10%;
+    }
 }
