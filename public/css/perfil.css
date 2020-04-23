@@ -33,6 +33,7 @@ body {
     bottom: 1vh;
     overflow: hidden;
   }
+
 }
 
 @media screen and (min-width: 600px) and (max-width: 1199px) {
