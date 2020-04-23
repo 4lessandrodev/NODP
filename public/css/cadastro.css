@@ -23,7 +23,7 @@
   align-items: center;
   justify-content: center;
   background-color: var(--light-background-color);
- 
+  
 }
 
 .login img{
@@ -55,4 +55,19 @@
 
 a.esqueci-senha{
   padding-top: 3vh;
+}
+
+@media screen and (max-width: 599px) {
+  #cadastro {
+    margin: 0;
+    padding: 0;
+    max-width: 95.5vw;
+  }
+  
+}
+
+@media screen and (min-width: 600px) and (max-width: 1199px) {
+  #cadastro .background{
+    background-position-y: center; 
+  }
 }

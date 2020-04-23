@@ -1361,7 +1361,7 @@ section#mensagens {
   .boas-vendas{
     text-align: center;
   }
-
+  
   /*Conquista de usuario*/
   #conquistas-usuario {
     background-color: var(--text-primary-color);
@@ -1822,6 +1822,12 @@ section#mensagens {
     width: 350px;
   }
   
+  #conquistas-usuario ul,
+  #conquista-aluno ul,
+  #conquista-professor ul {
+    margin: 0;
+    padding: 1vh 1vh 3vh 1vh;
+  }
 }
 /*AQUI FINALIZA O CSS PARA MOBILE*/
 /*-----------------------------------------------------------------------------------*/
