@@ -170,17 +170,17 @@
   
   <!--INICIO DO MODAL ENSINANDO-->
   <div class="modal fade" id="modalEnsinando" tabindex="-1" role="dialog" aria-labelledby="postModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="postModalLabel">Criar Publicação</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Descartar">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <!-- <section class="post-feed container">-->
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="postModalLabel">Criar Publicação</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Descartar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- <section class="post-feed container">-->
           <header class="post-feed-header">
             <div class="post-feed-header-avatar">
               <img src="/img/kate.jpg" alt="">
@@ -191,7 +191,7 @@
               <span class="data-post texto">Dom. 19:30h</span>
             </div>
           </header>
-
+          
           <article class="post-feed-article">
             <div class="img-post">
               <!-- <img src="/img/estudando.jpg" alt=""> -->
@@ -203,10 +203,10 @@
                   <input type="text" placeholder="Titulo" class="titulo titulo-modal" name="titulo-modal-ensinando">
                   <h2 class="subtitulo">#Estou-Ensinando</h2>
                 </div>
-
+                
               </div>
               <textarea name="" rows="4" placeholder="Seu texto aqui ..." class="texto texto-post"
-                maxlength="250"></textarea>
+              maxlength="250"></textarea>
               <div class="quantidade-caracteres">
                 <p class="texto">250</p>
               </div>
@@ -221,21 +221,21 @@
     </div>
   </div>
   <!--FIM DO MODAL ENSINANDO-->
-
-
+  
+  
   <!--INICIO DO MODAL MOBILE-->
   <div class="modal fade" id="modalMobile" tabindex="-1" role="dialog" aria-labelledby="postModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="postModalLabel">Criar Publicação</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Descartar">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <!-- <section class="post-feed container">-->
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="postModalLabel">Criar Publicação</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Descartar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- <section class="post-feed container">-->
           <header class="post-feed-header">
             <div class="post-feed-header-avatar">
               <img src="/img/kate.jpg" alt="">
@@ -246,7 +246,7 @@
               <span class="data-post texto">Dom. 19:30h</span>
             </div>
           </header>
-
+          
           <article class="post-feed-article">
             <div class="img-post">
               <!-- <img src="/img/estudando.jpg" alt=""> -->
@@ -259,19 +259,34 @@
                   <!-- <h2 class="subtitulo">#Estou-Ensinando</h2> -->
                   <div class="form-group">
                     <!-- <label for="sel1">Select list:</label> -->
-                    <select class="form-control" id="sel1">
-                      <option>#Quero-Aprender</option>
-                      <option>#Estou-Aprendendo</option>
-                      <option>#Quero-Ensinar</option>
-                      <option>#Estou-Ensinando</option>
+                    <select class="form-control" id="categoria" name="categoria">
+                      <option value="1">#Quero-Aprender</option>
+                      <option value="2">#Estou-Aprendendo</option>
+                      <option value="3">#Quero-Ensinar</option>
+                      <option value="4">#Estou-Ensinando</option>
                     </select>
                   </div>
-                  <input type="text" placeholder="Titulo" class="titulo titulo-modal" name="titulo-modal-ensinando">
+                  <div>
+                    <input type="text" placeholder="Titulo" class="titulo titulo-modal" name="titulo-modal-ensinando">
+                    <input type="button" value="urgente" class="btn-urgente" id="btn-Urgente">
+                  </div>
+                  <div class="dados-ensinar display-none" id="detalhesEnsinar">
+                    <div class="info-moeda">
+                      <input type="button" value="-" id="btn-menos-moeda">
+                      <input type="button" value="0 moedas" id="moeda">
+                      <input type="button" value="+" id="btn-mais-moeda">
+                    </div>
+                    <div class="info-time">
+                      <input type="button" value="-" id="btn-menos-tempo">
+                      <input type="button" value="15 min" id="time">
+                      <input type="button" value="+" id="btn-mais-tempo">
+                    </div>
+                  </div>
                 </div>
-
+                
               </div>
               <textarea name="" rows="4" placeholder="Seu texto aqui ..." class="texto texto-post"
-                maxlength="250"></textarea>
+              maxlength="250"></textarea>
               <div class="quantidade-caracteres">
                 <p class="texto">250</p>
               </div>
@@ -286,4 +301,83 @@
     </div>
   </div>
   <!--FIM DO MODAL MOBILE-->
+  
+  
+  <script>
+    const CATEGORIA = document.querySelector('#modalMobile select[name=categoria]');
+    const DETALHES_ENSINAR = document.querySelector('#detalhesEnsinar');
+    const URGENTE = document.querySelector('#btn-Urgente');
+    const TITULO = document.querySelector('#modalMobile input[name=titulo-modal-ensinando');
+    const QTD_MOEDAS = document.querySelector('#moeda');
+    const QTD_TEMPO = document.querySelector('#time');
+    
+    const BTN_MAIS_TEMPO = document.querySelector('#btn-mais-tempo');
+    const BTN_MENOS_TEMPO = document.querySelector('#btn-menos-tempo');
+    const BTN_MAIS_MOEDA = document.querySelector('#btn-mais-moeda');
+    const BTN_MENOS_MOEDA = document.querySelector('#btn-menos-moeda');
+    
+    const AJUSTAR_LAYOUT_POSTAGEM_MOBILE = () =>{
+      let categoria = CATEGORIA.value;
+      switch(categoria){
+        case '1':
+        URGENTE.classList.remove('display-none');
+        DETALHES_ENSINAR.classList.add('display-none');
+        TITULO.classList.remove('titulo-total');
+        break;
+        case '2':
+        URGENTE.classList.add('display-none');
+        DETALHES_ENSINAR.classList.add('display-none');
+        TITULO.classList.add('titulo-total');
+        break;
+        case '3':
+        URGENTE.classList.add('display-none');
+        DETALHES_ENSINAR.classList.remove('display-none');
+        TITULO.classList.add('titulo-total');
+        break;
+        case '4':
+        URGENTE.classList.add('display-none');
+        DETALHES_ENSINAR.classList.add('display-none');
+        TITULO.classList.add('titulo-total');
+        break;
+      }
+    };
+    
+    const AUMENTAR_TEMPO = ()=>{
+      var tempoAtual = parseInt(QTD_TEMPO.value);
+      QTD_TEMPO.value = `${tempoAtual + 15} min`;
+    };
+    
+    const DIMINUIR_TEMPO = ()=>{
+      var tempoAtual = parseInt(QTD_TEMPO.value);
+      (tempoAtual == 15)? QTD_TEMPO.value = `${15} min`:QTD_TEMPO.value = `${tempoAtual - 15} min`;
+    };
+    
+    const AUMENTAR_MOEDA = ()=>{
+      var moedaAtual = parseInt(QTD_MOEDAS.value);
+      (moedaAtual == 0)?QTD_MOEDAS.value = `${1} moeda`: QTD_MOEDAS.value = `${moedaAtual + 1} moedas`;
+    };
+    
+    const DIMINUIR_MOEDA = ()=>{
+      var moedaAtual = parseInt(QTD_MOEDAS.value);
+      if(moedaAtual == 2){
+        QTD_MOEDAS.value = `${1} moeda`;
+      }else if(moedaAtual < 1){
+        QTD_MOEDAS.value = `${0} moeda`;
+      }else{
+        QTD_MOEDAS.value = `${moedaAtual - 1} moedas`;
+      }
+    };
+
+    const FLEGAR_URGENTE = ()=>{
+      URGENTE.classList.toggle('urgente-selecionado');
+    };
+    
+    CATEGORIA.addEventListener('change', AJUSTAR_LAYOUT_POSTAGEM_MOBILE);
+    BTN_MAIS_TEMPO.addEventListener('click', AUMENTAR_TEMPO);
+    BTN_MENOS_TEMPO.addEventListener('click', DIMINUIR_TEMPO);
+    BTN_MAIS_MOEDA.addEventListener('click', AUMENTAR_MOEDA);
+    BTN_MENOS_MOEDA.addEventListener('click', DIMINUIR_MOEDA);
+    URGENTE.addEventListener('click', FLEGAR_URGENTE);
+    
+  </script>
   

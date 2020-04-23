@@ -336,3 +336,38 @@
 #modalMobile .modal-footer{
   flex-wrap: nowrap;
 }
+
+#modalMobile .titulo-modal {
+  max-width: 57vw;
+}
+#modalMobile .dados-ensinar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2vh;
+}
+
+#modalMobile .btn-urgente {
+  min-width: 30%;
+  width: 30%;
+}
+
+#modalMobile .display-none {
+  display: none;
+}
+
+#modalMobile .titulo-total {
+  max-width: 85vw;
+  width: 85vw;
+}
+
+#modalMobile input[type=button]{
+  background-color: var(--text-primary-color);
+  border: 1px solid var(--divider-color);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#modalMobile .urgente-selecionado{
+  background-color: var(--dark-primary-color) !important;
+  color: var(--text-primary-color);
+}
