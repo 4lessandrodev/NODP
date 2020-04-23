@@ -46,6 +46,13 @@ body {
   display: none;
 }
 
+#modalDeApoiados {
+  display: block;
+}
+#modalDeApoiadosCelular {
+  dislpay:none;
+}
+
 ::-webkit-scrollbar {
   width: 0px;
 }
@@ -72,6 +79,12 @@ body {
   }
   #mobilePostPesquisa {
     display: none;
+  }
+  #modalDeApoiados {
+    display: block;
+  }
+  #modalDeApoiadosCelular {
+    display:none;
   }
   .div-scroll-post {
     height: 142vh;
@@ -131,6 +144,12 @@ body {
   .div-scroll-post {
     height: 142vh;
     overflow: scroll;
+  }
+  #modalDeApoiados {
+    display: none;
+  }
+  #modalDeApoiadosCelular {
+    display: block;
   }
 }
 
