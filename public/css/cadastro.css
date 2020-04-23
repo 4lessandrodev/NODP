@@ -26,6 +26,10 @@
  
 }
 
+.login img{
+  margin:0;
+}
+
 .cadastro-div-termos {
   margin-top: 2vh;
 }
