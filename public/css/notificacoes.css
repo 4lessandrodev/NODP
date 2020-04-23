@@ -31,6 +31,12 @@ body {
   overflow: scroll;
   scrollbar-width: none;
 }
+.col-titulo {
+  width: 66.1333333333%;
+}
+.col-botaomensagem {
+  width: 32.2666666667%;
+}
 
 ::-webkit-scrollbar {
   width: 0px;
@@ -55,7 +61,15 @@ body {
   .coluna-direita {
     display: none;
   }
+  .col-titulo {
+    width: 66.1333333333%;
+  }
+  .col-botaomensagem {
+    width: 32.2666666667%;
+  }
+
 }
+
 @media screen and (max-width: 599px) {
   .coluna-esquerda {
     display: none;
@@ -70,6 +84,13 @@ body {
   }
   .coluna-direita {
     display: none;
+  }
+  .col-titulo {
+    width: 50%;
+  }
+  .col-botaomensagem {
+    width: 50%;
+    margin-right: 0;
   }
 }
 
