@@ -2759,7 +2759,27 @@ section#mensagens {
     display: none;
   }
   
-  #main-footer {
+  #main-footer{
+    position: fixed;
+    height: 4vh;
+    background-color: var(--dark-primary-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    bottom: 0px;
+    padding: 4% 0 0 0;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: center;
+    align-items: flex-end;
+    justify-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    
+  }
+
+  /* #main-footer {
+    position: fixed;
     background-color: var(--dark-primary-color);
     height: 4vh;
     display: -webkit-box;
@@ -2772,8 +2792,10 @@ section#mensagens {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    margin-top: 1vh;
-  }
+    
+    margin-left: 0px;
+    margin-bottom: 0px;
+  } */
   
   #main-footer address {
     padding: 0;
