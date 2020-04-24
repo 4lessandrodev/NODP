@@ -573,6 +573,10 @@ section#aulas-recentes img {
   color: var(--dark-primary-color);
 }
 
+#container-aulas-recentes{
+  display: none;
+}
+
 /*FIM DO CSS DO COMPONENTE AULAS RECENTES*/
 
 
@@ -1295,6 +1299,13 @@ section#mensagens {
   padding-left: 5%;
 }
 
+.sobre-footer ul{
+  list-style: none;
+}
+.sobre-footer ul:hover{
+  cursor: pointer;
+}
+
 /*AQUI FINALIZA O CSS PARA PADRÃO PARA TODOS OS TAMANOOS*/
 /*-----------------------------------------------------------------------------------*/
 
@@ -1313,6 +1324,9 @@ section#mensagens {
 /*-----------------------------------------------------------------------------------*/
 /* header para celulares até 599 pixeis */
 @media screen and (max-width: 599px) {
+  #container-aulas-recentes{
+    display: none;
+  }
   #header-desktop {
     display: none;
   }
@@ -1838,6 +1852,10 @@ section#mensagens {
 /*AQUI INICIA O CSS PARA MOBILE MAIOR QUE 600 PX*/
 /*-----------------------------------------------------------------------------------*/
 @media screen and (min-width: 600px) and (max-width: 1199px) {
+  #container-aulas-recentes{
+    display: block;
+    margin-bottom: 20%;
+  }
   #conquistas-usuario {
     background-color: var(--text-primary-color);
     border: 1vw solid var(--text-primary-color);
