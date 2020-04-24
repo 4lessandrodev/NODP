@@ -92,6 +92,20 @@ body {
     width: 50%;
     margin-right: 0;
   }
+
+  #buscar-destinatarios{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 5vh;
+    justify-content: space-between; 
+  }
+
+  .modal-footer{
+    flex-wrap: nowrap;
+  }
+
+
 }
 
 /* inicio componente notificacoes-central */
