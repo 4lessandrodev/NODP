@@ -93,6 +93,7 @@ body {
     align-items: center;
     margin-top: 1vh;
     display: inline-block;
+    padding-bottom: 2vh;
     /* margin-top: 0; */
   }
 }

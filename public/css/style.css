@@ -1067,6 +1067,7 @@ section#mensagens {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
+  padding: 2vh 0;
   
 }
 
@@ -1091,6 +1092,7 @@ section#mensagens {
   display: -ms-flexbox;
   display: flex;
   align-items: center;
+  padding: 2vh 0;
 }
 
 #aula-pesquisada .aula img {
@@ -1835,8 +1837,11 @@ section#mensagens {
   }
   
   #modalEditarPerfil .modal-dialog{
-    min-width: 350px;
-    width: 350px;
+    min-width: 95%;
+    width: 95%;
+  }
+  #modalEditarPerfil .modal-dialog .modal-footer {
+    flex-wrap: nowrap;
   }
   
   #conquistas-usuario ul,

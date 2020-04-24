@@ -44,10 +44,8 @@
 
 @media(max-width:599px){
     .msg-feed-header-avatar{
-        width: 100%;
-        height: 20vh;
-        background-image: url('/img/kate.jpg');
-        margin-bottom: 2%;
+        height: 8vh;
+        margin-bottom: 2%; 
     }
     #modalDetalhesAula .msg-feed-header-avatar img {
         display: none;
@@ -98,4 +96,18 @@
         width: 100%;
         height: 10%;
     }
+    #modalMensagem .modal-footer {
+    flex-wrap: nowrap;
+    }
+    #modalMensagem .msg-feed-header-avatar img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        transition: ease-in-out 0.5s;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: relative;
+    }
+
 }

@@ -2,17 +2,15 @@
 <%- include("./includes/head") -%>
 <!--Importar o css exclusivo da página que está sendo desenvolvida-->
 <link rel='stylesheet' href='/css/notificacoes.css' />
-<link rel='stylesheet' href='/css/post-feed.css' /> -->
+<link rel='stylesheet' href='/css/post-feed.css' />
 <link rel='stylesheet' href='/css/modais-post.css' />
 <link rel='stylesheet' href='/css/modal-mensagem.css' />
 
   <!--Tag de fechamento do head que ficou aberto para possibilitar importar o css da página-->
 </head>
 
-<!--Importanto o arquivo header com a barra de pesquisa e menu-->
 <%- include('./includes/header')-%>
 
-<!--Códigos da página-->
 <body>
   <div class="container">
     
@@ -32,7 +30,6 @@
       </div>
 
       <div class="coluna-direita">
-        <!--Coluna de mensagens, aulas recentes-->
         <%- include('./includes/mensagens-lateral')-%>
         <%- include('./includes/aulas-recentes')-%>
       </div>
@@ -42,5 +39,4 @@
 
 <!--Importando o arquivo scripts-->
 <%- include('./includes/scripts')-%>
-<!-- Importando o arquivo footer-->
 <%- include('./includes/footer-principal')-%>

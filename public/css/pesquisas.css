@@ -115,6 +115,7 @@ body {
     align-items: center;
     margin-top: 1vh;
     display: inline-block;
+    padding: 1vh 0;
   }
   #mobilePostPesquisa i {
     color: var(--default-primary-color);
