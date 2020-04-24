@@ -343,3 +343,9 @@
   scrollbar-color: var(--light-background-color);
 }
 /*FIM DO CSS PARA O MODAL MENSAGENS*/
+
+@media screen and (max-width: 599px) {
+#modalNovaMensagem .msg-feed-header .lista-de-amigos{
+  height:16vh;
+}
+}
