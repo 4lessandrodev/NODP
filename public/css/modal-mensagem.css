@@ -272,12 +272,12 @@
   border: 1px solid var(--divider-color);
   overflow-x: hidden;
   min-width: 100%;
-  height: 13vh;
+  height: 15vh;
 }
 
 #modalNovaMensagem .input-buscar-amigos {
-  min-width: 75%;
-  width: 75%;
+  min-width: 82%;
+  width: 82%;
 }
 
 #buscar-destinatarios {
@@ -345,7 +345,26 @@
 /*FIM DO CSS PARA O MODAL MENSAGENS*/
 
 @media screen and (max-width: 599px) {
-#modalNovaMensagem .msg-feed-header .lista-de-amigos{
-  height:16vh;
+  #modalNovaMensagem .msg-feed-header .lista-de-amigos{
+    height:16vh;
+  }
+  #modalNovaMensagem .input-buscar-amigos {
+    min-width: 75%;
+    width: 75%;
+  }
 }
+
+@media screen and (min-width: 600px) and (max-width: 1199px) {
+  #modalNovaMensagem .usuario-selecionado {
+    cursor: pointer;
+    color: var(--text-primary-color);
+  }
+  
+  #modalNovaMensagem .msg-feed-header .lista-de-amigos {
+    height: 8vh;
+  }
+  #modalNovaMensagem .input-buscar-amigos {
+    min-width: 80%;
+    width: 80%;
+  }
 }

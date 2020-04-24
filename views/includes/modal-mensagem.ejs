@@ -274,27 +274,5 @@ aria-hidden="true">
   </div>
 </div>
 
-<script>
-  const UL_USUARIOS = document.querySelector('.msg-ul-amigos');
-  //Esta função aplica o efeito no botão clicado pelo usuário para adicionar filtro do usuário
-  UL_USUARIOS.addEventListener('click', function(e) {
-    var clicou = e.target.parentNode.parentNode;
-    if(clicou.tagName == 'LI'){
-      clicou.classList.toggle('usuario-selecionado');
-    }
-  });
-  
-  const DIREITA = document.querySelector('.anterior');
-  const ESQUERDA = document.querySelector('.proximo');
-  const VIEW_USERS = document.querySelector('.msg-ul-amigos');
-  
-  ESQUERDA.addEventListener('click', function(){
-    VIEW_USERS.scrollTo(VIEW_USERS.offsetWidth + VIEW_USERS.offsetWidth, 0);
-  });
-  DIREITA.addEventListener('click', function(){
-    VIEW_USERS.scrollTo(VIEW_USERS.offsetWidth - VIEW_USERS.offsetWidth, 0);
-  });
-  
-  
-</script>
+<script src="/js/scroll-users-mensagens.js"></script>
 <!--FIM DO MODAL MENSAGEM-->
