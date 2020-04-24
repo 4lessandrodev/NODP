@@ -115,10 +115,18 @@ body {
     align-items: center;
     margin-top: 1vh;
     display: inline-block;
-    /* margin-top: 0; */
   }
   #mobilePostPesquisa i {
     color: var(--default-primary-color);
+  }
+  .mobilePesquisaCollapse {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .mobilePesquisaBotao {
+    margin-top: 1vh;
+
   }
   #usuario-pesquisado .botoes {
     align-items: center;
@@ -130,6 +138,19 @@ body {
   .btn-legenda {
     font-size: 10px;
     font-weight: 500;
+  }
+  /* #header-celular {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    color: var(--default-primary-color);
+  } */
+  .filtro-icon {
+    font-size: 1.2em;
+    list-style: none;
+    display: flex;
+    padding: 2% 5%;
+    color: var(--default-primary-color);
   }
   .div-scroll-post {
     height: 142vh;
@@ -253,7 +274,7 @@ body {
   }
 
   #iconeSearch{
-padding-left: 3%;
+  padding-left: 3%;
   }
 }
 @media screen and (min-width: 1200px) {
