@@ -1299,6 +1299,13 @@ section#mensagens {
   padding-left: 5%;
 }
 
+.sobre-footer ul{
+  list-style: none;
+}
+.sobre-footer ul:hover{
+  cursor: pointer;
+}
+
 /*AQUI FINALIZA O CSS PARA PADRÃO PARA TODOS OS TAMANOOS*/
 /*-----------------------------------------------------------------------------------*/
 
