@@ -1371,6 +1371,9 @@ section#mensagens {
     width: 70px;
     display: flex;
   }
+  #header-celular i {
+    color: var(--default-primary-color);
+  }
   
   .boas-vendas{
     text-align: center;
