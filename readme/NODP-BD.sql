@@ -48,7 +48,7 @@ CREATE TABLE IF NOT EXISTS `cidades` (
   `cep` VARCHAR(8) NOT NULL,
   `estado` INT NOT NULL,
   PRIMARY KEY (`cod_cidades`),
-  INDEX `FK_cidades_1_idx` (`estado` ASC) VISIBLE,
+  INDEX `FK_cidades_1_idx` (`estado` ASC)  ,
   CONSTRAINT `FK_cidades_1`
     FOREIGN KEY (`estado`)
     REFERENCES `estados` (`cod_estados`)
@@ -80,7 +80,7 @@ CREATE TABLE IF NOT EXISTS `instituicoes_ensino` (
   `estado_id` INT NOT NULL,
   `sigla` VARCHAR(20) NOT NULL DEFAULT 'NI',
   PRIMARY KEY (`id`),
-  INDEX `FK_instituicoes_ensino_1_idx` (`estado_id` ASC) VISIBLE,
+  INDEX `FK_instituicoes_ensino_1_idx` (`estado_id` ASC)  ,
   CONSTRAINT `FK_instituicoes_ensino_1`
     FOREIGN KEY (`estado_id`)
     REFERENCES `estados` (`cod_estados`)
@@ -98,7 +98,7 @@ CREATE TABLE IF NOT EXISTS `metodos_ensino` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `descricao` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE INDEX `descricao_UNIQUE` (`descricao` ASC) VISIBLE)
+  UNIQUE INDEX `descricao_UNIQUE` (`descricao` ASC)  )
 ENGINE = InnoDB;
 
 
@@ -123,12 +123,12 @@ CREATE TABLE IF NOT EXISTS `perfis` (
   `avatar` VARCHAR(250) NOT NULL DEFAULT 'NI',
   `turma` INT NOT NULL DEFAULT 9999,
   PRIMARY KEY (`id`),
-  INDEX `FK_perfis_1_idx` (`usuario_id` ASC) VISIBLE,
-  INDEX `FK_perfis_2_idx` (`cidade_id` ASC) VISIBLE,
-  INDEX `FK_perfis_3_idx` (`curso_id` ASC) VISIBLE,
-  INDEX `FK_perfis_4_idx` (`instituicao_ensino_id` ASC) VISIBLE,
-  INDEX `FK_perfis_5_idx` (`metodo_ensino_id` ASC) VISIBLE,
-  INDEX `FK_perfis_6_idx` (`metodo_aprendizado_id` ASC) VISIBLE,
+  INDEX `FK_perfis_1_idx` (`usuario_id` ASC)  ,
+  INDEX `FK_perfis_2_idx` (`cidade_id` ASC)  ,
+  INDEX `FK_perfis_3_idx` (`curso_id` ASC)  ,
+  INDEX `FK_perfis_4_idx` (`instituicao_ensino_id` ASC)  ,
+  INDEX `FK_perfis_5_idx` (`metodo_ensino_id` ASC)  ,
+  INDEX `FK_perfis_6_idx` (`metodo_aprendizado_id` ASC)  ,
   CONSTRAINT `FK_perfis_1`
     FOREIGN KEY (`usuario_id`)
     REFERENCES `usuarios` (`id`)
@@ -215,8 +215,8 @@ CREATE TABLE IF NOT EXISTS `postagens` (
   `imagem` VARCHAR(200) NOT NULL DEFAULT 'NI',
   `urgente` TINYINT(1) NOT NULL DEFAULT 0,
   PRIMARY KEY (`id`),
-  INDEX `FK_postagens_1_idx` (`usuario_id` ASC) VISIBLE,
-  INDEX `FK_postagens_2_idx` (`categoria_id` ASC) VISIBLE,
+  INDEX `FK_postagens_1_idx` (`usuario_id` ASC)  ,
+  INDEX `FK_postagens_2_idx` (`categoria_id` ASC)  ,
   CONSTRAINT `FK_postagens_1`
     FOREIGN KEY (`usuario_id`)
     REFERENCES `usuarios` (`id`)
@@ -241,8 +241,8 @@ CREATE TABLE IF NOT EXISTS `comentarios` (
   `usuario_id` INT NOT NULL,
   `post_id` INT NOT NULL,
   PRIMARY KEY (`id`),
-  INDEX `FK_comentarios_idx` (`post_id` ASC) VISIBLE,
-  INDEX `FK_comentarios_2_idx` (`usuario_id` ASC) VISIBLE,
+  INDEX `FK_comentarios_idx` (`post_id` ASC)  ,
+  INDEX `FK_comentarios_2_idx` (`usuario_id` ASC)  ,
   CONSTRAINT `FK_comentarios_1`
     FOREIGN KEY (`post_id`)
     REFERENCES `postagens` (`id`)
@@ -266,8 +266,8 @@ CREATE TABLE IF NOT EXISTS `apoiadores` (
   `usuario_id` INT NOT NULL,
   `apoiador_id` INT NOT NULL,
   PRIMARY KEY (`id`),
-  INDEX `FK_apoiadores_1_idx` (`usuario_id` ASC) VISIBLE,
-  INDEX `FK_apoiadores_2_idx` (`apoiador_id` ASC) VISIBLE,
+  INDEX `FK_apoiadores_1_idx` (`usuario_id` ASC)  ,
+  INDEX `FK_apoiadores_2_idx` (`apoiador_id` ASC)  ,
   CONSTRAINT `FK_apoiadores_1`
     FOREIGN KEY (`usuario_id`)
     REFERENCES `usuarios` (`id`)
@@ -291,8 +291,8 @@ CREATE TABLE IF NOT EXISTS `apoiados` (
   `usuario_id` INT NOT NULL,
   `apoiador_id` INT NOT NULL,
   PRIMARY KEY (`id`),
-  INDEX `FK_apoiados_1_idx` (`usuario_id` ASC) VISIBLE,
-  INDEX `FK_apoiados_2_idx` (`apoiador_id` ASC) VISIBLE,
+  INDEX `FK_apoiados_1_idx` (`usuario_id` ASC)  ,
+  INDEX `FK_apoiados_2_idx` (`apoiador_id` ASC)  ,
   CONSTRAINT `FK_apoiados_1`
     FOREIGN KEY (`usuario_id`)
     REFERENCES `usuarios` (`id`)
@@ -318,8 +318,8 @@ CREATE TABLE IF NOT EXISTS `mensagens` (
   `mensagem` TEXT NOT NULL,
   `data_hora` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
-  INDEX `FK_mensagens_1_idx` (`usuario_id` ASC) VISIBLE,
-  INDEX `FK_mensagens_2_idx` (`destinatario_id` ASC) VISIBLE,
+  INDEX `FK_mensagens_1_idx` (`usuario_id` ASC)  ,
+  INDEX `FK_mensagens_2_idx` (`destinatario_id` ASC)  ,
   CONSTRAINT `FK_mensagens_1`
     FOREIGN KEY (`usuario_id`)
     REFERENCES `usuarios` (`id`)
@@ -348,8 +348,8 @@ CREATE TABLE IF NOT EXISTS `aulas_ministradas` (
   `duracao_minutos` INT NOT NULL,
   `data_hora` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
-  INDEX `FK_aulas_ministradas_1_idx` (`aluno_id` ASC) VISIBLE,
-  INDEX `FK_aulas_ministradas_2_idx` (`usuario_id` ASC) VISIBLE,
+  INDEX `FK_aulas_ministradas_1_idx` (`aluno_id` ASC)  ,
+  INDEX `FK_aulas_ministradas_2_idx` (`usuario_id` ASC)  ,
   CONSTRAINT `FK_aulas_ministradas_1`
     FOREIGN KEY (`aluno_id`)
     REFERENCES `usuarios` (`id`)
@@ -386,8 +386,8 @@ CREATE TABLE IF NOT EXISTS `avaliacoes` (
   `tipo_avaliacao` INT NOT NULL,
   `nota` INT NOT NULL DEFAULT 5,
   PRIMARY KEY (`id`),
-  INDEX `FK_avaliacoes_1_idx` (`tipo_avaliacao` ASC) VISIBLE,
-  INDEX `FK_avaliacoes_2_idx` (`aula_id` ASC) VISIBLE,
+  INDEX `FK_avaliacoes_1_idx` (`tipo_avaliacao` ASC)  ,
+  INDEX `FK_avaliacoes_2_idx` (`aula_id` ASC)  ,
   CONSTRAINT `FK_avaliacoes_1`
     FOREIGN KEY (`tipo_avaliacao`)
     REFERENCES `tipos_avaliacoes` (`id`)
@@ -427,9 +427,9 @@ CREATE TABLE IF NOT EXISTS `notificacoes` (
   `lida` TINYINT(1) NOT NULL DEFAULT 0,
   `data_hora` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
-  INDEX `FK_notificacoes_1_idx` (`tipo_notificacao_id` ASC) VISIBLE,
-  INDEX `FK_notificacoes_2_idx` (`usuario_id` ASC) VISIBLE,
-  INDEX `FK_notificacoes_3_idx` (`remetente_id` ASC) VISIBLE,
+  INDEX `FK_notificacoes_1_idx` (`tipo_notificacao_id` ASC)  ,
+  INDEX `FK_notificacoes_2_idx` (`usuario_id` ASC)  ,
+  INDEX `FK_notificacoes_3_idx` (`remetente_id` ASC)  ,
   CONSTRAINT `FK_notificacoes_1`
     FOREIGN KEY (`tipo_notificacao_id`)
     REFERENCES `tipos_notificacoes` (`id`)
@@ -459,8 +459,8 @@ CREATE TABLE IF NOT EXISTS `medalhas` (
   `remetente_id` INT NOT NULL,
   `data_hora` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
-  INDEX `FK_medalhas_1_idx` (`remetente_id` ASC) VISIBLE,
-  INDEX `FK_medalhas_2_idx` (`id_post` ASC) VISIBLE,
+  INDEX `FK_medalhas_1_idx` (`remetente_id` ASC)  ,
+  INDEX `FK_medalhas_2_idx` (`id_post` ASC)  ,
   CONSTRAINT `FK_medalhas_1`
     FOREIGN KEY (`remetente_id`)
     REFERENCES `usuarios` (`id`)
@@ -486,8 +486,8 @@ CREATE TABLE IF NOT EXISTS `moedas` (
   `qtd_moedas` INT NOT NULL,
   `data_hora` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
-  INDEX `FK_moedas_1_idx` (`usuario_id` ASC) VISIBLE,
-  INDEX `FK_moedas_2_idx` (`remetente_id` ASC) VISIBLE,
+  INDEX `FK_moedas_1_idx` (`usuario_id` ASC)  ,
+  INDEX `FK_moedas_2_idx` (`remetente_id` ASC)  ,
   CONSTRAINT `FK_moedas_1`
     FOREIGN KEY (`usuario_id`)
     REFERENCES `usuarios` (`id`)
@@ -523,8 +523,8 @@ DROP TABLE IF EXISTS `usuarios_tem_interesses_ensino` ;
 CREATE TABLE IF NOT EXISTS `usuarios_tem_interesses_ensino` (
   `usuario_id` INT NOT NULL,
   `interesse_id` INT NOT NULL,
-  INDEX `FK_interesses_ensino_1_idx` (`usuario_id` ASC) VISIBLE,
-  INDEX `FK_interesses_ensino_2_idx` (`interesse_id` ASC) VISIBLE,
+  INDEX `FK_interesses_ensino_1_idx` (`usuario_id` ASC)  ,
+  INDEX `FK_interesses_ensino_2_idx` (`interesse_id` ASC)  ,
   PRIMARY KEY (`usuario_id`, `interesse_id`),
   CONSTRAINT `FK_interesses_ensino_1`
     FOREIGN KEY (`usuario_id`)
@@ -547,8 +547,8 @@ DROP TABLE IF EXISTS `usuarios_tem_interesses_aprendizado` ;
 CREATE TABLE IF NOT EXISTS `usuarios_tem_interesses_aprendizado` (
   `usuario_id` INT NOT NULL,
   `interesse_id` INT NOT NULL,
-  INDEX `FK_interesse_aprendizado_1_idx` (`usuario_id` ASC) VISIBLE,
-  INDEX `FK_interesse_aprendizado_2_idx` (`interesse_id` ASC) VISIBLE,
+  INDEX `FK_interesse_aprendizado_1_idx` (`usuario_id` ASC)  ,
+  INDEX `FK_interesse_aprendizado_2_idx` (`interesse_id` ASC)  ,
   PRIMARY KEY (`usuario_id`, `interesse_id`),
   CONSTRAINT `FK_interesse_aprendizado_1`
     FOREIGN KEY (`usuario_id`)

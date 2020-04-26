@@ -1308,6 +1308,17 @@ section#mensagens {
   cursor: pointer;
 }
 
+#ganhou-moedas .corpo-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#ganhou-moedas .corpo-modal .moeda {
+  font-size: 5em;
+  color: var(--accent-color);
+  padding: 0 2vw 0 0;
+}
+
 /*AQUI FINALIZA O CSS PARA PADRÃO PARA TODOS OS TAMANOOS*/
 /*-----------------------------------------------------------------------------------*/
 
@@ -2803,7 +2814,7 @@ section#mensagens {
     justify-content: center;
     
   }
-
+  
   /* #main-footer {
     position: fixed;
     background-color: var(--dark-primary-color);
@@ -2834,6 +2845,7 @@ section#mensagens {
     margin: 0;
     color: var(--text-primary-color);
   }
+
 }
 
 /*FIM DO CSS COMPONENTE USUARIO PESQUISADO*/
