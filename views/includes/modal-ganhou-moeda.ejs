@@ -1,0 +1,39 @@
+<!-- Modal ganhou moeda -->
+<div class="modal fade" id="ganhou-moedas" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ganhou-moedas-titulo">Moedas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body corpo-modal">
+        <div class="moeda">
+          <i class="fas fa-coins"></i>
+        </div>
+        <div>
+          <h3>Você ganhou 10 moedas</h3>
+        </div>
+        <audio id="audio-moeda" controls style="display: none;">
+          <source src="/audio/moeda.ogg" type="audio/ogg">
+          </audio>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-1-d" data-dismiss="modal" onclick="playMoedaSound()">Obrigado</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    const playMoedaSound = () =>{
+      const AUDIOMOEDA = document.querySelector('#audio-moeda');
+      AUDIOMOEDA.play();
+    }
+    
+    setTimeout(function () {
+      
+      $('#ganhou-moedas').modal('show');
+    }, 5000);
+  </script>
