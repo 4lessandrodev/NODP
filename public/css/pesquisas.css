@@ -202,7 +202,7 @@ body {
     min-height: 70px;
     background-color: var(--text-primary-color);
     background-color: var(--text-primary-color);
-    border: 1px solid var(--divider-color);
+    /* border: 1px solid var(--divider-color); */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -318,7 +318,7 @@ body {
   min-height: 70px;
   background-color: var(--text-primary-color);
   background-color: var(--text-primary-color);
-  border: 1px solid var(--divider-color);
+  /* border: 1px solid var(--divider-color); */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
