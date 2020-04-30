@@ -3221,7 +3221,7 @@ section#mensagens {
     border-radius: 10px;
     /* margin: 2vh 0; */
     -ms-flex-pack: distribute;
-    justify-content: space-around;
+    /* justify-content: space-around; */
   }
   
   #conquistas-usuario .conquistas-div-interna ul li {
